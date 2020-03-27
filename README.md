@@ -1,3 +1,19 @@
+- [EECS290FinalProject](#eecs290finalproject)
+  - [Meeting 27/03/2020](#meeting-27032020)
+  - [Story](#story)
+  - [Mechanics](#mechanics)
+    - [Game Design document outline](#game-design-document-outline)
+  - [Game Title](#game-title)
+  - [Game Genre](#game-genre)
+  - [Premise/Narrative/Story](#premisenarrativestory)
+  - [Player's Role and Game Goal (How do you beat the game?)](#players-role-and-game-goal-how-do-you-beat-the-game)
+  - [Gameplay/Mechanics (What abilities, activities, puzzles must be solved?)](#gameplaymechanics-what-abilities-activities-puzzles-must-be-solved)
+  - [Scoring or other feedback  (How is player progress and performance quantified?)](#scoring-or-other-feedback-how-is-player-progress-and-performance-quantified)
+  - [Writing/Art/Music style (What perspective, ambiance, or time period is conveyed?)](#writingartmusic-style-what-perspective-ambiance-or-time-period-is-conveyed)
+  - [Innovation (What is unique about the design or implementation?)](#innovation-what-is-unique-about-the-design-or-implementation)
+  - [Team Member Roles (Division of labor, timelines?)](#team-member-roles-division-of-labor-timelines)
+  - [Stages](#stages)
+
 # EECS290FinalProject
 Final Project for the intro to game design class at CWRU
 
