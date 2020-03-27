@@ -11,7 +11,7 @@
   - [Scoring or other feedback  (How is player progress and performance quantified?)](#scoring-or-other-feedback-how-is-player-progress-and-performance-quantified)
   - [Writing/Art/Music style (What perspective, ambiance, or time period is conveyed?)](#writingartmusic-style-what-perspective-ambiance-or-time-period-is-conveyed)
   - [Innovation (What is unique about the design or implementation?)](#innovation-what-is-unique-about-the-design-or-implementation)
-  - [Team Member Roles (Division of labor, timelines?)](#team-member-roles-division-of-labor-timelines)
+  - [Team Member Roles (Division of labor, timelines?) TENTATIVE](#team-member-roles-division-of-labor-timelines-tentative)
   - [Stages](#stages)
 
 # EECS290FinalProject
@@ -108,15 +108,15 @@ Innovation (What is unique about the design or implementation?)
 --
 The fact that you can befriend your ennemies.
 
-Team Member Roles (Division of labor, timelines?)
+Team Member Roles (Division of labor, timelines?) TENTATIVE
 --
 Cameron: Sprites + Art
 
-Zubair: Level Design
+Zubair: Level Design (Lead) + Storyline
 
-Mira: Music research + Level Design
+Mira: Storyline (Lead) + Level Design
 
-Kegan: 
+Kegan: Music research
 
 Stages
 --
