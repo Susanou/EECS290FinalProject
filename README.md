@@ -110,13 +110,13 @@ The fact that you can befriend your ennemies.
 
 Team Member Roles (Division of labor, timelines?)
 --
-Cameron:
+Cameron: Sprites + Art
 
-Zubair:
+Zubair: Level Design
 
-Mira:
+Mira: Music research + Level Design
 
-Kegan:
+Kegan: 
 
 Stages
 --
