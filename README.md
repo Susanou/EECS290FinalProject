@@ -1,41 +1,25 @@
 - [EECS290FinalProject](#eecs290finalproject)
-  - [Meeting 27/03/2020](#meeting-27032020)
-  - [Story](#story)
-  - [Mechanics](#mechanics)
-    - [Game Design document outline](#game-design-document-outline)
-  - [Game Title](#game-title)
-  - [Game Genre](#game-genre)
-  - [Premise/Narrative/Story](#premisenarrativestory)
-  - [Player's Role and Game Goal (How do you beat the game?)](#players-role-and-game-goal-how-do-you-beat-the-game)
-  - [Gameplay/Mechanics (What abilities, activities, puzzles must be solved?)](#gameplaymechanics-what-abilities-activities-puzzles-must-be-solved)
-  - [Scoring or other feedback  (How is player progress and performance quantified?)](#scoring-or-other-feedback-how-is-player-progress-and-performance-quantified)
-  - [Writing/Art/Music style (What perspective, ambiance, or time period is conveyed?)](#writingartmusic-style-what-perspective-ambiance-or-time-period-is-conveyed)
-  - [Innovation (What is unique about the design or implementation?)](#innovation-what-is-unique-about-the-design-or-implementation)
-  - [Team Member Roles (Division of labor, timelines?) TENTATIVE](#team-member-roles-division-of-labor-timelines-tentative)
-  - [Stages](#stages)
+  - [Game Design Document outline](#game-design-document-outline)
+    - [Game Title](#game-title)
+    - [Game Genre](#game-genre)
+    - [Premise/Narrative/Story](#premisenarrativestory)
+    - [Player's Role and Game Goal (How do you beat the game?)](#players-role-and-game-goal-how-do-you-beat-the-game)
+    - [Gameplay/Mechanics (What abilities, activities, puzzles must be solved?)](#gameplaymechanics-what-abilities-activities-puzzles-must-be-solved)
+    - [Scoring or other feedback  (How is player progress and performance quantified?)](#scoring-or-other-feedback-how-is-player-progress-and-performance-quantified)
+    - [Writing/Art/Music style (What perspective, ambiance, or time period is conveyed?)](#writingartmusic-style-what-perspective-ambiance-or-time-period-is-conveyed)
+    - [Innovation (What is unique about the design or implementation?)](#innovation-what-is-unique-about-the-design-or-implementation)
+    - [Team Member Roles (Division of labor, timelines?) TENTATIVE](#team-member-roles-division-of-labor-timelines-tentative)
+    - [Stages](#stages)
 
 # EECS290FinalProject: Butter 'em Up!
 Final Project for the intro to game design class at CWRU
 
-Cameron: “I’m constitutionally required to defend bread to my last breath”
+Cameron: “I’m constitutionally required to defend bread to my last breath.”
+
 Zubair: “Then you can create all the enemies!”
 
-Story
---
 
-Bread and Spread have always been on friendly terms, but in the face of gluten-free alternatives, they want to merge. Crown Princess de Pâques of the Kingdom of Bread’s royal family, the Couronnes, was set to marry Prince Nova Lox, Crown Prince of the Kingdom of Spread. The wedding was beautiful, but the day after, Princess de Pâques awoke stale. The Baguette Guard too has come down with a strange affliction. They’re attacking… spread?
-
-You have been called to retrieve the essential parts of the mythical Wash of Sweetness required to save her. The only problem? It seems that all of Bread has been affected by the curse laid upon Princess de Pâques and the recipe for the Wash of Sweetness is lost to time.
-
-
-Mechanics
-----
-
-The different spreads are your different attacks. Each attack "saves" bread from the curse, recruiting them to your team.
-
-The more people you save from the curse, the stronger you become. As you get stronger, you get access to different spreads.
-
-### Game Design Document outline
+## Game Design Document outline
 Game Title 
 -----
 Butter 'Em Up!
