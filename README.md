@@ -7,7 +7,7 @@ Game ideas:
 
 Using bread? 
 Bread cats?
-**Befriending your ennemies**
+**Befriending your enemies**
 
 - Beat the gluten
 - Bread cats?
@@ -20,20 +20,20 @@ Game Idea 3: Fight the Gluten
 Cameron: “I’m constitutionally required to defend bread to my last breath”
 Zubair: “Then you can create all the enemies!”
 
-You unzip, step into, and re-zip enemies
+One proposed mechanic: You unzip, step into, and re-zip enemies
 
 The mechanic we liked was befriending our enemies, or, if you will, buttering them up
 Upgrades? Add different spreads, vary effectiveness or something based on what you run.
 
-Storylines: 
-Revenge for Avocado Toast
+Storyline: 
 Bread declared war on The Kingdom of Spread
 
+Title:
 Butter ‘em Up!
 
 Who are we to start?
 A minor noble of The Kingdom of Spread
-    Allow some picking of titles, maybe 2 or 3 sprites
+    Allow some picking of titles, maybe 2 or 3 player sprites
 Why do we fight bread?
 
 Bread and Spread have always been on friendly terms, but in the face of gluten-free alternatives, they want to merge. A member of the Kingdom of Bread’s royal family, the Couronnes, was set to marry the Crown Prince of Spread. On the day of the wedding, 
@@ -41,13 +41,8 @@ Bread and Spread have always been on friendly terms, but in the face of gluten-f
 
 Spread friendship
 
-Story 1
---
- 
-Two kingdoms, the kingdom of bread and the kingdom of spread were friends. To cement their alliance, the only princess the kingdom of bread was to be married to the crown prince of Spread. But on the day of the wedding she was poisoned. Blaming the kingdom of Spread, Bread declared war on the kingdom to avenge their fallen princess. You're a [insert title (minor noble)] and you try to uncover the truth about the assassination of the princess of bread to save your kingdom from destruction.
 
-
-Story 2 (going on this one)
+Story
 --
 
 Bread and Spread have always been on friendly terms, but in the face of gluten-free alternatives, they want to merge. Crown Princess de Pâques of the Kingdom of Bread’s royal family, the Couronnes, was set to marry Prince Nova Lox, Crown Prince of the Kingdom of Spread. The wedding was beautiful, but the day after, Princess de Pâques awoke stale. The Baguette Guard too has come down with a strange affliction. They’re attacking… spread?
