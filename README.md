@@ -14,49 +14,14 @@
   - [Team Member Roles (Division of labor, timelines?) TENTATIVE](#team-member-roles-division-of-labor-timelines-tentative)
   - [Stages](#stages)
 
-# EECS290FinalProject
+# EECS290FinalProject: Butter 'em Up!
 Final Project for the intro to game design class at CWRU
 
-## Meeting 27/03/2020
-
-Game ideas:
-
-Using bread? 
-Bread cats?
-**Befriending your enemies**
-
-- Beat the gluten
-- Bread cats?
-
-Game idea 1: titled bread game😎
-
-Game Idea 2: Eating Bread simulator
-
-Game Idea 3: Fight the Gluten
 Cameron: “I’m constitutionally required to defend bread to my last breath”
 Zubair: “Then you can create all the enemies!”
 
-One proposed mechanic: You unzip, step into, and re-zip enemies
-
-The mechanic we liked was befriending our enemies, or, if you will, buttering them up
-Upgrades? Add different spreads, vary effectiveness or something based on what you run.
-
-Storyline: 
-Bread declared war on The Kingdom of Spread
-
-Title:
-Butter ‘em Up!
-
-Who are we to start?
-A minor noble of The Kingdom of Spread
-    Allow some picking of titles, maybe 2 or 3 player sprites
-Why do we fight bread?
-
-Bread and Spread have always been on friendly terms, but in the face of gluten-free alternatives, they want to merge. A member of the Kingdom of Bread’s royal family, the Couronnes, was set to marry the Crown Prince of Spread. On the day of the wedding, 
-
-
-Spread friendship
-
+Who is the player?
+A minor noble of The Kingdom of Spread. The player can pick from a list of titles and 2 or 3 player sprites.
 
 Story
 --
@@ -120,6 +85,7 @@ Kegan: Music research
 
 Stages
 --
+Stage premise: the final boss of each world points to the next
     BIG RECIPE:
     Preheat oven to 350
     Beat Eggs
@@ -128,21 +94,41 @@ Stages
     Place prepared bread on cookie sheet
     Cook till golden brown
 
-Stages, the final boss of each world points to the next 
-    The Castle
-        Start Margarine
-        Drops: [World Map] [Key to Castle, “recipe needs 1 cup of fresh milk”]
+### The Castle
+- Starting weapon:
+  - Margarine
+- Drops:
+  - World Map
+  - Key to Castle, “recipe needs 1 cup of fresh milk”
+-Boss:
+  - Head Guard
 
-    Aisle 1: Dairy
-        Access to dairy-based spreads (e.g. Cream Cheese, butter, condensed milk)
-        Drops: [“Combine in large bowl,”] [“Preheat oven,”] [“6 tbsp of sugar” + 1 cup of fresh milk (boss drop)]
+### Aisle 1: Dairy
+- Acquired Weapons (dairy-based):
+  - Cream Cheese
+  - Butter
+  - Condensed Milk
+- Drops:
+  - “Combine in large bowl”
+  - “Preheat oven”
+  - “6 tbsp of sugar” + 1 cup of fresh milk (boss drop)
+-Boss:
+  - Undecided
+  
+### Aisle 2: Sugar
+- Acquired Weapons (sweet):
+  - Jams/Jellies
+  - Preserves
+  - Nut Spreads
+- Drops
+  - "350 degrees"
+  - "Place prepared bread on cookie sheet"
+  - “3 Eggs” + 6 tbsp of sugar
 
-    Aisle 2: Sugar
-        6 tablespoons of sugar
-        Access to jams/jellies, preserves, and nut spreads
-        Drops: [“350 F”] [“Place prepared bread on cookie sheet”] [“3 Eggs” + 6 tbsp of sugar]
-
-    Aisle 3: Eggs
-        3 eggs
-        Access to “exotic” spreads, other toppings
-        Drops[“Dip bread in mix”] [”beat eggs thoroughly”] [“Bake until Golden Brown” + 3 Eggs]
+### Aisle 3: Eggs
+- Acquired Weapons (non-traditional spreads):
+  - Undetermined
+- Drops:
+  -“Dip bread in mix”
+  -”Beat eggs thoroughly”
+  - “Bake until Golden Brown” + 3 Eggs
