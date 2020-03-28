@@ -51,8 +51,8 @@ As the player completes levels, they receive components of the Wash of Sweetness
 Scoring or other feedback  (How is player progress and performance quantified?)
 -- 
 2 ways to score :
-- number of breads that you made friends with
-- the number of Key items (egg, milk and butter) that you have collected
+- The number of Key items (egg, milk and butter) that you have collected
+- We will track the number of bread killed versus befriended internally and provide feedback at certain (TBD) intervals.
 
 Writing/Art/Music style (What perspective, ambiance, or time period is conveyed?)
 --
