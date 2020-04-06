@@ -7,8 +7,6 @@ public class PLayerController : MonoBehaviour
     
     public string spread;
 
-    private 
-
     void Start() {
         
     }
