@@ -12,6 +12,7 @@ public class Befriend : MonoBehaviour
     private int enemy = 1;  // state of the enemy
                             // 1 = enemy, 0 = befriended, 2 = death
 
+
     // Start is called before the first frame update
     void Start()
     {   
@@ -28,7 +29,7 @@ public class Befriend : MonoBehaviour
         }
     }
 
-    void hurt(string spread){
+    public void hurt(string spread){
         if(dmg < totalHP){
             damage[dmg] = spread;
             dmg++;

@@ -216,6 +216,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: ToastEnemy
       objectReference: {fileID: 0}
+    - target: {fileID: 595252602436992145, guid: e898e7f9ce96f8a158ed298674bf04b0,
+        type: 3}
+      propertyPath: m_TagString
+      value: Damageable
+      objectReference: {fileID: 0}
     - target: {fileID: 595252602436992148, guid: e898e7f9ce96f8a158ed298674bf04b0,
         type: 3}
       propertyPath: m_LocalPosition.x
