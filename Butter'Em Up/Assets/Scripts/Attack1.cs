@@ -2,15 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Attack : MonoBehaviour
+public class Attack1 : MonoBehaviour
 {
     private Animator _animator;
 
     // Start is called before the first frame update
     void Start()
     {
-
-
+        _animator = this.GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -24,9 +23,9 @@ public class Attack : MonoBehaviour
     }
     private IEnumerator knifeSwing()
     {
-        _animator.SetBool("Attack", true);
+        _animator.SetBool("attacking", true);
         yield return new WaitForSeconds(1f);
-        _animator.SetBool("Attack", false);
+        _animator.SetBool("attacking", false);
 
 
     }
