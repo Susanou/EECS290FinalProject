@@ -10,7 +10,7 @@ public class Attack : MonoBehaviour
     void Start()
     {
 
-        
+
     }
 
     // Update is called once per frame
@@ -24,10 +24,10 @@ public class Attack : MonoBehaviour
     }
     private IEnumerator knifeSwing()
     {
-            _animator.SetBool("Attack", true);
-            yield return new WaitForSeconds(1f);
-            _animator.SetBool("Attack", false);
+        _animator.SetBool("Attack", true);
+        yield return new WaitForSeconds(1f);
+        _animator.SetBool("Attack", false);
 
-        
+
     }
 }
