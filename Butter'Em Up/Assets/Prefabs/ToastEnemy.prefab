@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: -4014872669768295924}
   m_Layer: 0
   m_Name: ToastEnemy
-  m_TagString: Untagged
+  m_TagString: Damageable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -144,5 +144,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f6f9fe31f157744bb610e9f9efc92fd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  correctSpread: Marg
+  correctSpread: marg
   totalHP: 4

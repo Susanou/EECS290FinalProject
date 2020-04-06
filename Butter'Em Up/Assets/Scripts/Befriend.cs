@@ -33,7 +33,9 @@ public class Befriend : MonoBehaviour
         if(dmg < totalHP){
             damage[dmg] = spread;
             dmg++;
+            Debug.Log("You dealt damage");
         }else{
+            Debug.Log("Befriending start");
             befriend();
         }
     }

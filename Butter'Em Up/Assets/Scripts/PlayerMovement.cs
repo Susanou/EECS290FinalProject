@@ -5,16 +5,29 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
 
+    public enum PlayerState{
+        walk,
+        attack,
+    }
+
+    public string spread;
     public float speed;
+    public PlayerState currentSate;
     
     private Rigidbody2D myRigidBody;
     private Vector3 change;
 
+    private Animator myAnimator;
+
     // Start is called before the first frame update
     void Start()
     {
-        myRigidBody = GetComponent<Rigidbody2D>();
+        currentSate = PlayerState.walk;
+        myAnimator = this.GetComponent<Animator>();
+        myRigidBody = this.GetComponent<Rigidbody2D>();
+        spread = "marg";
     }
+
 
     // Update is called once per frame
     void Update()
