@@ -20,12 +20,14 @@ public class Attack1 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.E))
+        if (Input.GetKeyDown(KeyCode.LeftShift))
         {
             spread = spread1;
+            Debug.Log(spread);
             StartCoroutine(knifeSwing());
-        }else if (Input.GetKeyDown(KeyCode.Mouse1))
+        }else if (Input.GetKeyDown(KeyCode.Space))
         {
+            Debug.Log(spread);
             spread = spread2;
             StartCoroutine(knifeSwing());
         }
