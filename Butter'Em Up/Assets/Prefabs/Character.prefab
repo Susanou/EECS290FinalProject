@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3355181244413464403}
   - component: {fileID: 3355181244413464402}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: attackHitBox
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -74,7 +74,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7377098351811410684}
   - component: {fileID: 7377098351811410685}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: eyes_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -131,8 +131,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1658789061
+  m_SortingLayer: 1
   m_SortingOrder: 1
   m_Sprite: {fileID: -8817426130257391540, guid: 3fcda9c3f2d6e234e9e313d015369bd6,
     type: 3}
@@ -155,7 +155,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7377098351992178921}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Body
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -188,7 +188,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7377098352219389550}
   - component: {fileID: 7377098352219389551}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Knife
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -245,8 +245,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1658789061
+  m_SortingLayer: 1
   m_SortingOrder: -2
   m_Sprite: {fileID: 5637020899135582185, guid: 9f636cd491bccda47aa5668cce8c393a,
     type: 3}
@@ -270,7 +270,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7377098352504141744}
   - component: {fileID: 7377098352504141745}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Left foot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -327,8 +327,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1658789061
+  m_SortingLayer: 1
   m_SortingOrder: -1
   m_Sprite: {fileID: 8372404247693859508, guid: 9f636cd491bccda47aa5668cce8c393a,
     type: 3}
@@ -352,7 +352,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7377098352588976904}
   - component: {fileID: 7377098352588976905}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Jar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -409,8 +409,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1658789061
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: -5145059400507163617, guid: 9f636cd491bccda47aa5668cce8c393a,
     type: 3}
@@ -437,7 +437,7 @@ GameObject:
   - component: {fileID: 3355181244681544705}
   - component: {fileID: 3355181244681544704}
   - component: {fileID: 3355181244681544707}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Character
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -552,7 +552,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7377098353487554945}
   - component: {fileID: 7377098353487554958}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Right food
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -609,8 +609,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1658789061
+  m_SortingLayer: 1
   m_SortingOrder: -1
   m_Sprite: {fileID: 5524745695277153670, guid: 9f636cd491bccda47aa5668cce8c393a,
     type: 3}
