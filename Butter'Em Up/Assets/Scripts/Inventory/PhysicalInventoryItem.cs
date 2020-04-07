@@ -27,7 +27,7 @@ public class PhysicalInventoryItem : MonoBehaviour
             }
             else
             {
-                playerInventory.myInventory.Add(thisItem);
+                playerInventory.addItem(thisItem);
                 thisItem.numberHeld += 1;
             }
         }
