@@ -57,5 +57,6 @@ public class Befriend : MonoBehaviour
             enemy = 0;
         else
             enemy = 2;
+        this.gameObject.SetActive(false);
     }
 }
