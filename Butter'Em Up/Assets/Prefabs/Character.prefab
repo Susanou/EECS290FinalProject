@@ -458,7 +458,6 @@ GameObject:
   - component: {fileID: 3355181244681544704}
   - component: {fileID: 3355181244681544707}
   - component: {fileID: 5707866912915158061}
-  - component: {fileID: 2936354120957904616}
   m_Layer: 8
   m_Name: Character
   m_TagString: Untagged
@@ -578,20 +577,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 04047aebdf03d0c4c8767ce13bc9b06b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spread: marg
---- !u!114 &2936354120957904616
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7377098352821378923}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 04047aebdf03d0c4c8767ce13bc9b06b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  spread: marg
+  spread1: marg
+  spread2: nutella
 --- !u!1 &7377098353487554959
 GameObject:
   m_ObjectHideFlags: 0

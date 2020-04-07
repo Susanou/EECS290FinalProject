@@ -30,27 +30,30 @@ public class Befriend : MonoBehaviour
     }
 
     public void hurt(string spread){
-        if(dmg < totalHP){
-            damage[dmg] = spread;
-            dmg++;
-            Debug.Log("You dealt damage");
+        damage[dmg] = spread;
+        dmg++;
+        if (dmg < totalHP){
+            Debug.Log("You dealt damage with " + spread + " correct? " + (spread == correctSpread));
         }else{
             Debug.Log("Befriending start");
             befriend();
+            return;
         }
     }
 
     void befriend(){
-        int good = 0;
+        float good = 0;
 
         foreach(string s in damage){
             if(s == correctSpread)
                 good++;
         }
+        Debug.Log(good/(float)totalHP*100 + " % chance to befriend");
 
-        Debug.Log(good/totalHP*100 + " % chance to befriend");
+        float x = Random.Range(0.0f, 1.0f);
+        Debug.Log(x);
 
-        if(Random.Range(0.0f, 1.0f) <= good/totalHP)
+        if (x <= good/totalHP)
             enemy = 0;
         else
             enemy = 2;

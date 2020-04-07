@@ -5,8 +5,10 @@ using UnityEngine;
 public class Attack1 : MonoBehaviour
 {
 
-    public string spread;
+    public string spread1;
+    public string spread2;
 
+    private string spread;
     private Animator _animator;
 
     // Start is called before the first frame update
@@ -20,8 +22,12 @@ public class Attack1 : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Mouse0))
         {
+            spread = spread1;
             StartCoroutine(knifeSwing());
-
+        }else if (Input.GetKeyDown(KeyCode.Mouse1))
+        {
+            spread = spread2;
+            StartCoroutine(knifeSwing());
         }
     }
     private IEnumerator knifeSwing()
