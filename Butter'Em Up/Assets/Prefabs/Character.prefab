@@ -189,7 +189,6 @@ GameObject:
   - component: {fileID: 7377098352219389550}
   - component: {fileID: 7377098352219389551}
   - component: {fileID: 5661106695200192006}
-  - component: {fileID: 4042148760162372947}
   m_Layer: 8
   m_Name: Knife
   m_TagString: Untagged
@@ -281,19 +280,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &4042148760162372947
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7377098352219389548}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 04047aebdf03d0c4c8767ce13bc9b06b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  spread: 
 --- !u!1 &7377098352504141758
 GameObject:
   m_ObjectHideFlags: 0
@@ -487,7 +473,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7377098352821378923}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -5.773595, y: 0.12, z: 0}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_Children:
@@ -538,7 +524,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!61 &3355181244681544704
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -578,7 +564,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spread: marg
-  speed: 4
+  speed: 15
   currentSate: 0
 --- !u!114 &5707866912915158061
 MonoBehaviour:
