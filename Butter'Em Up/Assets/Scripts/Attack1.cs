@@ -20,7 +20,7 @@ public class Attack1 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Mouse0))
+        if (Input.GetKeyDown(KeyCode.E))
         {
             spread = spread1;
             StartCoroutine(knifeSwing());
