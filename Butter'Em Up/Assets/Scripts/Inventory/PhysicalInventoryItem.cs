@@ -20,7 +20,10 @@ public class PhysicalInventoryItem : MonoBehaviour
         {
             if (playerInventory.myInventory.Contains(thisItem))
             {
-                thisItem.numberHeld += 1;
+                if (!thisItem.unique)
+                {
+                    thisItem.numberHeld += 1;
+                }
             }
             else
             {
