@@ -1,29 +1,51 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.AI;
 
 public class WanderingAI : MonoBehaviour {
-    public float speed = 3.0f;
-    public float obstacleRange = 5.0f;
-
-    [SerializeField] private GameObject knife;
-    private GameObject _knife;
-
-    private bool _alive;
+    private float timer;
+    public float wanderRadius;
+    public float wanderTimer;
+    private Transform target;
+    private NavMeshAgent agent;
 
     void Start() {
-        _alive = true;
+        agent = GetComponent<NavMeshAgent>();
+        timer = wanderTimer;
     }
 
     void Update() {
-        if (_alive)
+
+        timer += Time.deltaTime;
+
+        if (timer >= wanderTimer)
         {
-            transform.Translate(Time.deltaTime, speed * Time.deltaTime, 0);
+            Vector3 newPos = RandomNavSphere(transform.position, wanderRadius, -1);
+            agent.SetDestination(newPos);
+            timer = 0;
+        }
 
-        }
-        }
 
-        public void SetAlive(bool alive) {
-            _alive = alive;
-        }
+
+
+
+
     }
+    public static Vector3 RandomNavSphere(Vector3 origin, float dist, int layermask)
+    {
+        Vector3 randDirection = Random.insideUnitSphere * dist;
+
+        randDirection += origin;
+
+        NavMeshHit navHit;
+
+        NavMesh.SamplePosition(randDirection, out navHit, dist, layermask);
+
+        return navHit.position;
+    }
+
+
+       
+    }
+
 
