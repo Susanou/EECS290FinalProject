@@ -9,7 +9,7 @@ public class WanderingAI : MonoBehaviour {
     private Transform target;
     private NavMeshAgent agent;
 
-    void Start() {
+    void OnEnable() {
         agent = GetComponent<NavMeshAgent>();
         timer = wanderTimer;
     }

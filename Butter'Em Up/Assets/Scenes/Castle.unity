@@ -133,15 +133,20 @@ PrefabInstance:
       propertyPath: m_Name
       value: ToastEnemy (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 595252602436992145, guid: e898e7f9ce96f8a158ed298674bf04b0,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 595252602436992148, guid: e898e7f9ce96f8a158ed298674bf04b0,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 65.9
+      value: 64.1
       objectReference: {fileID: 0}
     - target: {fileID: 595252602436992148, guid: e898e7f9ce96f8a158ed298674bf04b0,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 18.2
+      value: 18.8
       objectReference: {fileID: 0}
     - target: {fileID: 595252602436992148, guid: e898e7f9ce96f8a158ed298674bf04b0,
         type: 3}
@@ -273,7 +278,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   wanderRadius: 1
-  wanderTimer: 10
+  wanderTimer: 1
 --- !u!1 &804110730
 GameObject:
   m_ObjectHideFlags: 0
