@@ -27,7 +27,7 @@ public class PlayerMovement : MonoBehaviour
         myAttack = this.GetComponent<Attack1>();
 
         myAnimator.SetFloat("changeX", 0);
-        myAnimator.SetFloat("changeY", 1);
+        myAnimator.SetFloat("changeY", -1);
 
     }
 
@@ -38,9 +38,6 @@ public class PlayerMovement : MonoBehaviour
         change = Vector3.zero;
         change.x = Input.GetAxisRaw("Horizontal");
         change.y = Input.GetAxisRaw("Vertical");
-
-        myAnimator.SetFloat("changeX", change.x);
-        myAnimator.SetFloat("changeY", change.y);
 
 
         if (Input.GetKeyDown(KeyCode.LeftShift) && currentSate != PlayerState.attack)
@@ -64,8 +61,19 @@ public class PlayerMovement : MonoBehaviour
         {
             
             MoveCharacter();
-            myAnimator.SetFloat("changeX", change.x);
-            myAnimator.SetFloat("changeY", change.y);
+
+            if(change.x != 0)
+            {
+                myAnimator.SetFloat("changeX", Mathf.Sign(change.x)*1);
+                myAnimator.SetFloat("changeY", 0);
+            }
+            else
+            {
+                myAnimator.SetFloat("changeX", change.x);
+                myAnimator.SetFloat("changeY", change.y);
+            }
+
+            
             myAnimator.SetBool("walking", true);
 
         }
@@ -74,6 +82,7 @@ public class PlayerMovement : MonoBehaviour
     }
 
     void MoveCharacter(){
+        change.Normalize();
         myRigidBody.MovePosition(transform.position + change * speed * Time.deltaTime);
     }
 }

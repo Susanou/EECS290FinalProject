@@ -44,8 +44,9 @@ public class Attack1 : MonoBehaviour
     {
         _animator.SetBool("attacking", true);
         movement.currentSate = PlayerState.attack;
-        yield return new WaitForSeconds(0.3f);
+        yield return null;
         _animator.SetBool("attacking", false);
+        yield return new WaitForSeconds(0.5f);
         movement.currentSate = PlayerState.walk;
     }
 
