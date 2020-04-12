@@ -22,7 +22,7 @@ public class WanderingAI : MonoBehaviour {
         if (timer > wanderTimer)
         {
             Vector2 newPos = Random.insideUnitCircle * dist;
-            rigibody.MovePosition(newPos);
+            rigibody.transform.Translate(newPos);
             timer = 0;
         }
 
