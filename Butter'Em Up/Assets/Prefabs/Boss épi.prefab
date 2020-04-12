@@ -43,7 +43,7 @@ GameObject:
   - component: {fileID: 5698415287513876373}
   - component: {fileID: 5698415287513876374}
   m_Layer: 0
-  m_Name: "\xE9pi body"
+  m_Name: Body
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -290,7 +290,7 @@ GameObject:
   - component: {fileID: 5698415287847055120}
   - component: {fileID: 5698415287847055121}
   m_Layer: 0
-  m_Name: Boss sword
+  m_Name: sword
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

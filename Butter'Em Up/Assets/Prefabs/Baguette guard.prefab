@@ -452,7 +452,7 @@ GameObject:
   - component: {fileID: 9125969213166255529}
   - component: {fileID: 9125969213166255530}
   m_Layer: 0
-  m_Name: Baguette Body
+  m_Name: Body
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
