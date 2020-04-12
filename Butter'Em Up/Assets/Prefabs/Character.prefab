@@ -521,9 +521,10 @@ GameObject:
   - component: {fileID: 3355181244681544704}
   - component: {fileID: 3355181244681544707}
   - component: {fileID: 5707866912915158061}
+  - component: {fileID: 355781128}
   m_Layer: 8
   m_Name: Character
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -625,7 +626,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3ee1b1eb1befbb09bb8f4e4131d1aaaf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spread: marg
   speed: 15
   currentSate: 0
 --- !u!114 &5707866912915158061
@@ -642,6 +642,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spread1: marg
   spread2: nutella
+--- !u!114 &355781128
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7377098352821378923}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 77310edc79e8b71449d38b2fc2360852, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerInventory: {fileID: 11400000, guid: af685a2419829af409ca56e166782b5c, type: 2}
 --- !u!1 &7377098353487554959
 GameObject:
   m_ObjectHideFlags: 0
