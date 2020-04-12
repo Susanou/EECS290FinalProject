@@ -141,12 +141,12 @@ PrefabInstance:
     - target: {fileID: 595252602436992148, guid: e898e7f9ce96f8a158ed298674bf04b0,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 64.1
+      value: 2.43
       objectReference: {fileID: 0}
     - target: {fileID: 595252602436992148, guid: e898e7f9ce96f8a158ed298674bf04b0,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 18.8
+      value: -0.86
       objectReference: {fileID: 0}
     - target: {fileID: 595252602436992148, guid: e898e7f9ce96f8a158ed298674bf04b0,
         type: 3}
@@ -195,6 +195,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e898e7f9ce96f8a158ed298674bf04b0, type: 3}
+--- !u!50 &268967570 stripped
+Rigidbody2D:
+  m_CorrespondingSourceObject: {fileID: 595252602436992146, guid: e898e7f9ce96f8a158ed298674bf04b0,
+    type: 3}
+  m_PrefabInstance: {fileID: 268967569}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &374446536
 GameObject:
   m_ObjectHideFlags: 0
@@ -360,6 +366,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   wanderRadius: 1
   wanderTimer: 1
+  rigibody: {fileID: 268967570}
 --- !u!1 &665253795
 GameObject:
   m_ObjectHideFlags: 0

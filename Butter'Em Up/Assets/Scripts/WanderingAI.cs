@@ -2,14 +2,16 @@
 using System.Collections;
 using UnityEngine.AI;
 
+
 public class WanderingAI : MonoBehaviour {
     private float timer;
     public float wanderRadius;
     public float wanderTimer;
     private Transform target;
     private NavMeshAgent agent;
+    public Rigidbody2D rigibody;
 
-    void OnEnable() {
+    void Start() {
         agent = GetComponent<NavMeshAgent>();
         timer = wanderTimer;
     }
@@ -21,7 +23,7 @@ public class WanderingAI : MonoBehaviour {
         if (timer >= wanderTimer)
         {
             Vector3 newPos = RandomNavSphere(transform.position, wanderRadius, -1);
-            agent.SetDestination(newPos);
+            rigibody.MovePosition(newPos);
             timer = 0;
         }
 
@@ -39,7 +41,7 @@ public class WanderingAI : MonoBehaviour {
 
         NavMeshHit navHit;
 
-        NavMesh.SamplePosition(randDirection, out navHit, dist, layermask);
+        NavMesh.SamplePosition(randDirection, out navHit, 5, -1);
 
         return navHit.position;
     }
