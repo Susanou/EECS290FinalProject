@@ -35,7 +35,7 @@ public class Befriend : MonoBehaviour
 
     public void hurt(string spread){
         damage[dmg] = spread;
-        dmg = Mathf.Max(dmg++, totalHP);
+        dmg = Mathf.Min(++dmg, totalHP);
         if (dmg < totalHP){
             Debug.Log("You dealt damage with " + spread + " correct? " + (spread == correctSpread));
         }else{
