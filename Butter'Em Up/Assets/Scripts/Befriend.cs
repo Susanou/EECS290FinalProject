@@ -11,12 +11,14 @@ public class Befriend : MonoBehaviour
     private int dmg = 0; // counter of the number of hits
     private int enemy = 1;  // state of the enemy
                             // 1 = enemy, 0 = befriended, 2 = death
+    private Animator enemyAnimator;
 
 
     // Start is called before the first frame update
     void Start()
     {   
         damage = new string[totalHP];
+        enemyAnimator = this.GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -24,14 +26,16 @@ public class Befriend : MonoBehaviour
     {
         if(enemy == 0){
             Debug.Log("You have befriended this bread");
+            enemyAnimator.SetBool("friend", true);
         }else if(enemy == 2){
+            enemyAnimator.SetBool("dead", true);
             Debug.Log("You killed that bread");
         }
     }
 
     public void hurt(string spread){
         damage[dmg] = spread;
-        dmg++;
+        dmg = Mathf.Max(dmg++, totalHP);
         if (dmg < totalHP){
             Debug.Log("You dealt damage with " + spread + " correct? " + (spread == correctSpread));
         }else{
@@ -57,6 +61,5 @@ public class Befriend : MonoBehaviour
             enemy = 0;
         else
             enemy = 2;
-        this.gameObject.SetActive(false);
     }
 }
