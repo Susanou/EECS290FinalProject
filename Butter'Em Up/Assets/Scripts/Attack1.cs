@@ -43,11 +43,11 @@ public class Attack1 : MonoBehaviour
     private IEnumerator knifeSwing()
     {
         _animator.SetBool("attacking", true);
-        movement.currentSate = PlayerState.attack;
+        movement.currentState = PlayerState.attack;
         yield return null;
         _animator.SetBool("attacking", false);
         yield return new WaitForSeconds(0.5f);
-        movement.currentSate = PlayerState.walk;
+        movement.currentState = PlayerState.walk;
     }
 
     private void OnTriggerEnter2D(Collider2D other) {
