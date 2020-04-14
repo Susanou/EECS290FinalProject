@@ -1,11 +1,11 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UIElements;
+using UnityEngine.UI;
 
 public class Befriend : MonoBehaviour
 {
-    [SerializeField] public Slider slider;
+    public Slider slider;
     public GameObject sliderUI;
     public string correctSpread; // Spread that you need to use to befriend. Any other will deal damage
     public int totalHP; // total number of hits to kill or befriend

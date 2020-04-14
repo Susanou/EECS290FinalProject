@@ -560,7 +560,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f6f9fe31f157744bb610e9f9efc92fd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sliderUI: {fileID: 5489715871603843774}
+  slider: {fileID: 1754854928129273445}
+  sliderUI: {fileID: 3344599152802582042}
   correctSpread: marg
   totalHP: 2
 --- !u!61 &429347396
