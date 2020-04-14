@@ -18,8 +18,26 @@ public class InventoryManager : MonoBehaviour
         description.text = desc;
     }
 
+    private void MakeInventorySlots()
+    {
+        if (playerInventory)
+        {
+            for (int i = 0; i < playerInventory.myInventory.Count; i++)
+            {
+                GameObject temp = Instantiate(blankInventorySlot, inventoryPanel.transform.position, Quaternion.identity);
+                temp.transform.SetParent(inventoryPanel.transform);
+                InventorySlot newSlot = temp.GetComponent<InventorySlot>();
+                if (newSlot)
+                {
+                    newSlot.Setup(playerInventory.myInventory[i], this);
+                }
+            }
+        }
+    }
+
     private void Start()
     {
+        MakeInventorySlots();
         SetText("");
     }
 }

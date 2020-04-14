@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a9ce8fe983dfe0408ee1f34d5397adf, type: 3}
   m_Name: Margarine
   m_EditorClassIdentifier: 
-  itemName: margarine
+  itemName: Margarine
   itemDescription: It's margarine
   itemImage: {fileID: 5687524595573011454, guid: 6abefd1e9664fd44fb38dd9b384453fb,
     type: 3}

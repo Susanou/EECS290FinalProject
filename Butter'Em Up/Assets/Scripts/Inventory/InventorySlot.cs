@@ -10,7 +10,7 @@ public class InventorySlot : MonoBehaviour
     // Start is called before the first frame update
     public InventoryItem thisItem;
     public InventoryManager thisManager;
-    void Setup(InventoryItem thisItem, InventoryManager manager)
+    public void Setup(InventoryItem thisItem, InventoryManager manager)
     {
         this.thisItem = thisItem;
         this.thisManager = manager;

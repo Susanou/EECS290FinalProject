@@ -8,7 +8,8 @@ public class PlayerInventory : ScriptableObject
 {
     public List<InventoryItem> myInventory = new List<InventoryItem>();
     public bool canAttack = false;
-    public string currentSpread;
+    public string currentPrimary;
+    public string currentSecondary;
 
     public void addItem(InventoryItem thisItem)
     {
@@ -22,7 +23,6 @@ public class PlayerInventory : ScriptableObject
                 break;
             case 1:
                 myInventory.Add(thisItem);
-                currentSpread = thisItem.itemName; //switch to new spread on acquire
                 Debug.Log($"Acquired {thisItem.itemName}");
                 break;
             case 2:
