@@ -59,16 +59,6 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
-    public void knock(float kbtime, int damage)
-    {
-        health -= damage;
-        if (health > 0)
-        {
-            StartCoroutine(knockback(kbtime));
-            playerHealth.Raise();
-        }
-    }
-
     void updateMoveAndAnimation()
     {
 
@@ -94,13 +84,6 @@ public class PlayerMovement : MonoBehaviour
         }
         else
             myAnimator.SetBool("walking", false);
-    }
-
-    private IEnumerator knockback(float time)
-    {
-        myAnimator.SetTrigger("hurt");
-        yield return new WaitForSeconds(time);
-        currentState = PlayerState.walk;
     }
 
     void MoveCharacter(){

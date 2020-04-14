@@ -54,6 +54,5 @@ public class Attack1 : MonoBehaviour
         if(other.CompareTag("Damageable")){
             other.GetComponent<Befriend>().hurt(spread);
         }
-
     }
 }
