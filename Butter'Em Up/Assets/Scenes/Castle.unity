@@ -431,6 +431,11 @@ PrefabInstance:
       propertyPath: m_AnchorMax.x
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3168142526768003449, guid: 1800549976415724a8b8bd38f1852355,
+        type: 3}
+      propertyPath: correctSpread
+      value: Margarine
+      objectReference: {fileID: 0}
     - target: {fileID: 4405151153843490605, guid: 1800549976415724a8b8bd38f1852355,
         type: 3}
       propertyPath: m_AnchorMax.y
@@ -642,7 +647,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 668858280}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1589714831}
+        m_MethodName: SetPrimary
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &668858280
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -60215,6 +60231,11 @@ PrefabInstance:
       propertyPath: m_AnchorMax.x
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3168142526768003449, guid: 1800549976415724a8b8bd38f1852355,
+        type: 3}
+      propertyPath: correctSpread
+      value: Margarine
+      objectReference: {fileID: 0}
     - target: {fileID: 4405151153843490605, guid: 1800549976415724a8b8bd38f1852355,
         type: 3}
       propertyPath: m_AnchorMax.y
@@ -60394,6 +60415,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3168142526768003449, guid: 1800549976415724a8b8bd38f1852355,
+        type: 3}
+      propertyPath: correctSpread
+      value: Margarine
       objectReference: {fileID: 0}
     - target: {fileID: 4405151153843490605, guid: 1800549976415724a8b8bd38f1852355,
         type: 3}
@@ -73731,7 +73757,9 @@ MonoBehaviour:
   description: {fileID: 1091508437}
   equipPrimary: {fileID: 668858277}
   equipSecondary: {fileID: 1936998290}
+  playerAttack: {fileID: 2061487526}
   playerInventory: {fileID: 11400000, guid: af685a2419829af409ca56e166782b5c, type: 2}
+  currentItem: {fileID: 0}
 --- !u!1 &1594120146
 GameObject:
   m_ObjectHideFlags: 0
@@ -73832,7 +73860,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1744635954
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -74028,7 +74056,7 @@ MonoBehaviour:
     type: 3}
   emptyHeart: {fileID: 0}
   heartContainers: 0
-  playerCurrentHealth: 0
+  player: {fileID: 0}
 --- !u!1 &1936998290
 GameObject:
   m_ObjectHideFlags: 0
@@ -74109,7 +74137,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1936998293}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1589714831}
+        m_MethodName: SetSecondary
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1936998293
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -74318,6 +74357,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2056447636}
   m_CullTransparentMesh: 0
+--- !u!114 &2061487526 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5707866912915158061, guid: 813086c8e87653394be9ccfbe61770da,
+    type: 3}
+  m_PrefabInstance: {fileID: 2082799072}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 04047aebdf03d0c4c8767ce13bc9b06b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &2082799072
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -74325,6 +74376,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5707866912915158061, guid: 813086c8e87653394be9ccfbe61770da,
+        type: 3}
+      propertyPath: spread1
+      value: Margarine
+      objectReference: {fileID: 0}
+    - target: {fileID: 5707866912915158061, guid: 813086c8e87653394be9ccfbe61770da,
+        type: 3}
+      propertyPath: spread2
+      value: Nutella
+      objectReference: {fileID: 0}
     - target: {fileID: 7377098352219389548, guid: 813086c8e87653394be9ccfbe61770da,
         type: 3}
       propertyPath: m_IsActive

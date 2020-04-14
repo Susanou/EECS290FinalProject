@@ -11,6 +11,7 @@ public class InventoryManager : MonoBehaviour
     [SerializeField] private Text description;
     [SerializeField] private GameObject equipPrimary;
     [SerializeField] private GameObject equipSecondary;
+    [SerializeField] private Attack1 playerAttack;
     public PlayerInventory playerInventory;
     public InventoryItem currentItem;
 
@@ -50,10 +51,10 @@ public class InventoryManager : MonoBehaviour
 
     public void SetPrimary()
     {
-        playerInventory.currentPrimary = currentItem.itemName;
+        playerAttack.spread1 = currentItem.itemName;
     }
     public void SetSecondary()
     {
-        playerInventory.currentSecondary = currentItem.itemName;
+        playerAttack.spread2 = currentItem.itemName;
     }
 }
