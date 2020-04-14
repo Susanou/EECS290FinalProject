@@ -20,3 +20,4 @@ MonoBehaviour:
   myEvent:
     m_PersistentCalls:
       m_Calls: []
+  canEquip: 1

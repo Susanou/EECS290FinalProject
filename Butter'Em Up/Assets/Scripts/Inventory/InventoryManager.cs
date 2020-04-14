@@ -51,10 +51,16 @@ public class InventoryManager : MonoBehaviour
 
     public void SetPrimary()
     {
-        playerAttack.spread1 = currentItem.itemName;
+        if (currentItem.canEquip)
+        {
+            playerAttack.spread1 = currentItem.itemName;
+        }
     }
     public void SetSecondary()
     {
-        playerAttack.spread2 = currentItem.itemName;
+        if(currentItem.canEquip)
+        {
+            playerAttack.spread2 = currentItem.itemName;
+        }
     }
 }

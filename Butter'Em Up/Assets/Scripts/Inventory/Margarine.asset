@@ -17,4 +17,7 @@ MonoBehaviour:
   itemImage: {fileID: 5687524595573011454, guid: 6abefd1e9664fd44fb38dd9b384453fb,
     type: 3}
   type: 1
-  unique: 1
+  myEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  canEquip: 1
