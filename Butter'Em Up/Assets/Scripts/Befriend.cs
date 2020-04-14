@@ -1,9 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UIElements;
 
 public class Befriend : MonoBehaviour
 {
+    [SerializeField] public Slider slider;
+    public GameObject sliderUI;
     public string correctSpread; // Spread that you need to use to befriend. Any other will deal damage
     public int totalHP; // total number of hits to kill or befriend
 
@@ -12,6 +15,7 @@ public class Befriend : MonoBehaviour
     private int enemy = 1;  // state of the enemy
                             // 1 = enemy, 0 = befriended, 2 = death
     private Animator enemyAnimator;
+    
 
 
     // Start is called before the first frame update
@@ -24,6 +28,8 @@ public class Befriend : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        slider.value = CalculateFriend();
+
         if(enemy == 0){
             Debug.Log("You have befriended this bread");
             enemyAnimator.SetBool("friend", true);
@@ -45,6 +51,19 @@ public class Befriend : MonoBehaviour
         }
     }
 
+    float CalculateFriend()
+    {
+        float good = 0;
+
+        foreach (string s in damage)
+        {
+            if (s == correctSpread)
+                good++;
+        }
+        Debug.Log(good / (float)totalHP * 100 + " % chance to befriend");
+        return good / (float)totalHP;
+    }
+
     void befriend(){
         float good = 0;
 
@@ -57,7 +76,7 @@ public class Befriend : MonoBehaviour
         float x = Random.Range(0.0f, 1.0f);
         Debug.Log(x);
 
-        if (x <= good/totalHP)
+        if (x <= good/(float)totalHP)
             enemy = 0;
         else
             enemy = 2;

@@ -1,13 +1,13 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UIElements;
+using UnityEngine.UI;
 
 
 public class HeartManager : MonoBehaviour
 {
 
-    public GameObject[] hearts;
+    public Image[] hearts;
     public Sprite fullHeart;
     public Sprite damagedHeart;
     public float heartContainers;
@@ -22,8 +22,8 @@ public class HeartManager : MonoBehaviour
     {
         for(int i= 0; i < heartContainers; i++)
         {
-            hearts[i].SetActive(true);
-            hearts[i].GetComponent<SpriteRenderer>().sprite = fullHeart;
+            hearts[i].gameObject.SetActive(true);
+            hearts[i].sprite = fullHeart;
             
         }
     }
