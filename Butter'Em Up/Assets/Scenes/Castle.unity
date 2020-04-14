@@ -60657,6 +60657,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 106274584, guid: 1800549976415724a8b8bd38f1852355, type: 3}
+      propertyPath: wanderTimer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 106274584, guid: 1800549976415724a8b8bd38f1852355, type: 3}
+      propertyPath: dist
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 1238856453085755184, guid: 1800549976415724a8b8bd38f1852355,
         type: 3}
       propertyPath: m_Name
