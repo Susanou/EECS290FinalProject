@@ -1595,7 +1595,9 @@ MonoBehaviour:
   description: {fileID: 253624242}
   equipPrimary: {fileID: 884384467}
   equipSecondary: {fileID: 1151495681}
+  playerAttack: {fileID: 0}
   playerInventory: {fileID: 11400000, guid: af685a2419829af409ca56e166782b5c, type: 2}
+  currentItem: {fileID: 0}
 --- !u!114 &1459119457
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1974,15 +1976,23 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1818989718, guid: d92e61470fed82f4da915d0496dee0e3, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1818989718, guid: d92e61470fed82f4da915d0496dee0e3, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5698415287774685974, guid: d92e61470fed82f4da915d0496dee0e3,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -22.55
+      value: 6.21
       objectReference: {fileID: 0}
     - target: {fileID: 5698415287774685974, guid: d92e61470fed82f4da915d0496dee0e3,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.54
+      value: 1.68
       objectReference: {fileID: 0}
     - target: {fileID: 5698415287774685974, guid: d92e61470fed82f4da915d0496dee0e3,
         type: 3}
@@ -2028,16 +2038,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5698415287774685974, guid: d92e61470fed82f4da915d0496dee0e3,
-        type: 3}
-      propertyPath: m_LocalScale.x
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 5698415287774685974, guid: d92e61470fed82f4da915d0496dee0e3,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5698415287774685975, guid: d92e61470fed82f4da915d0496dee0e3,
         type: 3}
