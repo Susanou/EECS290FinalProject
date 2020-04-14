@@ -7,7 +7,7 @@ using UnityEngine.UIElements;
 public class HeartManager : MonoBehaviour
 {
 
-    public Image[] hearts;
+    public GameObject[] hearts;
     public Sprite fullHeart;
     public Sprite damagedHeart;
     public float heartContainers;
@@ -22,8 +22,9 @@ public class HeartManager : MonoBehaviour
     {
         for(int i= 0; i < heartContainers; i++)
         {
-            hearts[i].sprite = fullHeart;
-            hearts[i].SetEnabled(true);
+            hearts[i].SetActive(true);
+            hearts[i].GetComponent<SpriteRenderer>().sprite = fullHeart;
+            
         }
     }
 

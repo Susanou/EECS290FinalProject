@@ -429,7 +429,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 3.47, y: 2.14}
+  m_Size: {x: 1.41, y: 1.52}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -838,7 +838,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 15
   currentState: 0
-  heath: 4
+  health: 0
+  playerHealth: {fileID: 0}
 --- !u!114 &5707866912915158061
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -865,6 +866,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 77310edc79e8b71449d38b2fc2360852, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  blankInventorySlot: {fileID: 0}
+  inventoryPanel: {fileID: 0}
+  description: {fileID: 0}
+  equipPrimary: {fileID: 0}
+  equipSecondary: {fileID: 0}
   playerInventory: {fileID: 11400000, guid: af685a2419829af409ca56e166782b5c, type: 2}
 --- !u!1 &7377098353487554959
 GameObject:
