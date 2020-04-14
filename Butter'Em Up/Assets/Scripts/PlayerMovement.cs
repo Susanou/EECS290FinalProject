@@ -13,6 +13,7 @@ public class PlayerMovement : MonoBehaviour
     public float speed;
     public PlayerState currentState;
     public int heath;
+    public Signal playerHealth;
 
     private Rigidbody2D myRigidBody;
     private Vector3 change;
@@ -55,6 +56,11 @@ public class PlayerMovement : MonoBehaviour
         {
             updateMoveAndAnimation();
         }
+    }
+
+    public void knock(float kbtime, int damage)
+    {
+
     }
 
     void updateMoveAndAnimation()
