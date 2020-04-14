@@ -17,7 +17,6 @@ public class HeartManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        playerCurrentHealth = player.health;
         InitHearts();
     }
     
