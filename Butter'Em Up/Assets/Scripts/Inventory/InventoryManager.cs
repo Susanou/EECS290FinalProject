@@ -12,6 +12,7 @@ public class InventoryManager : MonoBehaviour
     [SerializeField] private GameObject equipPrimary;
     [SerializeField] private GameObject equipSecondary;
     public PlayerInventory playerInventory;
+    public InventoryItem currentItem;
 
     public void SetText(string desc)
     {
@@ -41,8 +42,18 @@ public class InventoryManager : MonoBehaviour
         SetText("");
     }
 
-    public void SetDesc(string desc)
+    public void SetDesc(InventoryItem targetItem)
     {
-        description.text = desc;
+        description.text = targetItem.itemDescription;
+        currentItem = targetItem;
+    }
+
+    public void SetPrimary()
+    {
+        playerInventory.currentPrimary = currentItem.itemName;
+    }
+    public void SetSecondary()
+    {
+        playerInventory.currentSecondary = currentItem.itemName;
     }
 }
