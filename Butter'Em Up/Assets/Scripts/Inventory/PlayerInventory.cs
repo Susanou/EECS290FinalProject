@@ -17,7 +17,7 @@ public class PlayerInventory : ScriptableObject
         switch (thisItem.type)
         {
             case 0:
-                myInventory.Add(thisItem);
+                //myInventory.Add(thisItem); // we don't add the butter knife since it can't be equipped
                 canAttack = true; //the butter knife enables attacking
                 Debug.Log("Acquired Butter Knife");
                 break;

@@ -74127,7 +74127,7 @@ MonoBehaviour:
   blankInventorySlot: {fileID: 8742482318732374502, guid: a78606c810dc4424e9073536f320b2c6,
     type: 3}
   inventoryPanel: {fileID: 1967063312}
-  description: {fileID: 0}
+  description: {fileID: 1091508437}
   equipPrimary: {fileID: 668858277}
   equipSecondary: {fileID: 1936998290}
   playerAttack: {fileID: 2061487526}
