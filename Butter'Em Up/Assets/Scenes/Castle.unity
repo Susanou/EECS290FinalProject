@@ -74676,11 +74676,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 5707866912915158061, guid: 813086c8e87653394be9ccfbe61770da,
-        type: 3}
-      propertyPath: spread1
-      value: :qrgqrine
-      objectReference: {fileID: 0}
     - target: {fileID: 7377098352821378923, guid: 813086c8e87653394be9ccfbe61770da,
         type: 3}
       propertyPath: m_Name
