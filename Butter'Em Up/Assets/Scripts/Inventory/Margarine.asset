@@ -14,10 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemName: margarine
   itemDescription: It's margarine
-  itemImage: {fileID: 0}
-  numberHeld: 1
+  itemImage: {fileID: 5687524595573011454, guid: 6abefd1e9664fd44fb38dd9b384453fb,
+    type: 3}
   type: 1
   unique: 1
-  thisEvent:
-    m_PersistentCalls:
-      m_Calls: []

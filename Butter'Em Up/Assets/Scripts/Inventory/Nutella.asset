@@ -14,10 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemName: Hazelnut Spread
   itemDescription: You know there's a brand name for this, but copyright exists...
-  itemImage: {fileID: 0}
-  numberHeld: 1
+  itemImage: {fileID: -145808401816936526, guid: 6abefd1e9664fd44fb38dd9b384453fb,
+    type: 3}
   type: 1
   unique: 1
-  thisEvent:
-    m_PersistentCalls:
-      m_Calls: []

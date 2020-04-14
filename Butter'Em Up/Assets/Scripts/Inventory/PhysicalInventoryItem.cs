@@ -18,17 +18,9 @@ public class PhysicalInventoryItem : MonoBehaviour
     {
         if (playerInventory && thisItem)
         {
-            if (playerInventory.myInventory.Contains(thisItem))
-            {
-                if (!thisItem.unique)
-                {
-                    thisItem.numberHeld += 1;
-                }
-            }
-            else
+            if (!playerInventory.myInventory.Contains(thisItem))
             {
                 playerInventory.addItem(thisItem);
-                thisItem.numberHeld += 1;
             }
         }
     }
