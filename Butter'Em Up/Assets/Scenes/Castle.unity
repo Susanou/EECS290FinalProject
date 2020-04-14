@@ -1159,8 +1159,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -1.893, y: 38.597, z: 0}
   m_LocalScale: {x: 2, y: 2, z: 1}
-  m_Children:
-  - {fileID: 1172479019}
+  m_Children: [{fileID: 1172479019}]
   m_Father: {fileID: 0}
   m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1952,8 +1951,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 10.8, y: 22.2, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 4503610}
+  m_Children: [{fileID: 4503610}]
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2376,8 +2374,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 45.8, y: 37.1, z: 0}
   m_LocalScale: {x: 2, y: 2, z: 1}
-  m_Children:
-  - {fileID: 339813997}
+  m_Children: [{fileID: 339813997}]
   m_Father: {fileID: 0}
   m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2508,7 +2505,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1035074511
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2523,9 +2520,9 @@ RectTransform:
   m_Father: {fileID: 1839904060}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 50, y: -50}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1035074512
@@ -61389,12 +61386,12 @@ MonoBehaviour:
   - "You only have a couple spreads right now, but that\u2019s still a good place
     to start. You\u2019ll discover more later, but first you need to talk to that
     stuffy \xE9pi. However hostile he can be, you will need his help. As the head
-    guard of this castle, \xE9pi has knowledge of the surrounding lands and will
-    tell you where you need to go from here."
+    guard of this castle, \xE9pi has knowledge of the surrounding lands and will tell
+    you where you need to go from here."
   - I mentioned that you have a couple spreads, be careful not to confuse them. They
     do very different things. You can set your primary and secondary spreads using
-    the inventory menu. Primary spread is used with shift, and secondary is used
-    with space.
+    the inventory menu. Primary spread is used with shift, and secondary is used with
+    space.
   - 'Although some spreads befriend your enemies, some spreads are not so friendly.
     You have the ability to hurt a bread. Although you know my opinion, that choice
     will be yours. '
@@ -74996,7 +74993,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1520413467
 RectTransform:
   m_ObjectHideFlags: 0
@@ -75011,9 +75008,9 @@ RectTransform:
   m_Father: {fileID: 1839904060}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 160, y: -50}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1520413468
@@ -75179,7 +75176,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1561377001
 RectTransform:
   m_ObjectHideFlags: 0
@@ -75194,9 +75191,9 @@ RectTransform:
   m_Father: {fileID: 1839904060}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 270, y: -50}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1561377002
@@ -75274,9 +75271,9 @@ RectTransform:
   m_Father: {fileID: 1744635957}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -100}
+  m_AnchorMin: {x: 0.5, y: 1}
+  m_AnchorMax: {x: 0.5, y: 1}
+  m_AnchoredPosition: {x: 0, y: -400}
   m_SizeDelta: {x: 1000, y: 600}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1589714829
@@ -75652,8 +75649,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 60.1, y: 2.3, z: 0}
   m_LocalScale: {x: 2, y: 2, z: 1}
-  m_Children:
-  - {fileID: 447809017}
+  m_Children: [{fileID: 447809017}]
   m_Father: {fileID: 0}
   m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -75985,10 +75981,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hearts:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 1035074512}
+  - {fileID: 1520413468}
+  - {fileID: 1561377002}
+  - {fileID: 2056447638}
   fullHeart: {fileID: 5687524595573011454, guid: 6abefd1e9664fd44fb38dd9b384453fb,
     type: 3}
   emptyHeart: {fileID: -145808401816936526, guid: 6abefd1e9664fd44fb38dd9b384453fb,
@@ -76254,9 +76250,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Padding:
-    m_Left: 50
+    m_Left: 60
     m_Right: 0
-    m_Top: 50
+    m_Top: 80
     m_Bottom: 0
   m_ChildAlignment: 0
   m_StartCorner: 0
@@ -76438,7 +76434,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2056447637
 RectTransform:
   m_ObjectHideFlags: 0
@@ -76453,9 +76449,9 @@ RectTransform:
   m_Father: {fileID: 1839904060}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 380, y: -50}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2056447638

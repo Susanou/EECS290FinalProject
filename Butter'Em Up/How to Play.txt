@@ -1,4 +1,5 @@
 WASD are the main controls. 
 left shift is the main weapon (margarine) and space is the secondary (nutella)
+I is inventory. Text isn't added in the game yet.
 
 We don't have a quit button yet, so you have to close the window from outside the game or alt+f4.
