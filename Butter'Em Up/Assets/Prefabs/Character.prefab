@@ -851,7 +851,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 04047aebdf03d0c4c8767ce13bc9b06b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spread1: marg
+  spread1: Margarine
   spread2: nutella
 --- !u!1 &7377098353487554959
 GameObject:

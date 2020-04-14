@@ -60414,11 +60414,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 332783198581700010, guid: 1800549976415724a8b8bd38f1852355,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 1238856453085755184, guid: 1800549976415724a8b8bd38f1852355,
         type: 3}
       propertyPath: m_Name
@@ -60481,45 +60476,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1521431043642679258, guid: 1800549976415724a8b8bd38f1852355,
         type: 3}
-      propertyPath: m_AnchorMax.y
+      propertyPath: m_AnchorMax.x
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1521431043642679258, guid: 1800549976415724a8b8bd38f1852355,
-        type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3168142526768003449, guid: 1800549976415724a8b8bd38f1852355,
-        type: 3}
-      propertyPath: correctSpread
-      value: Margarine
-      objectReference: {fileID: 0}
-    - target: {fileID: 4405151153843490605, guid: 1800549976415724a8b8bd38f1852355,
-        type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6275002705343473381, guid: 1800549976415724a8b8bd38f1852355,
-        type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6793376833314346525, guid: 1800549976415724a8b8bd38f1852355,
-        type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7044259753651180953, guid: 1800549976415724a8b8bd38f1852355,
-        type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7044259753651180953, guid: 1800549976415724a8b8bd38f1852355,
-        type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8112104717324403090, guid: 1800549976415724a8b8bd38f1852355,
         type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -74716,6 +74676,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5707866912915158061, guid: 813086c8e87653394be9ccfbe61770da,
+        type: 3}
+      propertyPath: spread1
+      value: :qrgqrine
+      objectReference: {fileID: 0}
     - target: {fileID: 7377098352821378923, guid: 813086c8e87653394be9ccfbe61770da,
         type: 3}
       propertyPath: m_Name

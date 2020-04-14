@@ -563,7 +563,7 @@ MonoBehaviour:
   slider: {fileID: 1754854928129273445}
   sliderUI: {fileID: 3344599152802582042}
   correctSpread: Margarine
-  totalHP: 2
+  totalHP: 3
 --- !u!61 &429347396
 BoxCollider2D:
   m_ObjectHideFlags: 0
