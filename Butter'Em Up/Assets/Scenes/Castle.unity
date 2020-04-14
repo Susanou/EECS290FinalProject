@@ -74207,7 +74207,7 @@ MonoBehaviour:
   description: {fileID: 1091508437}
   equipPrimary: {fileID: 668858277}
   equipSecondary: {fileID: 1936998290}
-  playerAttack: {fileID: 0}
+  playerAttack: {fileID: 1777917716}
   playerInventory: {fileID: 11400000, guid: af685a2419829af409ca56e166782b5c, type: 2}
   currentItem: {fileID: 0}
 --- !u!1 &1594120146
@@ -74513,6 +74513,18 @@ RectTransform:
   m_AnchoredPosition: {x: 800, y: 449.88}
   m_SizeDelta: {x: 1600, y: 899.76}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1777917716 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5707866912915158061, guid: 813086c8e87653394be9ccfbe61770da,
+    type: 3}
+  m_PrefabInstance: {fileID: 2082799072}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 04047aebdf03d0c4c8767ce13bc9b06b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1839904059
 GameObject:
   m_ObjectHideFlags: 0
@@ -74626,9 +74638,10 @@ MonoBehaviour:
   - {fileID: 0}
   fullHeart: {fileID: 5687524595573011454, guid: 6abefd1e9664fd44fb38dd9b384453fb,
     type: 3}
-  emptyHeart: {fileID: 0}
-  heartContainers: 0
-  playerHealth: {fileID: 0}
+  emptyHeart: {fileID: -145808401816936526, guid: 6abefd1e9664fd44fb38dd9b384453fb,
+    type: 3}
+  heartContainers: 3
+  playerHealth: {fileID: 11400000, guid: 83cf39b5bae2cb94faed1cae3993ac1c, type: 2}
 --- !u!1 &1936998290
 GameObject:
   m_ObjectHideFlags: 0
@@ -74936,6 +74949,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5707866912915158061, guid: 813086c8e87653394be9ccfbe61770da,
+        type: 3}
+      propertyPath: spread2
+      value: Nutella
+      objectReference: {fileID: 0}
     - target: {fileID: 7377098352821378923, guid: 813086c8e87653394be9ccfbe61770da,
         type: 3}
       propertyPath: m_Name
