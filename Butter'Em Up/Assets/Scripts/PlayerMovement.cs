@@ -38,7 +38,7 @@ public class PlayerMovement : MonoBehaviour
 
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         change = Vector3.zero;
         change.x = Input.GetAxisRaw("Horizontal");
@@ -55,6 +55,7 @@ public class PlayerMovement : MonoBehaviour
         }
         else if (currentState == PlayerState.walk)
         {
+            MoveCharacter();
             updateMoveAndAnimation();
         }
     }
@@ -64,8 +65,6 @@ public class PlayerMovement : MonoBehaviour
 
         if (change != Vector3.zero)
         {
-            
-            MoveCharacter();
 
             if(change.x != 0)
             {
@@ -95,6 +94,10 @@ public class PlayerMovement : MonoBehaviour
 
     void MoveCharacter(){
         change.Normalize();
-        myRigidBody.MovePosition(transform.position + change * speed * Time.deltaTime);
+        //myRigidBody.MovePosition(new Vector3(7f,5f, transform.position.z));
+        //myRigidBody.position = new Vector3(7f, 5f, transform.position.z);
+        this.transform.position = this.transform.position + change * speed * Time.deltaTime;
+        //Debug.Log("math = "+ transform.position + change * speed * Time.deltaTime);
+        Debug.Log("rigidbody = " + myRigidBody.position);
     }
 }
