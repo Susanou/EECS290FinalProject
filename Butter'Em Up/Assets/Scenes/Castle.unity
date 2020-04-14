@@ -291,6 +291,7 @@ GameObject:
   m_Component:
   - component: {fileID: 498400432}
   - component: {fileID: 498400431}
+  - component: {fileID: 498400433}
   m_Layer: 0
   m_Name: Door 1
   m_TagString: Untagged
@@ -363,6 +364,32 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &498400433
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 498400430}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 4.28, y: 0.28}
+    newSize: {x: 4.28, y: 0.28}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 4.28, y: 0.28}
+  m_EdgeRadius: 0
 --- !u!1001 &587470236
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -370,6 +397,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 429347396, guid: 1800549976415724a8b8bd38f1852355, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 332783198581700010, guid: 1800549976415724a8b8bd38f1852355,
         type: 3}
       propertyPath: m_LocalPosition.z
@@ -60411,12 +60442,12 @@ MonoBehaviour:
   - "You only have a couple spreads right now, but that\u2019s still a good place
     to start. You\u2019ll discover more later, but first you need to talk to that
     stuffy \xE9pi. However hostile he can be, you will need his help. As the head
-    guard of this castle, \xE9pi has knowledge of the surrounding lands and will tell
-    you where you need to go from here."
+    guard of this castle, \xE9pi has knowledge of the surrounding lands and will
+    tell you where you need to go from here."
   - I mentioned that you have a couple spreads, be careful not to confuse them. They
     do very different things. You can set your primary and secondary spreads using
-    the inventory menu. Primary spread is used with shift, and secondary is used with
-    space.
+    the inventory menu. Primary spread is used with shift, and secondary is used
+    with space.
   - 'Although some spreads befriend your enemies, some spreads are not so friendly.
     You have the ability to hurt a bread. Although you know my opinion, that choice
     will be yours. '
@@ -60433,6 +60464,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1186444789}
   - component: {fileID: 1186444788}
+  - component: {fileID: 1186444790}
   m_Layer: 0
   m_Name: Door 3
   m_TagString: Untagged
@@ -60505,6 +60537,32 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &1186444790
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1186444787}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.32, y: 6.21}
+    newSize: {x: 0.32, y: 6.21}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.32, y: 6.21}
+  m_EdgeRadius: 0
 --- !u!1001 &1335870117
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -60512,6 +60570,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 429347396, guid: 1800549976415724a8b8bd38f1852355, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1238856453085755184, guid: 1800549976415724a8b8bd38f1852355,
         type: 3}
       propertyPath: m_Name
@@ -73798,6 +73860,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1552676024}
   - component: {fileID: 1552676023}
+  - component: {fileID: 1552676025}
   m_Layer: 0
   m_Name: Door 2
   m_TagString: Untagged
@@ -73870,6 +73933,32 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &1552676025
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1552676022}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 4.28, y: 0.28}
+    newSize: {x: 4.28, y: 0.28}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 4.28, y: 0.28}
+  m_EdgeRadius: 0
 --- !u!1 &1561377000
 GameObject:
   m_ObjectHideFlags: 0
