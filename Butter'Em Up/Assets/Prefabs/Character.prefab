@@ -837,7 +837,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 15
-  currentSate: 0
+  currentState: 0
+  heath: 4
 --- !u!114 &5707866912915158061
 MonoBehaviour:
   m_ObjectHideFlags: 0

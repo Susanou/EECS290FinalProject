@@ -12,11 +12,14 @@ public class PlayerMovement : MonoBehaviour
 {
     public float speed;
     public PlayerState currentState;
-    
+    public int heath;
+
     private Rigidbody2D myRigidBody;
     private Vector3 change;
     private Animator myAnimator;
     private Attack1 myAttack;
+
+
 
     // Start is called before the first frame update
     void Start()
