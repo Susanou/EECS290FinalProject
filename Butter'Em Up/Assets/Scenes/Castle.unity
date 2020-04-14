@@ -479,6 +479,7 @@ GameObject:
   - component: {fileID: 612320204}
   - component: {fileID: 612320203}
   - component: {fileID: 612320202}
+  - component: {fileID: 612320205}
   m_Layer: 0
   m_Name: Key
   m_TagString: Untagged
@@ -576,6 +577,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &612320205
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 612320201}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: adb0bf2b910031442bdd73eb5e10752c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 1552676022}
 --- !u!1 &665253795
 GameObject:
   m_ObjectHideFlags: 0
@@ -962,6 +976,7 @@ GameObject:
   - component: {fileID: 804110732}
   - component: {fileID: 804110731}
   - component: {fileID: 804110734}
+  - component: {fileID: 804110735}
   m_Layer: 0
   m_Name: ButterKnife
   m_TagString: Untagged
@@ -1074,6 +1089,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 4.79, y: 5.44}
   m_EdgeRadius: 0
+--- !u!114 &804110735
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 804110730}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: adb0bf2b910031442bdd73eb5e10752c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 498400430}
 --- !u!1 &852050471
 GameObject:
   m_ObjectHideFlags: 0
@@ -1276,6 +1304,7 @@ GameObject:
   - component: {fileID: 1021289462}
   - component: {fileID: 1021289461}
   - component: {fileID: 1021289460}
+  - component: {fileID: 1021289463}
   m_Layer: 0
   m_Name: Key 2
   m_TagString: Untagged
@@ -1373,6 +1402,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1021289463
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1021289459}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: adb0bf2b910031442bdd73eb5e10752c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 1186444787}
 --- !u!1 &1035074510
 GameObject:
   m_ObjectHideFlags: 0
@@ -74069,6 +74111,7 @@ GameObject:
   - component: {fileID: 1619951811}
   - component: {fileID: 1619951810}
   - component: {fileID: 1619951809}
+  - component: {fileID: 1619951812}
   m_Layer: 0
   m_Name: Key 3
   m_TagString: Untagged
@@ -74166,6 +74209,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1619951812
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1619951808}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: adb0bf2b910031442bdd73eb5e10752c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 1594120146}
 --- !u!1 &1744635953
 GameObject:
   m_ObjectHideFlags: 0
