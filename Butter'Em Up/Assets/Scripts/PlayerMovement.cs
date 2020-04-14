@@ -13,7 +13,7 @@ public class PlayerMovement : MonoBehaviour
 {
     public float speed;
     public PlayerState currentState;
-    public int health;
+    public FloatValue health;
     public Signal playerHealth;
 
     private Rigidbody2D myRigidBody;
@@ -87,9 +87,14 @@ public class PlayerMovement : MonoBehaviour
 
     public void hurt(int dmg)
     {
-        health -= dmg;
+        health.RuntimeValue -= dmg;
         playerHealth.Raise();
-        Debug.Log(health + "Current heqlth");
+        if (health.RuntimeValue > 0) {
+            //knockout should go here
+        }
+
+        else
+            this.gameObject.SetActive(false);
     }
 
     void MoveCharacter(){

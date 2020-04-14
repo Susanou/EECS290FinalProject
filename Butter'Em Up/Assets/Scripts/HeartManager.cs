@@ -11,7 +11,7 @@ public class HeartManager : MonoBehaviour
     public Sprite fullHeart;
     public Sprite emptyHeart;
     public int heartContainers;
-    public PlayerMovement player;
+    public FloatValue playerHealth;
 
 
     // Start is called before the first frame update
@@ -34,7 +34,7 @@ public class HeartManager : MonoBehaviour
     {
         Debug.Log("updating hearts");
 
-        int tempHealth = player.health;
+        int tempHealth = (int)playerHealth.RuntimeValue;
 
         for(int i = 0; i < heartContainers; i++)
         {

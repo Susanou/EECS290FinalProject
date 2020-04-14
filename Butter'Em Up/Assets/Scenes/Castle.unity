@@ -74207,7 +74207,7 @@ MonoBehaviour:
   description: {fileID: 1091508437}
   equipPrimary: {fileID: 668858277}
   equipSecondary: {fileID: 1936998290}
-  playerAttack: {fileID: 2061487526}
+  playerAttack: {fileID: 0}
   playerInventory: {fileID: 11400000, guid: af685a2419829af409ca56e166782b5c, type: 2}
   currentItem: {fileID: 0}
 --- !u!1 &1594120146
@@ -74628,7 +74628,7 @@ MonoBehaviour:
     type: 3}
   emptyHeart: {fileID: 0}
   heartContainers: 0
-  player: {fileID: 0}
+  playerHealth: {fileID: 0}
 --- !u!1 &1936998290
 GameObject:
   m_ObjectHideFlags: 0
@@ -74929,18 +74929,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2056447636}
   m_CullTransparentMesh: 0
---- !u!114 &2061487526 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 5707866912915158061, guid: 813086c8e87653394be9ccfbe61770da,
-    type: 3}
-  m_PrefabInstance: {fileID: 2082799072}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 04047aebdf03d0c4c8767ce13bc9b06b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &2082799072
 PrefabInstance:
   m_ObjectHideFlags: 0
