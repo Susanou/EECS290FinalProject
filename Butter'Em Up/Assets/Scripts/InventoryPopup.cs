@@ -6,7 +6,7 @@ using UnityEngine;
 public class InventoryPopup : MonoBehaviour
 {
     [SerializeField] public Canvas inventory;
-    bool inventoryOpen = true; //initializing to true, will sync up on the first use
+    bool inventoryOpen = false;
 
     // Update is called once per frame
     void Update()
@@ -17,7 +17,8 @@ public class InventoryPopup : MonoBehaviour
 
     bool toggleInventory()
     {
-        inventory.gameObject.SetActive(inventoryOpen);
-        return !inventoryOpen;
+        inventoryOpen = !inventoryOpen; //swap state
+        inventory.gameObject.SetActive(inventoryOpen); //activate/deactivate
+        return inventoryOpen; //new value
     }
 }
