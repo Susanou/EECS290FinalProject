@@ -133,6 +133,7 @@ GameObject:
   - component: {fileID: 242317649}
   - component: {fileID: 242317648}
   - component: {fileID: 242317647}
+  - component: {fileID: 242317650}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -222,6 +223,19 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
+--- !u!114 &242317650
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 242317645}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14f58cf089bd0e04cb6e8cae552ceab3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inventory: {fileID: 1744635956}
 --- !u!1 &374446536
 GameObject:
   m_ObjectHideFlags: 0
@@ -1114,7 +1128,6 @@ GameObject:
   - component: {fileID: 852050473}
   - component: {fileID: 852050472}
   - component: {fileID: 852050475}
-  - component: {fileID: 852050476}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1203,19 +1216,6 @@ MonoBehaviour:
   smoothing: 0.6
   max: {x: 77, y: 37.5}
   min: {x: 8.8, y: 3}
---- !u!114 &852050476
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 852050471}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 14f58cf089bd0e04cb6e8cae552ceab3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  inventory: {fileID: 1744635956}
 --- !u!1 &869548819
 GameObject:
   m_ObjectHideFlags: 0
