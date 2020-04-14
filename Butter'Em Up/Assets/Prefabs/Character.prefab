@@ -728,7 +728,6 @@ GameObject:
   - component: {fileID: 3355181244681544704}
   - component: {fileID: 3355181244681544707}
   - component: {fileID: 5707866912915158061}
-  - component: {fileID: 355781128}
   m_Layer: 8
   m_Name: Character
   m_TagString: Player
@@ -771,7 +770,7 @@ Animator:
   m_Controller: {fileID: 9100000, guid: 495fceb49bb8301498ed5ec8ee7e9e9c, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
-  m_ApplyRootMotion: 0
+  m_ApplyRootMotion: 1
   m_LinearVelocityBlending: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
@@ -852,26 +851,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 04047aebdf03d0c4c8767ce13bc9b06b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spread1: marg
+  spread1: Margarine
   spread2: nutella
---- !u!114 &355781128
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7377098352821378923}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 77310edc79e8b71449d38b2fc2360852, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  blankInventorySlot: {fileID: 0}
-  inventoryPanel: {fileID: 0}
-  description: {fileID: 0}
-  equipPrimary: {fileID: 0}
-  equipSecondary: {fileID: 0}
-  playerInventory: {fileID: 11400000, guid: af685a2419829af409ca56e166782b5c, type: 2}
 --- !u!1 &7377098353487554959
 GameObject:
   m_ObjectHideFlags: 0
