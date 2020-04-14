@@ -10,6 +10,7 @@ public class SignalListener : MonoBehaviour
 
     public void OnSignalRaised()
     {
+        Debug.Log("was raised");
         signalEvent.Invoke();
     }
 

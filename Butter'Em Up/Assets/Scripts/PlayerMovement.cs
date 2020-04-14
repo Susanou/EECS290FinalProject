@@ -86,6 +86,13 @@ public class PlayerMovement : MonoBehaviour
             myAnimator.SetBool("walking", false);
     }
 
+    public void hurt(int dmg)
+    {
+        health -= dmg;
+        playerHealth.Raise();
+        Debug.Log(health + "Current heqlth");
+    }
+
     void MoveCharacter(){
         change.Normalize();
         myRigidBody.MovePosition(transform.position + change * speed * Time.deltaTime);

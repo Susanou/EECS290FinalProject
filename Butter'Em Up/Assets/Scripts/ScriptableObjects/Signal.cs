@@ -13,6 +13,8 @@ public class Signal : ScriptableObject
         {
             listeners[i].OnSignalRaised();
         }
+
+        Debug.Log("Raised");
     }
 
     public void registerListener(SignalListener l)
