@@ -59804,7 +59804,32 @@ MonoBehaviour:
     when you get back. Don\u2019t forget you can pick things up by walking into them!"
   - You need to use walk into the knife to pick it up, I will explain how you can
     use it after you return.
-  - 6
+  - Did you get the knife? Wonderful! Now, let me explain how you can use spreads
+    to defend yourself.
+  - Our Kingdoms, Bread and Spread, have always been on good terms for a very good
+    reason. There are few pairings in nature that complement each other so well as
+    a scrumptious spread on a delectable bread. For this reason, we must not fight
+    each other but instead fight to keep our alliance.
+  - I told you the spreads will help you defend yourself. However, you do not have
+    to use them as a weapon to hurt my bread-people. Instead, you can use them to
+    befriend enemies. We, breads, enjoy the feeling of a good spread. We could all
+    use a reminder of that in these times.
+  - Use shift to use your primary spread. You can practice using shift on me. Don't
+    worry, you won't hurt me! It feels great!
+  - "You only have a couple spreads right now, but that\u2019s still a good place
+    to start. You\u2019ll discover more later, but first you need to talk to that
+    stuffy \xE9pi. However hostile he can be, you will need his help. As the head
+    guard of this castle, \xE9pi has knowledge of the surrounding lands and will
+    tell you where you need to go from here."
+  - I mentioned that you have a couple spreads, be careful not to confuse them. They
+    do very different things. You can set your primary and secondary spreads using
+    the inventory menu. Primary spread is used with shift, and secondary is used
+    with space.
+  - 'Although some spreads befriend your enemies, some spreads are not so friendly.
+    You have the ability to hurt a bread. Although you know my opinion, that choice
+    will be yours. '
+  - The toasts should be in the hall outside my room, so go practice buttering them
+    up! Be careful, and good luck on your journey!
   inRange: 0
 --- !u!1 &1186444787
 GameObject:

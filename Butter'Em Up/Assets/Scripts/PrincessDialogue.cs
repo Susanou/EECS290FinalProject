@@ -36,7 +36,17 @@ public class PrincessDialogue : MonoBehaviour
                 dialogueText.text = dialogue[click++];
             else if (click == 4 && inRange)
             {
-                dialogueText.text = dialogue[4];
+                dialogueText.text = dialogue[click++]; // change to 4 later
+                dialogueBox.SetActive(true);
+            }
+            else if (click > 4 && click < dialogue.Length && inRange)
+            {
+                dialogueText.text = dialogue[click++];
+                dialogueBox.SetActive(true);
+            }
+            else if (click == dialogue.Length && inRange)
+            {
+                dialogueText.text = dialogue[dialogue.Length]; // change to 4 later
                 dialogueBox.SetActive(true);
             }
         }
