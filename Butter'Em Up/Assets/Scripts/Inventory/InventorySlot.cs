@@ -25,7 +25,7 @@ public class InventorySlot : MonoBehaviour
     {
         if (thisItem)
         {
-            thisManager.SetDesc(thisItem.itemDescription);
+            thisManager.SetDesc(thisItem);
         }
     }
 }
