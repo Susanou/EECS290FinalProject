@@ -40,4 +40,9 @@ public class InventoryManager : MonoBehaviour
         MakeInventorySlots();
         SetText("");
     }
+
+    public void SetDesc(string desc)
+    {
+        description.text = desc;
+    }
 }

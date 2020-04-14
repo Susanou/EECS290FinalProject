@@ -21,13 +21,11 @@ public class InventorySlot : MonoBehaviour
         }
     }
 
-    // Update is called once per frame
-    void Update()
+    public void ClickedOn()
     {
-        
-    }
-    private void Start()
-    {
-        
+        if (thisItem)
+        {
+            thisManager.SetDesc(thisItem.itemDescription);
+        }
     }
 }
