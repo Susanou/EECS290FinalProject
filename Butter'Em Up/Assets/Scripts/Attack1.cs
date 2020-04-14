@@ -54,5 +54,10 @@ public class Attack1 : MonoBehaviour
         if(other.CompareTag("Damageable")){
             other.GetComponent<Befriend>().hurt(spread);
         }
+        if (other.CompareTag("player") && other.GetComponent<PlayerMovement>().currentState != PlayerState.stagger)
+        {
+            other.GetComponent<PlayerMovement>().currentState = PlayerState.stagger;
+            other.GetComponent<PlayerMovement>().knock(2f, 1);
+        }
     }
 }
