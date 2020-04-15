@@ -19,6 +19,7 @@ public class KeyScript : MonoBehaviour
             target.SetActive(false);
             
             this.gameObject.SetActive(false);
+            jingle.SetActive(false);
             jingle.SetActive(true);
            
            
