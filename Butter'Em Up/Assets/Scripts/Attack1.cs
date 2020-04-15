@@ -11,6 +11,7 @@ public class Attack1 : MonoBehaviour
     private string spread;
     private Animator _animator;
     private PlayerMovement movement;
+    [SerializeField] GameObject swoosh;
 
     // Start is called before the first frame update
     void Start()
@@ -44,9 +45,11 @@ public class Attack1 : MonoBehaviour
     {
         _animator.SetBool("attacking", true);
         movement.currentState = PlayerState.attack;
+        swoosh.SetActive(true);
         yield return null;
         _animator.SetBool("attacking", false);
         yield return new WaitForSeconds(0.5f);
+        swoosh.SetActive(false);
         movement.currentState = PlayerState.walk;
     }
 

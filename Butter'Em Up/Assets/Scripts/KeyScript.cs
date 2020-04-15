@@ -5,6 +5,7 @@ using UnityEngine;
 public class KeyScript : MonoBehaviour
 {
     [SerializeField] private GameObject target;
+    [SerializeField] private GameObject jingle;
 
 
     // Start is called before the first frame update
@@ -13,10 +14,15 @@ public class KeyScript : MonoBehaviour
       
         if (other.gameObject.CompareTag("Player") && !other.isTrigger)
         {
-           
-            target.SetActive(false);
-            this.gameObject.SetActive(false);
+         
             
+            target.SetActive(false);
+            
+            this.gameObject.SetActive(false);
+            jingle.SetActive(true);
+           
+           
+
         }
     }
 }
