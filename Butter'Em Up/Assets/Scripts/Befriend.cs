@@ -16,7 +16,7 @@ public class Befriend : MonoBehaviour
                             // 1 = enemy, 0 = befriended, 2 = death
     private Animator enemyAnimator;
     [SerializeField] GameObject befriendjingle;
-
+    [SerializeField] GameObject endmusic;
 
     // Start is called before the first frame update
     void Start()
@@ -34,6 +34,7 @@ public class Befriend : MonoBehaviour
             Debug.Log("You have befriended this bread");
             befriendjingle.SetActive(true);
             enemyAnimator.SetBool("friend", true);
+            endmusic.SetActive(false);
             
         }else if(enemy == 2){
             enemyAnimator.SetBool("dead", true);
