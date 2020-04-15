@@ -456,6 +456,7 @@ GameObject:
   - component: {fileID: 3168142526768003449}
   - component: {fileID: 429347396}
   - component: {fileID: 106274584}
+  - component: {fileID: 1428608444}
   m_Layer: 9
   m_Name: Toast enemy
   m_TagString: Damageable
@@ -564,7 +565,10 @@ MonoBehaviour:
   slider: {fileID: 1754854928129273445}
   sliderUI: {fileID: 3344599152802582042}
   correctSpread: Margarine
-  totalHP: 3
+  totalHP: {fileID: 11400000, guid: ef2975973e458094f9d693eac6398b6d, type: 2}
+  befriendjingle: {fileID: 0}
+  endmusic: {fileID: 0}
+  killMusic: {fileID: 0}
 --- !u!61 &429347396
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -604,8 +608,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   wanderRadius: 2
-  wanderTimer: 0
-  dist: 0
+  wanderTimer: 1
+  dist: 3
+  speed: 2
+--- !u!114 &1428608444
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1238856453085755184}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3312622659bb0db498a9854455fd5722, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dmg: 1
+  kbtime: 2
 --- !u!1 &1238856453616575599
 GameObject:
   m_ObjectHideFlags: 0

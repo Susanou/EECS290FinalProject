@@ -743,6 +743,7 @@ GameObject:
   - component: {fileID: 3355181244681544704}
   - component: {fileID: 3355181244681544707}
   - component: {fileID: 5707866912915158061}
+  - component: {fileID: 776660336}
   m_Layer: 8
   m_Name: Character
   m_TagString: Player
@@ -867,7 +868,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spread1: Margarine
-  spread2: nutella
+  spread2: Nutella
+  swoosh: {fileID: 0}
+--- !u!81 &776660336
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7377098352821378923}
+  m_Enabled: 1
 --- !u!1 &7377098353487554959
 GameObject:
   m_ObjectHideFlags: 0

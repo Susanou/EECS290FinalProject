@@ -22,9 +22,11 @@ public class KnockBack: MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("Player"))
+        if (other.CompareTag("Player") && other.GetComponent<PlayerMovement>().currentState != PlayerState.stagger)
         {
+            other.GetComponent<PlayerMovement>().currentState = PlayerState.stagger;
             other.GetComponent<PlayerMovement>().hurt(dmg);
+
         }
     }
 }

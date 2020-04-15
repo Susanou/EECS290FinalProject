@@ -8,10 +8,10 @@ public class Befriend : MonoBehaviour
     public Slider slider;
     public GameObject sliderUI;
     public string correctSpread; // Spread that you need to use to befriend. Any other will deal damage
-    public int totalHP; // total number of hits to kill or befriend
+    public FloatValue totalHP; // total number of hits to kill or befriend
 
     private string[] damage; // array that will store the spreads used
-    private int dmg = 0; // counter of the number of hits
+    private float dmg = 0; // counter of the number of hits
     private int enemy = 1;  // state of the enemy
                             // 1 = enemy, 0 = befriended, 2 = death
     private Animator enemyAnimator;
@@ -22,14 +22,14 @@ public class Befriend : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {   
-        damage = new string[totalHP];
+        damage = new string[(int)totalHP.RuntimeValue];
         enemyAnimator = this.GetComponent<Animator>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        slider.value = CalculateFriend();
+        
 
         if(enemy == 0){
             Debug.Log("You have befriended this bread");
@@ -46,11 +46,12 @@ public class Befriend : MonoBehaviour
     }
 
     public void hurt(string spread){
-        damage[dmg] = spread;
-        dmg = Mathf.Min(++dmg, totalHP);
-        if (dmg < totalHP){
-            Debug.Log("You dealt damage with " + spread + " correct? " + (spread == correctSpread));
-        }else{
+        damage[(int)dmg] = spread;
+        dmg = Mathf.Min(++dmg, totalHP.RuntimeValue);
+        if (dmg < totalHP.RuntimeValue){
+            slider.value = CalculateFriend();
+        }
+        else{
             Debug.Log("Befriending start");
             befriend();
             return;
@@ -66,8 +67,7 @@ public class Befriend : MonoBehaviour
             if (s == correctSpread)
                 good++;
         }
-        Debug.Log(good / (float)totalHP * 100 + " % chance to befriend");
-        return good / (float)totalHP;
+        return good / (float)totalHP.RuntimeValue;
     }
 
     void befriend(){
@@ -77,12 +77,10 @@ public class Befriend : MonoBehaviour
             if(s == correctSpread)
                 good++;
         }
-        Debug.Log(good/(float)totalHP*100 + " % chance to befriend");
 
         float x = Random.Range(0.0f, 1.0f);
-        Debug.Log(x);
 
-        if (x <= good/(float)totalHP)
+        if (x <= good/(float)totalHP.RuntimeValue)
             enemy = 0;
         else
             enemy = 2;

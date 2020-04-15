@@ -32,9 +32,8 @@ public class HeartManager : MonoBehaviour
 
     public void updateHearts()
     {
-        Debug.Log("updating hearts");
 
-        int tempHealth = (int)playerHealth.RuntimeValue;
+        int tempHealth = (int)playerHealth.RuntimeValue-1;
 
         for(int i = 0; i < heartContainers; i++)
         {

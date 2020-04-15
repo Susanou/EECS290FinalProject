@@ -29,14 +29,11 @@ public class Attack1 : MonoBehaviour
     public void AttackSpread1()
     {
         spread = spread1;
-        Debug.Log(spread);
         StartCoroutine(knifeSwing());
     }
 
     public void AttackSpread2()
     {
-
-        Debug.Log(spread);
         spread = spread2;
         StartCoroutine(knifeSwing());
     }

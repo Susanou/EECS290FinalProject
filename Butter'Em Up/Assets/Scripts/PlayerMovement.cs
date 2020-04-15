@@ -90,11 +90,22 @@ public class PlayerMovement : MonoBehaviour
         health.RuntimeValue -= dmg;
         playerHealth.Raise();
         if (health.RuntimeValue > 0) {
-            //knockout should go here
+            StartCoroutine(kbPlayer());
         }
 
         else
             this.gameObject.SetActive(false);
+    }
+
+    IEnumerator kbPlayer()
+    {
+        this.currentState = PlayerState.stagger;
+        Debug.Log("hurt");
+        myAnimator.SetBool("hurt", true);
+        yield return null;
+        myAnimator.SetBool("hurt", false);
+        yield return new WaitForSeconds(0.5f);
+        this.currentState = PlayerState.walk;
     }
 
     void MoveCharacter(){
