@@ -608,9 +608,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   wanderRadius: 10
-  wanderTimer: 5
-  dist: 10
-  speed: 10
+  wanderTimer: 3
+  dist: 3
+  speed: 5
+  waypoints: []
 --- !u!114 &1428608444
 MonoBehaviour:
   m_ObjectHideFlags: 0

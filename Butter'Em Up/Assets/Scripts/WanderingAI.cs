@@ -9,6 +9,7 @@ public class WanderingAI : MonoBehaviour {
     public float wanderTimer;
     public float dist;
     public int speed;
+    public Vector3[] waypoints;
 
     private Vector3 change;
     private Rigidbody2D myRigidbody;
@@ -76,7 +77,11 @@ public class WanderingAI : MonoBehaviour {
     }
 
 
-
+    private void OnDrawGizmos()
+    {
+        UnityEditor.Handles.color = Color.cyan;
+        UnityEditor.Handles.DrawWireDisc(this.transform.position, this.transform.forward, this.dist);
+    }
 
 
 
