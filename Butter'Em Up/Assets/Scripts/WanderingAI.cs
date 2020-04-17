@@ -28,8 +28,13 @@ public class WanderingAI : MonoBehaviour {
         change = Vector3.zero;
         timer += Time.deltaTime;
         if (timer > wanderTimer)
-        {  
-            timer = 0;
+        {
+            updateMoveAndAnimation();
+        }
+        else
+        {
+            myAnimator.SetFloat("changeX", 0);
+            myAnimator.SetFloat("changeY", -1);
         }
 
 
@@ -51,8 +56,8 @@ public class WanderingAI : MonoBehaviour {
             }
             else
             {
-                myAnimator.SetFloat("changeX", change.x);
-                myAnimator.SetFloat("changeY", change.y);
+                myAnimator.SetFloat("changeX", 0);
+                myAnimator.SetFloat("changeY", Mathf.Sign(change.y)*1);
             }
 
 

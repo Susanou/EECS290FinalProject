@@ -68,6 +68,51 @@ TextureImporter:
   - first:
       213: -1139496241440403015
     second: EnemyParts_21
+  - first:
+      213: -745213837132001451
+    second: EnemyParts_0
+  - first:
+      213: -7011086179329814047
+    second: EnemyParts_1
+  - first:
+      213: 3329727328156701509
+    second: EnemyParts_2
+  - first:
+      213: 1494233397640931605
+    second: EnemyParts_3
+  - first:
+      213: -3723592635669266301
+    second: EnemyParts_4
+  - first:
+      213: -4979958966695001033
+    second: EnemyParts_5
+  - first:
+      213: -1539489731733328986
+    second: EnemyParts_7
+  - first:
+      213: -2589193574549471354
+    second: EnemyParts_11
+  - first:
+      213: 4521413465062556450
+    second: EnemyParts_13
+  - first:
+      213: -903661194243308010
+    second: EnemyParts_15
+  - first:
+      213: 8755401903798451897
+    second: EnemyParts_22
+  - first:
+      213: 581777016611007824
+    second: EnemyParts_23
+  - first:
+      213: -3214557060315128489
+    second: EnemyParts_24
+  - first:
+      213: 5119896074268015965
+    second: EnemyParts_25
+  - first:
+      213: -3774673059532357360
+    second: EnemyParts_26
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -370,6 +415,90 @@ TextureImporter:
       bones: []
       spriteID: 958f3907fa0cfd6a0800000000000000
       internalID: -6422202683866482599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyParts_6
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 75
+        width: 69
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc068eed0daad0130800000000000000
+      internalID: 3534669096625397967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyParts_8
+      rect:
+        serializedVersion: 2
+        x: 1104
+        y: 71
+        width: 78
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bdc4c799faaedee50800000000000000
+      internalID: 6840381448960888027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyParts_9
+      rect:
+        serializedVersion: 2
+        x: 1028
+        y: 170
+        width: 203
+        height: 395
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05028e576ebddf430800000000000000
+      internalID: 3818449841947156560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyParts_10
+      rect:
+        serializedVersion: 2
+        x: 725
+        y: 274
+        width: 300
+        height: 177
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d36fd3c2f067594f0800000000000000
+      internalID: -822621549386402243
       vertices: []
       indices: 
       edges: []
