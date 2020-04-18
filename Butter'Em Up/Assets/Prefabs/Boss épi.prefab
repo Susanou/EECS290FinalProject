@@ -618,7 +618,7 @@ GameObject:
   - component: {fileID: 6279648959248884979}
   m_Layer: 0
   m_Name: "Boss \xE9pi"
-  m_TagString: Damageable
+  m_TagString: Boss
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -748,7 +748,10 @@ MonoBehaviour:
   slider: {fileID: 415901923}
   sliderUI: {fileID: 1465296181}
   correctSpread: Margarine
-  totalHP: 4
+  totalHP: {fileID: 11400000, guid: 610bd5de54e878a4db2597e8a5a5594d, type: 2}
+  befriendjingle: {fileID: 0}
+  endmusic: {fileID: 0}
+  killMusic: {fileID: 0}
 --- !u!1 &5698415287847055122
 GameObject:
   m_ObjectHideFlags: 0
