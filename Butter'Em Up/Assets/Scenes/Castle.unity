@@ -77527,6 +77527,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3355181244681544707, guid: 813086c8e87653394be9ccfbe61770da,
+        type: 3}
+      propertyPath: speed
+      value: 30
+      objectReference: {fileID: 0}
     - target: {fileID: 5707866912915158061, guid: 813086c8e87653394be9ccfbe61770da,
         type: 3}
       propertyPath: swoosh

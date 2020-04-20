@@ -854,7 +854,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3ee1b1eb1befbb09bb8f4e4131d1aaaf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 15
+  speed: 30
   currentState: 0
   health: {fileID: 11400000, guid: 83cf39b5bae2cb94faed1cae3993ac1c, type: 2}
   playerHealth: {fileID: 11400000, guid: 6c36e35ee8ce0c940b8836987a0734f3, type: 2}
