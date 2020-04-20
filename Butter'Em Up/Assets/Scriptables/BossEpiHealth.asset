@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb467e6ab42418d46b088180b50b37ad, type: 3}
   m_Name: BossEpiHealth
   m_EditorClassIdentifier: 
-  initialValue: 20
-  RuntimeValue: 20
+  initialValue: 14
+  RuntimeValue: 14
