@@ -41,7 +41,19 @@ public class KnockBack: MonoBehaviour
         
         if (other.CompareTag("Player") && other.GetComponent<PlayerMovement>().currentState != PlayerState.stagger)
         {
+
+
             other.GetComponent<PlayerMovement>().currentState = PlayerState.stagger;
+            Rigidbody2D enemy = other.GetComponent<Rigidbody2D>();
+            if (enemy != null)
+            {
+                Debug.Log("Knocking Bakc");
+                enemy.isKinematic = false;
+                Vector2 difference = enemy.transform.position - transform.position;
+                difference = difference.normalized * thrust;
+                enemy.AddForce(difference, ForceMode2D.Impulse);
+                StartCoroutine(KnockCo(enemy));
+            }
             other.GetComponent<PlayerMovement>().hurt(dmg);
 
         }

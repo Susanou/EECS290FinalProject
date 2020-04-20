@@ -49,20 +49,21 @@ public class Befriend : MonoBehaviour
 
         befriendjingle.SetActive(true);
         enemyAnimator.SetBool("friend", true);
-        endmusic.SetActive(false);
+        
 
         yield return new WaitForSeconds(3f);
+        Debug.Log("setting to false");
         this.gameObject.SetActive(false);
+        
     }
 
     private IEnumerator dead()
     {
         killMusic.SetActive(true);
         enemyAnimator.SetBool("dead", true);
-        endmusic.SetActive(false);
         Debug.Log("You killed that bread");
 
-        yield return new WaitForSeconds(3f);
+        yield return new WaitForSeconds(1.5f);
         this.gameObject.SetActive(false);
     }
 

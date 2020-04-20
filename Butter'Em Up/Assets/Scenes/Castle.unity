@@ -260,6 +260,10 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1428608444, guid: 1800549976415724a8b8bd38f1852355, type: 3}
+      propertyPath: thrust
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 1238856453085755184, guid: 1800549976415724a8b8bd38f1852355,
         type: 3}
       propertyPath: m_Name
