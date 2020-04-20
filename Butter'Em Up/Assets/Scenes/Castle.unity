@@ -2091,7 +2091,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &764091481
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2130,7 +2130,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 2038032196489607726, guid: 6abefd1e9664fd44fb38dd9b384453fb,
+    type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2421,8 +2422,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -2.4, y: 5.8}
-  m_SizeDelta: {x: 1377.2, y: 157.3}
+  m_AnchoredPosition: {x: -13.2, y: -0.2}
+  m_SizeDelta: {x: 756.4, y: 145.2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &869548821
 MonoBehaviour:
@@ -2444,7 +2445,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 8031b930dc8dc7044baddb9d54017b37, type: 3}
-    m_FontSize: 30
+    m_FontSize: 33
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 3
@@ -61601,29 +61602,30 @@ MonoBehaviour:
   - Did you get the knife? Wonderful! Now, let me explain how you can use spreads
     to defend yourself.
   - Our Kingdoms, Bread and Spread, have always been on good terms for a very good
-    reason. There are few pairings in nature that complement each other so well as
-    a scrumptious spread on a delectable bread. For this reason, we must not fight
-    each other but instead fight to keep our alliance.
+    reason. There are few pairings in nature so perfect as spread and bread.
+  - For this reason, we must not fight each other but instead fight to keep our alliance.
   - I told you the spreads will help you defend yourself. However, you do not have
-    to use them as a weapon to hurt my bread-people. Instead, you can use them to
-    befriend enemies. We, breads, enjoy the feeling of a good spread. We could all
-    use a reminder of that in these times.
+    to use them as a weapon. We, breads, enjoy the feeling of a good spread.
   - Use shift to use your primary spread. You can practice using shift on me. Don't
-    worry, you won't hurt me! It feels great!
+    worry, you won't hurt me!
+  - It feels great!
+  - 'You only have a couple spreads right now, margarine and chocolate nut spread.
+    You can set your primary and secondary spreads using the inventory menu. '
+  - Primary spread is used with shift, and secondary is used with space. Be careful
+    not to confuse your spreads. They do very different things.
+  - Although some spreads befriend your enemies, some spreads are not so friendly.
+    You have the ability to hurt a bread. Your chocolate spread is one that can kill
+    breads.
   - "You only have a couple spreads right now, but that\u2019s still a good place
-    to start. You\u2019ll discover more later, but first you need to talk to that
-    stuffy \xE9pi. However hostile he can be, you will need his help. As the head
-    guard of this castle, \xE9pi has knowledge of the surrounding lands and will
-    tell you where you need to go from here."
-  - I mentioned that you have a couple spreads, be careful not to confuse them. They
-    do very different things. You can set your primary and secondary spreads using
-    the inventory menu. Primary spread is used with shift, and secondary is used
-    with space.
-  - 'Although some spreads befriend your enemies, some spreads are not so friendly.
-    You have the ability to hurt a bread. Although you know my opinion, that choice
-    will be yours. '
+    to start. You\u2019ll discover more later, but first you need to talk to \xE9pi."
+  - "However hostile he can be, you will need his help. As the head guard of this
+    castle, \xE9pi has knowledge of the surrounding lands and will tell you where
+    you need to go from here."
+  - Before you talk to him, you need to take care of the toasts and baguttes.
   - The toasts should be in the hall outside my room, so go practice buttering them
-    up! Be careful, and good luck on your journey!
+    up. Remember to use shift for your primary spread and space for your secondary.
+  - Keep in mind that you can befriend or hurt breads. Although you know my opinion,
+    that choice will be yours. Be careful, and good luck on your journey!
   inRange: 0
 --- !u!1 &1153993182
 GameObject:
