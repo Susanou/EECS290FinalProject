@@ -5,9 +5,12 @@ using UnityEngine.SceneManagement;
 
 public class StartMenu : MonoBehaviour
 {
+
+    [SerializeField] private GameObject MenuMusic;
     // Start is called before the first frame update
     void Start()
     {
+        MenuMusic.SetActive(true);
         
     }
 
@@ -20,6 +23,7 @@ public class StartMenu : MonoBehaviour
     public void startGame()
     {
         SceneManager.LoadScene(1); // 1 should be the number of the castle scene
+        MenuMusic.SetActive(false);
     }
 
     public void exitGame()
