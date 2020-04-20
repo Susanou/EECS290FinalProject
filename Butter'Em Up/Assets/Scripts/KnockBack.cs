@@ -44,7 +44,6 @@ public class KnockBack: MonoBehaviour
 
 
             other.GetComponent<PlayerMovement>().currentState = PlayerState.stagger;
-            Rigidbody2D enemy = other.GetComponent<Rigidbody2D>();
             other.GetComponent<PlayerMovement>().hurt(dmg);
 
         }

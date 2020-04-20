@@ -6,7 +6,8 @@ using UnityEngine.UI;
 public enum BossState
 {
     walk,
-    attack
+    attack,
+    idle
 }
 
 
@@ -39,7 +40,7 @@ public class BossEpi : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        currentState = BossState.walk;
+        currentState = BossState.idle;
         myAnimator = this.GetComponent<Animator>();
         myRigidBody = this.GetComponent<Rigidbody2D>();
         target = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
@@ -52,6 +53,16 @@ public class BossEpi : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if(target.transform.position.x < maxBossArea.x && target.transform.position.y < maxBossArea.y
+            && target.transform.position.x > minBossArea.x && target.transform.position.y > minBossArea.y)
+        {
+            currentState = BossState.walk;
+        }
+        else
+        {
+            currentState = BossState.idle;
+        }
+
 
         if(health == 0)
         {

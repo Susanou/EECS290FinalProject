@@ -1321,12 +1321,12 @@ PrefabInstance:
     - target: {fileID: 5698415287774685974, guid: d92e61470fed82f4da915d0496dee0e3,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 90.7
+      value: 91.07
       objectReference: {fileID: 0}
     - target: {fileID: 5698415287774685974, guid: d92e61470fed82f4da915d0496dee0e3,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.5
+      value: 22.15
       objectReference: {fileID: 0}
     - target: {fileID: 5698415287774685974, guid: d92e61470fed82f4da915d0496dee0e3,
         type: 3}
@@ -1393,11 +1393,6 @@ PrefabInstance:
       propertyPath: killMusic
       value: 
       objectReference: {fileID: 1633658785}
-    - target: {fileID: 7346988548821937384, guid: d92e61470fed82f4da915d0496dee0e3,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d92e61470fed82f4da915d0496dee0e3, type: 3}
 --- !u!1 &615780376
@@ -2379,7 +2374,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 852050471}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 13.8, y: 3.2, z: -15}
+  m_LocalPosition: {x: 11.5, y: 3.2, z: -15}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -2399,7 +2394,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 2082799073}
   smoothing: 0.6
-  max: {x: 72.5, y: 38}
+  max: {x: 75, y: 38}
   min: {x: 14, y: 3}
 --- !u!1 &869548819
 GameObject:
@@ -77537,11 +77532,6 @@ PrefabInstance:
       propertyPath: swoosh
       value: 
       objectReference: {fileID: 164817363}
-    - target: {fileID: 7377098352219389548, guid: 813086c8e87653394be9ccfbe61770da,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 7377098352821378923, guid: 813086c8e87653394be9ccfbe61770da,
         type: 3}
       propertyPath: m_Name
@@ -77550,12 +77540,12 @@ PrefabInstance:
     - target: {fileID: 7377098352821378925, guid: 813086c8e87653394be9ccfbe61770da,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 76.3
+      value: -3.67
       objectReference: {fileID: 0}
     - target: {fileID: 7377098352821378925, guid: 813086c8e87653394be9ccfbe61770da,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 40.4
+      value: 1.6
       objectReference: {fileID: 0}
     - target: {fileID: 7377098352821378925, guid: 813086c8e87653394be9ccfbe61770da,
         type: 3}
