@@ -9,14 +9,19 @@ public enum BossState
 }
 
 
-public class NewBehaviourScript : MonoBehaviour
+public class BossEpi : MonoBehaviour
 {
 
     public Vector2 maxBossArea;
     public Vector2 minBossArea;
+    public float attackRange;
     public int health;
     public int maxHealth;
     public int speed;
+
+    [SerializeField] GameObject befriendjingle;
+    [SerializeField] GameObject endmusic;
+    [SerializeField] GameObject killMusic;
 
     private BossState currentState;
     private Rigidbody2D myRigidBody;
@@ -40,7 +45,30 @@ public class NewBehaviourScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
+        if(health == 0)
+        {
+            Debug.Log("You have befriended this bread");
+
+            befriendjingle.SetActive(true);
+            myAnimator.SetBool("friend", true);
+            endmusic.SetActive(false);
+            this.GetComponent<BossEpi>().gameObject.SetActive(false);
+        }
+
+
+        change = Vector2.zero;
+        change = target.transform.position - this.transform.position;
+
+        if (change.magnitude <= attackRange && currentState != BossState.attack)
+        {
+            StartCoroutine(attack());
+        }
+
+        else if (currentState == BossState.walk)
+        {
+            updateMoveAndAnimation();
+        }
     }
 
     void updateMoveAndAnimation()
@@ -58,8 +86,8 @@ public class NewBehaviourScript : MonoBehaviour
             }
             else
             {
-                myAnimator.SetFloat("changeX", change.x);
-                myAnimator.SetFloat("changeY", change.y);
+                myAnimator.SetFloat("changeX", 0);
+                myAnimator.SetFloat("changeY", Mathf.Sign(change.y) * 1);
             }
 
 
@@ -68,6 +96,16 @@ public class NewBehaviourScript : MonoBehaviour
         }
         else
             myAnimator.SetBool("walking", false);
+    }
+
+    private IEnumerator attack()
+    {
+        myAnimator.SetBool("attacking", true);
+        currentState = BossState.attack;
+        yield return null;
+        myAnimator.SetBool("attacking", false);
+        yield return new WaitForSeconds(3f);
+        currentState = BossState.walk;
     }
 
     void MoveCharacter()
