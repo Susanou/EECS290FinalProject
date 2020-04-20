@@ -2168,6 +2168,7 @@ GameObject:
   - component: {fileID: 804110731}
   - component: {fileID: 804110734}
   - component: {fileID: 804110735}
+  - component: {fileID: 804110736}
   m_Layer: 0
   m_Name: ButterKnife
   m_TagString: Untagged
@@ -2294,6 +2295,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 498400430}
   jingle: {fileID: 4503609}
+--- !u!114 &804110736
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 804110730}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5979493d7a17e7b4e91cc7d1f2a8e12b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Knife: {fileID: 978596044}
 --- !u!1 &852050471
 GameObject:
   m_ObjectHideFlags: 0
@@ -2473,6 +2487,12 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 869548819}
   m_CullTransparentMesh: 0
+--- !u!1 &978596044 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7377098352219389548, guid: 813086c8e87653394be9ccfbe61770da,
+    type: 3}
+  m_PrefabInstance: {fileID: 2082799072}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1021289459
 GameObject:
   m_ObjectHideFlags: 0
@@ -77537,6 +77557,11 @@ PrefabInstance:
       propertyPath: swoosh
       value: 
       objectReference: {fileID: 164817363}
+    - target: {fileID: 7377098352219389548, guid: 813086c8e87653394be9ccfbe61770da,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7377098352219389548, guid: 813086c8e87653394be9ccfbe61770da,
         type: 3}
       propertyPath: m_IsActive
