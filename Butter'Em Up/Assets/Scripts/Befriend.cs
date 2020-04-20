@@ -18,6 +18,7 @@ public class Befriend : MonoBehaviour
     [SerializeField] GameObject befriendjingle;
     [SerializeField] GameObject endmusic;
     [SerializeField] GameObject killMusic;
+    [SerializeField] GameObject HealthPot;
 
     // Start is called before the first frame update
     void Start()
@@ -48,13 +49,17 @@ public class Befriend : MonoBehaviour
         Debug.Log("You have befriended this bread");
 
         befriendjingle.SetActive(true);
+ 
         enemyAnimator.SetBool("friend", true);
+        
+        
         
 
         yield return new WaitForSeconds(3f);
         Debug.Log("setting to false");
         this.gameObject.SetActive(false);
-        
+        HealthPot.SetActive(true);
+
     }
 
     private IEnumerator dead()
@@ -62,7 +67,7 @@ public class Befriend : MonoBehaviour
         killMusic.SetActive(true);
         enemyAnimator.SetBool("dead", true);
         Debug.Log("You killed that bread");
-
+        
         yield return new WaitForSeconds(1.5f);
         this.gameObject.SetActive(false);
     }
