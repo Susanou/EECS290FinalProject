@@ -49,6 +49,7 @@ public class Befriend : MonoBehaviour
         Debug.Log("You have befriended this bread");
 
         befriendjingle.SetActive(true);
+        HealthPot.SetActive(true);
  
         enemyAnimator.SetBool("friend", true);
         
