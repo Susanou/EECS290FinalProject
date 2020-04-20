@@ -7,6 +7,7 @@ using UnityEngine;
 public class PlayerInventory : ScriptableObject
 {
     public List<InventoryItem> myInventory = new List<InventoryItem>();
+    [System.NonSerialized]
     public bool canAttack = false;
     public string currentPrimary;
     public string currentSecondary;
