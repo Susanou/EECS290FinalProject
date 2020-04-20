@@ -61601,7 +61601,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b86d2ec2015354fb8aeeeacd5b4a1004, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerInventory: {fileID: 0}
+  playerInventory: {fileID: 11400000, guid: af685a2419829af409ca56e166782b5c, type: 2}
   dialogueBox: {fileID: 764091480}
   dialogueText: {fileID: 869548821}
   click: 0
