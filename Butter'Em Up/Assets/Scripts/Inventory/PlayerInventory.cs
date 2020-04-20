@@ -23,7 +23,7 @@ public class PlayerInventory : ScriptableObject
                 Debug.Log("Acquired Butter Knife");
                 break;
             case 1:
-                myInventory.Add(thisItem);
+                myInventory.Add(thisItem); //spreads
                 Debug.Log($"Acquired {thisItem.itemName}");
                 break;
             case 2:
