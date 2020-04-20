@@ -1,11 +1,13 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public enum BossState
 {
     walk,
-    attack
+    attack,
+    idle
 }
 
 
@@ -14,25 +16,31 @@ public class BossEpi : MonoBehaviour
 
     public Vector2 maxBossArea;
     public Vector2 minBossArea;
+    public Slider slider;
+    public GameObject sliderUI;
     public float attackRange;
-    public int health;
-    public int maxHealth;
+    public FloatValue maxHealth;
     public int speed;
+    public string correctSpread;
 
     [SerializeField] GameObject befriendjingle;
     [SerializeField] GameObject endmusic;
     [SerializeField] GameObject killMusic;
+    [SerializeField] GameObject angry;
 
+    [SerializeField] private int health = 0;
+    private bool friends = false;
     private BossState currentState;
     private Rigidbody2D myRigidBody;
     private Vector3 change;
     private Animator myAnimator;
     private Transform target;
+    private bool angryState = false;
 
     // Start is called before the first frame update
     void Start()
     {
-        currentState = BossState.walk;
+        currentState = BossState.idle;
         myAnimator = this.GetComponent<Animator>();
         myRigidBody = this.GetComponent<Rigidbody2D>();
         target = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
@@ -45,27 +53,40 @@ public class BossEpi : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if(target.transform.position.x < maxBossArea.x && target.transform.position.y < maxBossArea.y
+            && target.transform.position.x > minBossArea.x && target.transform.position.y > minBossArea.y)
+        {
+            currentState = BossState.walk;
+        }
+        else
+        {
+            currentState = BossState.idle;
+        }
+
 
         if(health == 0)
         {
-            Debug.Log("You have befriended this bread");
+            StartCoroutine(friend());
+        }
 
-            befriendjingle.SetActive(true);
-            myAnimator.SetBool("friend", true);
-            endmusic.SetActive(false);
-            this.GetComponent<BossEpi>().gameObject.SetActive(false);
+        if(health > maxHealth.initialValue / 2 && !angryState)
+        {
+            angry.SetActive(true);
+            angryState = true;
+            speed += 10;
+            this.GetComponent<KnockBack>().thrust += 10;
         }
 
 
         change = Vector2.zero;
         change = target.transform.position - this.transform.position;
 
-        if (change.magnitude <= attackRange && currentState != BossState.attack)
+        if (change.magnitude <= attackRange && currentState != BossState.attack && !friends)
         {
             StartCoroutine(attack());
         }
 
-        else if (currentState == BossState.walk)
+        else if (currentState == BossState.walk && !friends)
         {
             updateMoveAndAnimation();
         }
@@ -98,6 +119,39 @@ public class BossEpi : MonoBehaviour
             myAnimator.SetBool("walking", false);
     }
 
+    public void hurt(string spread)
+    {
+        
+        if(spread == correctSpread)
+            health++;
+
+        if (health < maxHealth.RuntimeValue)
+        {
+            slider.value = health / maxHealth.RuntimeValue;
+        }
+        else
+        {
+            Debug.Log("Befriending start");
+            friends = true;
+            StartCoroutine(friend());
+            return;
+        }
+    }
+
+    private IEnumerator friend()
+    {
+        Debug.Log("You have befriended this bread");
+
+        befriendjingle.SetActive(true);
+        myAnimator.SetBool("friend", true);
+
+
+        yield return new WaitForSeconds(3f);
+        Debug.Log("setting to false");
+        //this.gameObject.SetActive(false);
+
+    }
+
     private IEnumerator attack()
     {
         myAnimator.SetBool("attacking", true);
@@ -112,5 +166,14 @@ public class BossEpi : MonoBehaviour
     {
         change.Normalize();
         myRigidBody.MovePosition(transform.position + change * speed * Time.deltaTime);
+    }
+
+    private void OnDrawGizmos()
+    {
+
+        UnityEditor.Handles.color = Color.green;
+        UnityEditor.Handles.DrawWireDisc(this.transform.position, this.transform.forward, this.attackRange);
+
+        UnityEditor.Handles.DrawWireCube(this.transform.position, maxBossArea-minBossArea);
     }
 }

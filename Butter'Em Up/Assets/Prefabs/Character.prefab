@@ -485,7 +485,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &7377098352219389550
 Transform:
   m_ObjectHideFlags: 0
@@ -746,6 +746,7 @@ GameObject:
   - component: {fileID: 776660336}
   - component: {fileID: 709620691}
   - component: {fileID: 709620692}
+  - component: {fileID: 2082799075}
   m_Layer: 8
   m_Name: Character
   m_TagString: Player
@@ -853,7 +854,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3ee1b1eb1befbb09bb8f4e4131d1aaaf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 15
+  speed: 30
   currentState: 0
   health: {fileID: 11400000, guid: 83cf39b5bae2cb94faed1cae3993ac1c, type: 2}
   playerHealth: {fileID: 11400000, guid: 6c36e35ee8ce0c940b8836987a0734f3, type: 2}
@@ -919,8 +920,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dmg: 1
-  kbtime: 0.5
-  thrust: 25
+  kbtime: 2
+  thrust: 10
+--- !u!114 &2082799075
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7377098352821378923}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f0f6c688bba614978b9b9a4a87d97a4b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerInventory: {fileID: 11400000, guid: af685a2419829af409ca56e166782b5c, type: 2}
+  knifeSprite: {fileID: 7377098352219389548}
 --- !u!1 &7377098353487554959
 GameObject:
   m_ObjectHideFlags: 0
