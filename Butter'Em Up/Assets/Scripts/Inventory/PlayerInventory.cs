@@ -41,4 +41,9 @@ public class PlayerInventory : ScriptableObject
                 
         }
     }
+
+    public bool hasKnife()
+    {
+        return canAttack;
+    }
 }
