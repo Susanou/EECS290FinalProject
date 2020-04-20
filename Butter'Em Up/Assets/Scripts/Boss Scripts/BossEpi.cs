@@ -34,6 +34,7 @@ public class BossEpi : MonoBehaviour
     private Vector3 change;
     private Animator myAnimator;
     private Transform target;
+    private bool angryState = false;
 
     // Start is called before the first frame update
     void Start()
@@ -57,9 +58,10 @@ public class BossEpi : MonoBehaviour
             StartCoroutine(friend());
         }
 
-        if(health < maxHealth.initialValue / 2 && !angry.activeSelf)
+        if(health > maxHealth.initialValue / 2 && !angryState)
         {
             angry.SetActive(true);
+            angryState = true;
             speed += 10;
             this.GetComponent<KnockBack>().thrust += 10;
         }

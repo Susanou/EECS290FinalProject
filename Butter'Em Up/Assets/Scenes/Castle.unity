@@ -1393,6 +1393,11 @@ PrefabInstance:
       propertyPath: killMusic
       value: 
       objectReference: {fileID: 1633658785}
+    - target: {fileID: 7346988548821937384, guid: d92e61470fed82f4da915d0496dee0e3,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d92e61470fed82f4da915d0496dee0e3, type: 3}
 --- !u!1 &615780376
@@ -77532,6 +77537,11 @@ PrefabInstance:
       propertyPath: swoosh
       value: 
       objectReference: {fileID: 164817363}
+    - target: {fileID: 7377098352219389548, guid: 813086c8e87653394be9ccfbe61770da,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7377098352821378923, guid: 813086c8e87653394be9ccfbe61770da,
         type: 3}
       propertyPath: m_Name
@@ -77540,12 +77550,12 @@ PrefabInstance:
     - target: {fileID: 7377098352821378925, guid: 813086c8e87653394be9ccfbe61770da,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -3.5
+      value: 76.3
       objectReference: {fileID: 0}
     - target: {fileID: 7377098352821378925, guid: 813086c8e87653394be9ccfbe61770da,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.3
+      value: 40.4
       objectReference: {fileID: 0}
     - target: {fileID: 7377098352821378925, guid: 813086c8e87653394be9ccfbe61770da,
         type: 3}
