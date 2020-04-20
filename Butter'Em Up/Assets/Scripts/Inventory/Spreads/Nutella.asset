@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Nutella
   m_EditorClassIdentifier: 
   itemName: Nutella
-  itemDescription: Strong against French Bread
+  itemDescription: +1 Befriend against French Bread
   itemImage: {fileID: 8641895268797647228, guid: e0febef2d3575ac4c949fa375409dd19,
     type: 3}
   type: 1

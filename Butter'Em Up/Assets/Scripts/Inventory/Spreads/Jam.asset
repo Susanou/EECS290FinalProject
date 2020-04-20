@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Jam
   m_EditorClassIdentifier: 
   itemName: Jam
-  itemDescription: It's jam!
+  itemDescription: +2 Befriend against French Bread
   itemImage: {fileID: 311458941057611498, guid: e0febef2d3575ac4c949fa375409dd19,
     type: 3}
   type: 1

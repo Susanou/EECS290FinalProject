@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Margarine
   m_EditorClassIdentifier: 
   itemName: Margarine
-  itemDescription: Strong against white bread
+  itemDescription: +1 Befriend against White Bread
   itemImage: {fileID: -7952128407326839171, guid: e0febef2d3575ac4c949fa375409dd19,
     type: 3}
   type: 1

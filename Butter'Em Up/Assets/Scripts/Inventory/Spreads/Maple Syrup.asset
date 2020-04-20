@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Maple Syrup
   m_EditorClassIdentifier: 
   itemName: Maple Syrup
-  itemDescription: It's delicious maple syrup
+  itemDescription: +2 Befriend agaisnt White Bread
   itemImage: {fileID: -8421654334768678421, guid: e0febef2d3575ac4c949fa375409dd19,
     type: 3}
   type: 1

@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Tonkatsu
   m_EditorClassIdentifier: 
   itemName: Tonkatsu
-  itemDescription: Tonkatsu Sauce. Might be strong against steamed buns... or something...
+  itemDescription: +3 Befriend against French Bread
   itemImage: {fileID: 8855085021979221714, guid: e0febef2d3575ac4c949fa375409dd19,
     type: 3}
   type: 1
