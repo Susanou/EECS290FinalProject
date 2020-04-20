@@ -7,6 +7,7 @@ using UnityEngine;
 public class PlayerInventory : ScriptableObject
 {
     public List<InventoryItem> myInventory = new List<InventoryItem>();
+    [System.NonSerialized]
     public bool canAttack = false;
     public string currentPrimary;
     public string currentSecondary;
@@ -22,7 +23,7 @@ public class PlayerInventory : ScriptableObject
                 Debug.Log("Acquired Butter Knife");
                 break;
             case 1:
-                myInventory.Add(thisItem);
+                myInventory.Add(thisItem); //spreads
                 Debug.Log($"Acquired {thisItem.itemName}");
                 break;
             case 2:
@@ -39,5 +40,10 @@ public class PlayerInventory : ScriptableObject
                 break;
                 
         }
+    }
+
+    public bool hasKnife()
+    {
+        return canAttack;
     }
 }

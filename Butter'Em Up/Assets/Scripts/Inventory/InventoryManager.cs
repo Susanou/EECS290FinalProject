@@ -12,6 +12,8 @@ public class InventoryManager : MonoBehaviour
     [SerializeField] private GameObject equipPrimary;
     [SerializeField] private GameObject equipSecondary;
     [SerializeField] private Attack1 playerAttack;
+    [SerializeField] private Image primary;
+    [SerializeField] private Image secondary;
     public PlayerInventory playerInventory;
     public InventoryItem currentItem;
 
@@ -54,6 +56,7 @@ public class InventoryManager : MonoBehaviour
         if (currentItem.canEquip)
         {
             playerAttack.spread1 = currentItem.itemName;
+            primary.sprite = currentItem.itemImage;
         }
     }
     public void SetSecondary()
@@ -61,6 +64,7 @@ public class InventoryManager : MonoBehaviour
         if(currentItem.canEquip)
         {
             playerAttack.spread2 = currentItem.itemName;
+            secondary.sprite = currentItem.itemImage;
         }
     }
 }

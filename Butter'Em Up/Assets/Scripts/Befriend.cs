@@ -32,20 +32,43 @@ public class Befriend : MonoBehaviour
         
 
         if(enemy == 0){
-            Debug.Log("You have befriended this bread");
-            
-            befriendjingle.SetActive(true);
-            enemyAnimator.SetBool("friend", true);
-            endmusic.SetActive(false);
-            
-        }else if(enemy == 2){
-           
-            killMusic.SetActive(true);
-            enemyAnimator.SetBool("dead", true);
-            endmusic.SetActive(false);
-            Debug.Log("You killed that bread");
+
+            StartCoroutine(friend());
+
+        }
+        else if(enemy == 2){
+
+            StartCoroutine(dead());
+
         }
     }
+
+    private IEnumerator friend()
+    {
+        Debug.Log("You have befriended this bread");
+
+        befriendjingle.SetActive(true);
+        enemyAnimator.SetBool("friend", true);
+        
+
+        yield return new WaitForSeconds(3f);
+        Debug.Log("setting to false");
+        this.gameObject.SetActive(false);
+        
+    }
+
+    private IEnumerator dead()
+    {
+        killMusic.SetActive(true);
+        enemyAnimator.SetBool("dead", true);
+        Debug.Log("You killed that bread");
+
+        yield return new WaitForSeconds(1.5f);
+        this.gameObject.SetActive(false);
+    }
+
+
+
 
     public void hurt(string spread){
         damage[(int)dmg] = spread;

@@ -38,7 +38,7 @@ public class PlayerMovement : MonoBehaviour
 
 
     // Update is called once per frame
-    void FixedUpdate()
+    void Update()
     {
         change = Vector3.zero;
         change.x = Input.GetAxisRaw("Horizontal");
@@ -100,7 +100,6 @@ public class PlayerMovement : MonoBehaviour
     IEnumerator kbPlayer()
     {
         this.currentState = PlayerState.stagger;
-        Debug.Log("hurt");
         myAnimator.SetBool("hurt", true);
         yield return null;
         myAnimator.SetBool("hurt", false);

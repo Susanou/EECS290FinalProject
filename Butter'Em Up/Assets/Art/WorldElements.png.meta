@@ -11,6 +11,78 @@ TextureImporter:
   - first:
       213: -1575335300829397735
     second: WorldElements_2
+  - first:
+      213: 2577764122490665410
+    second: WorldElements_0
+  - first:
+      213: -3999422751249329620
+    second: WorldElements_1
+  - first:
+      213: 3539233354905892461
+    second: WorldElements_2
+  - first:
+      213: 46842822684328588
+    second: WorldElements_3
+  - first:
+      213: -1596528697678937816
+    second: WorldElements_4
+  - first:
+      213: -6917285697876247198
+    second: WorldElements_5
+  - first:
+      213: 311458941057611498
+    second: WorldElements_6
+  - first:
+      213: 4875104347457041409
+    second: WorldElements_7
+  - first:
+      213: -7952128407326839171
+    second: WorldElements_8
+  - first:
+      213: -2243423616732023639
+    second: WorldElements_9
+  - first:
+      213: 8641895268797647228
+    second: WorldElements_10
+  - first:
+      213: 4290793373458457780
+    second: WorldElements_11
+  - first:
+      213: -8421654334768678421
+    second: WorldElements_12
+  - first:
+      213: -3703286432419613266
+    second: WorldElements_13
+  - first:
+      213: -2714856076194042828
+    second: WorldElements_14
+  - first:
+      213: -9222549645958373472
+    second: WorldElements_15
+  - first:
+      213: 447713902098277448
+    second: WorldElements_16
+  - first:
+      213: -6335684153688520900
+    second: WorldElements_17
+  - first:
+      213: 2480943460443849707
+    second: WorldElements_18
+  - first:
+      213: 6979639673562766729
+    second: WorldElements_19
+  - first:
+      213: 8855085021979221714
+    second: WorldElements_20
+  - first:
+      213: 7212523755287583437
+    second: WorldElements_21
+  - first:
+      213: 5732770743089089479
+    second: WorldElements_22
+  - first:
+      213: 5632008949510913286
+    second: WorldElements_23
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -116,14 +188,14 @@ TextureImporter:
         width: 463
         height: 535
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 66fa8a231815242e0800000000000000
-      internalID: -2143060857332387994
+      spriteID: 2c97dc3dfce06c320800000000000000
+      internalID: 2577764122490665410
       vertices: []
       indices: 
       edges: []
@@ -137,14 +209,14 @@ TextureImporter:
         width: 32
         height: 621
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b9d72303be3784990800000000000000
-      internalID: -7401538533620286053
+      spriteID: c221b2592323f78c0800000000000000
+      internalID: -3999422751249329620
       vertices: []
       indices: 
       edges: []
@@ -158,14 +230,245 @@ TextureImporter:
         width: 428
         height: 28
       alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6631601cf1ed1130800000000000000
+      internalID: 3539233354905892461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldElements_6
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 883
+        width: 287
+        height: 298
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae6bbd7b146825400800000000000000
+      internalID: 311458941057611498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldElements_8
+      rect:
+        serializedVersion: 2
+        x: 551
+        y: 883
+        width: 335
+        height: 258
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7eadf0885d54a190800000000000000
+      internalID: -7952128407326839171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldElements_9
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 495
+        width: 368
+        height: 323
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a437f35b12cdd0e0800000000000000
+      internalID: -2243423616732023639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldElements_10
+      rect:
+        serializedVersion: 2
+        x: 561
+        y: 592
+        width: 308
+        height: 235
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7900d2d5fd2ee770800000000000000
+      internalID: 8641895268797647228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldElements_12
+      rect:
+        serializedVersion: 2
+        x: 1007
+        y: 522
+        width: 211
+        height: 331
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be9fbfa9006402b80800000000000000
+      internalID: -8421654334768678421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldElements_14
+      rect:
+        serializedVersion: 2
+        x: 1598
+        y: 82
+        width: 335
+        height: 622
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43ca42a58c4e25ad0800000000000000
+      internalID: -2714856076194042828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldElements_18
+      rect:
+        serializedVersion: 2
+        x: 423
+        y: 43
+        width: 201
+        height: 269
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be38593cee41e6220800000000000000
+      internalID: 2480943460443849707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldElements_19
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 39
+        width: 349
+        height: 270
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98d9eeaad49acd060800000000000000
+      internalID: 6979639673562766729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldElements_20
+      rect:
+        serializedVersion: 2
+        x: 1125
+        y: 46
+        width: 209
+        height: 396
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2de14f649e493ea70800000000000000
+      internalID: 8855085021979221714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldElements_3
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 47
+        width: 282
+        height: 263
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c82406e8c4b66a000800000000000000
+      internalID: 46842822684328588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldElements_4
+      rect:
+        serializedVersion: 2
+        x: 977
+        y: 927
+        width: 273
+        height: 265
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 91d3eefe3e8432ae0800000000000000
-      internalID: -1575335300829397735
+      spriteID: 8214125bb9df7d9e0800000000000000
+      internalID: -1596528697678937816
       vertices: []
       indices: 
       edges: []
