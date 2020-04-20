@@ -2289,6 +2289,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 9125969211874208114, guid: 4240ac2f5a5248048a9bd98c08db06df,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 9125969211874208115, guid: 4240ac2f5a5248048a9bd98c08db06df,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -6990840403640849133, guid: 3fcda9c3f2d6e234e9e313d015369bd6,
+        type: 3}
     - target: {fileID: 9125969212745297708, guid: 4240ac2f5a5248048a9bd98c08db06df,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2349,5 +2360,26 @@ PrefabInstance:
       propertyPath: m_Name
       value: Baguette guard
       objectReference: {fileID: 0}
+    - target: {fileID: 9125969213110463962, guid: 4240ac2f5a5248048a9bd98c08db06df,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 3.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 9125969213336460725, guid: 4240ac2f5a5248048a9bd98c08db06df,
+        type: 3}
+      propertyPath: m_Name
+      value: Left foot
+      objectReference: {fileID: 0}
+    - target: {fileID: 9125969213491687722, guid: 4240ac2f5a5248048a9bd98c08db06df,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 9125969213491687723, guid: 4240ac2f5a5248048a9bd98c08db06df,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -60545194262561565, guid: 3fcda9c3f2d6e234e9e313d015369bd6,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4240ac2f5a5248048a9bd98c08db06df, type: 3}
