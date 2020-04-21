@@ -58,6 +58,7 @@ public class Befriend : MonoBehaviour
 
         yield return new WaitForSeconds(3f);
         Debug.Log("setting to false");
+        endmusic.SetActive(false);
         this.gameObject.SetActive(false);
         HealthPot.SetActive(true);
 
