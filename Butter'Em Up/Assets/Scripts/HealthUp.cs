@@ -14,6 +14,7 @@ public class HealthUp : MonoBehaviour
 
         if (other.gameObject.CompareTag("Player") && !other.isTrigger)
         {
+            sound.SetActive(false);
             sound.SetActive(true);
             other.GetComponent<PlayerMovement>().gainHealth(1);
             health.SetActive(false);
