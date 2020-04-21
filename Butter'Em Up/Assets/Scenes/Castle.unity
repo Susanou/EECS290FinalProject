@@ -766,6 +766,7 @@ GameObject:
   - component: {fileID: 348062082}
   - component: {fileID: 348062081}
   - component: {fileID: 348062080}
+  - component: {fileID: 348062083}
   m_Layer: 0
   m_Name: Castle Key
   m_TagString: Untagged
@@ -851,6 +852,32 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 32
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &348062083
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 348062079}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2.09, y: 2.16}
+    newSize: {x: 2.87, y: 2.98}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 2.09, y: 2.16}
+  m_EdgeRadius: 0
 --- !u!1 &362208175
 GameObject:
   m_ObjectHideFlags: 0
@@ -62419,7 +62446,7 @@ MonoBehaviour:
     worry, you won't hurt me!
   - It feels great!
   - 'You only have a couple spreads right now, margarine and chocolate nut spread.
-    You can set your primary and secondary spreads using the inventory menu. '
+    You can set your primary and secondary spreads using the inventory menu (I). '
   - Primary spread is used with shift, and secondary is used with space. Be careful
     not to confuse your spreads. They do very different things.
   - Although some spreads befriend your enemies, some spreads are not so friendly.
@@ -62640,6 +62667,7 @@ GameObject:
   - component: {fileID: 1227792857}
   - component: {fileID: 1227792856}
   - component: {fileID: 1227792855}
+  - component: {fileID: 1227792858}
   m_Layer: 0
   m_Name: Recipe Fragment
   m_TagString: Untagged
@@ -62726,6 +62754,32 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 30
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &1227792858
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1227792854}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2.01, y: 2.69}
+    newSize: {x: 2.87, y: 2.98}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 2.01, y: 2.69}
+  m_EdgeRadius: 0
 --- !u!1 &1332027994
 GameObject:
   m_ObjectHideFlags: 0
