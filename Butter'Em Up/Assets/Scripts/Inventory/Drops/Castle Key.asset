@@ -10,14 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8a9ce8fe983dfe0408ee1f34d5397adf, type: 3}
-  m_Name: Tonkatsu
+  m_Name: Castle Key
   m_EditorClassIdentifier: 
-  itemName: Tonkatsu
-  itemDescription: +3 Befriend against French Bread
-  itemImage: {fileID: 8855085021979221714, guid: e0febef2d3575ac4c949fa375409dd19,
-    type: 3}
-  type: 1
+  itemName: Castle Key
+  itemDescription: 
+  itemImage: {fileID: 21300000, guid: 7cacf1b8541d7ac4fa5bd572c2964258, type: 3}
+  type: 0
   myEvent:
     m_PersistentCalls:
       m_Calls: []
-  canEquip: 1
+  canEquip: 0
