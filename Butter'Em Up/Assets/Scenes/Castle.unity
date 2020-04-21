@@ -1077,12 +1077,12 @@ GameObject:
   - component: {fileID: 535105689}
   - component: {fileID: 535105688}
   m_Layer: 0
-  m_Name: WorldElements_5
+  m_Name: Teleporter
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &535105688
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1098,7 +1098,6 @@ MonoBehaviour:
   transitioningGameObject: {fileID: 2082799074}
   newSceneName: Aisle 1
   transitionDestinationTag: 0
-  resetInputValuesOnTransition: 1
 --- !u!61 &535105689
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1741,6 +1740,10 @@ PrefabInstance:
       propertyPath: attackRange
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 242960392, guid: d92e61470fed82f4da915d0496dee0e3, type: 3}
+      propertyPath: Portal
+      value: 
+      objectReference: {fileID: 535105687}
     - target: {fileID: 312684166, guid: d92e61470fed82f4da915d0496dee0e3, type: 3}
       propertyPath: kbtime
       value: 0.2
