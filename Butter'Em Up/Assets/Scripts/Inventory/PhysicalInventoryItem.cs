@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 
+[RequireComponent(typeof(Collider2D))]
 public class PhysicalInventoryItem : MonoBehaviour
 {
     [SerializeField] private PlayerInventory playerInventory;
