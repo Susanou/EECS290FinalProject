@@ -160,6 +160,9 @@ public class BossEpi : MonoBehaviour
 
         yield return new WaitForSeconds(3f);
         Debug.Log("setting to false");
+        HealthPot.transform.position = this.transform.position;
+        recipeDrop.transform.position = this.transform.position;
+        KeyDrop.transform.position = this.transform.position;
         //this.gameObject.SetActive(false);
 
     }

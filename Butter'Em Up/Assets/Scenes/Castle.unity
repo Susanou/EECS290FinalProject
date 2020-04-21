@@ -2490,6 +2490,7 @@ GameObject:
   - component: {fileID: 708092031}
   - component: {fileID: 708092030}
   - component: {fileID: 708092029}
+  - component: {fileID: 708092034}
   m_Layer: 0
   m_Name: HealthPot (4)
   m_TagString: Untagged
@@ -2620,6 +2621,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 33
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &708092034
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 708092028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70d3f2aa55e238542a2ff2df44c44a3e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  healthManager: {fileID: 1839904059}
+  sound: {fileID: 1900489692}
 --- !u!1 &764091480
 GameObject:
   m_ObjectHideFlags: 0
