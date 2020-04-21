@@ -105,7 +105,7 @@ public class WanderingAI : MonoBehaviour {
 
     }
 
-
+#if UNITY_EDITOR
     private void OnDrawGizmos()
     {
         UnityEditor.Handles.color = Color.cyan;
@@ -117,7 +117,7 @@ public class WanderingAI : MonoBehaviour {
         UnityEditor.Handles.color = Color.green;
         UnityEditor.Handles.DrawWireDisc(this.transform.position, this.transform.forward, this.attackRange);
     }
-
+#endif
 
 
 }
