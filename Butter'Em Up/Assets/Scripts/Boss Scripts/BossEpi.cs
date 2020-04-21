@@ -7,7 +7,7 @@ public enum BossState
 {
     walk,
     attack,
-    idle
+    stagger
 }
 
 
@@ -22,20 +22,17 @@ public class BossEpi : MonoBehaviour
     public FloatValue maxHealth;
     public int speed;
     public string correctSpread;
+    public BossState currentState;
 
     [SerializeField] GameObject befriendjingle;
     [SerializeField] GameObject endmusic;
     [SerializeField] GameObject killMusic;
     [SerializeField] GameObject angry;
-    [SerializeField] PhysicalInventoryItem spread1;
-    [SerializeField] PhysicalInventoryItem spread2;
-    [SerializeField] PhysicalInventoryItem recipeComponent;
-    [SerializeField] PhysicalInventoryItem ingredient;
-
+    [SerializeField] GameObject HealthPot;
 
     [SerializeField] private int health = 0;
     private bool friends = false;
-    private BossState currentState;
+    
     private Rigidbody2D myRigidBody;
     private Vector3 change;
     private Animator myAnimator;
@@ -45,7 +42,7 @@ public class BossEpi : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        currentState = BossState.idle;
+        currentState = BossState.stagger;
         myAnimator = this.GetComponent<Animator>();
         myRigidBody = this.GetComponent<Rigidbody2D>();
         target = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
@@ -65,11 +62,11 @@ public class BossEpi : MonoBehaviour
         }
         else
         {
-            currentState = BossState.idle;
+            currentState = BossState.stagger;
         }
 
 
-        if(health == 0)
+        if(health >= maxHealth.RuntimeValue )
         {
             StartCoroutine(friend());
         }
@@ -94,6 +91,12 @@ public class BossEpi : MonoBehaviour
         else if (currentState == BossState.walk && !friends)
         {
             updateMoveAndAnimation();
+        }
+        else
+        {
+            myAnimator.SetBool("walking", false);
+            myAnimator.SetFloat("changeX", 0);
+            myAnimator.SetFloat("changeY", -1);
         }
     }
 
@@ -126,7 +129,7 @@ public class BossEpi : MonoBehaviour
 
     public void hurt(string spread)
     {
-        
+        Debug.Log(spread);
         if(spread == correctSpread)
             health++;
 
@@ -149,10 +152,7 @@ public class BossEpi : MonoBehaviour
 
         befriendjingle.SetActive(true);
         myAnimator.SetBool("friend", true);
-        spread1.gameObject.SetActive(true);
-        spread2.gameObject.SetActive(true);
-        recipeComponent.gameObject.SetActive(true);
-        ingredient.gameObject.SetActive(true);
+
 
         yield return new WaitForSeconds(3f);
         Debug.Log("setting to false");

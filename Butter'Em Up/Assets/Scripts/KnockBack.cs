@@ -23,7 +23,7 @@ public class KnockBack: MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.gameObject.CompareTag("Damageable") || other.gameObject.CompareTag("Boss"))
+        if (other.gameObject.CompareTag("Damageable"))
         {
             
 
@@ -31,11 +31,33 @@ public class KnockBack: MonoBehaviour
             if(enemy != null)
             {
                 Debug.Log("Knocking Bakc");
-                enemy.isKinematic = false;
-                Vector2 difference = enemy.transform.position - transform.position;
+                
+                enemy.GetComponent<WanderingAI>().currentState = EnemyState.stagger;
+                Vector2 difference = enemy.transform.position - this.transform.position;
+
+                Debug.Log(difference);
+                difference = difference.normalized * thrust;
+                Debug.Log(difference);
+                enemy.AddForce(difference, ForceMode2D.Impulse);
+                
+                StartCoroutine(KnockCo(enemy));
+               
+            }
+        }
+        else if (other.gameObject.CompareTag("Boss"))
+        {
+            Rigidbody2D enemy = other.GetComponent<Rigidbody2D>();
+            if (enemy != null)
+            {
+                Debug.Log("Knocking Bakc");
+
+                enemy.GetComponent<BossEpi>().currentState = BossState.stagger;
+                Vector2 difference = enemy.transform.position - this.transform.position;
                 difference = difference.normalized * thrust;
                 enemy.AddForce(difference, ForceMode2D.Impulse);
-                StartCoroutine(KnockCo(enemy));
+
+                StartCoroutine(BossKnockCo(enemy));
+                enemy.GetComponent<BossEpi>().currentState = BossState.walk;
             }
         }
         
@@ -55,7 +77,17 @@ public class KnockBack: MonoBehaviour
         {
             yield return new WaitForSeconds(kbtime);
             e.velocity = Vector2.zero;
-            e.isKinematic = true;
+            e.GetComponent<WanderingAI>().currentState = EnemyState.pursuit;
+        }
+    }
+
+    private IEnumerator BossKnockCo(Rigidbody2D e)
+    {
+        if (e != null)
+        {
+            yield return new WaitForSeconds(kbtime);
+            e.velocity = Vector2.zero;
+            e.GetComponent<BossEpi>().currentState = BossState.walk;
         }
     }
 }

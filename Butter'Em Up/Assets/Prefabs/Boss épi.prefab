@@ -844,7 +844,6 @@ GameObject:
   - component: {fileID: 90535626}
   - component: {fileID: 5698415287851965921}
   - component: {fileID: 5698415287851965922}
-  - component: {fileID: 6279648959248884979}
   - component: {fileID: 312684166}
   - component: {fileID: 242960392}
   m_Layer: 0
@@ -968,25 +967,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.0131998, y: 4.449191}
   m_EdgeRadius: 0
---- !u!114 &6279648959248884979
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5698415287774685975}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f6f9fe31f157744bb610e9f9efc92fd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  slider: {fileID: 415901923}
-  sliderUI: {fileID: 1465296181}
-  correctSpread: Margarine
-  totalHP: {fileID: 11400000, guid: 610bd5de54e878a4db2597e8a5a5594d, type: 2}
-  befriendjingle: {fileID: 0}
-  endmusic: {fileID: 0}
-  killMusic: {fileID: 0}
 --- !u!114 &312684166
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1014,8 +994,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8c269467a27ba6140b2ec2ce6aaa5bd1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxBossArea: {x: 99, y: 45}
-  minBossArea: {x: 50, y: -9}
+  maxBossArea: {x: 95, y: 45}
+  minBossArea: {x: 70, y: -9}
   slider: {fileID: 415901923}
   sliderUI: {fileID: 1465296181}
   attackRange: 7.5
@@ -1026,6 +1006,7 @@ MonoBehaviour:
   endmusic: {fileID: 0}
   killMusic: {fileID: 0}
   angry: {fileID: 7346988548821937384}
+  HealthPot: {fileID: 0}
   health: 0
 --- !u!1 &5698415287847055122
 GameObject:

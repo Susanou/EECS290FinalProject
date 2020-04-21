@@ -85,6 +85,12 @@ public class PlayerMovement : MonoBehaviour
             myAnimator.SetBool("walking", false);
     }
 
+    public void gainHealth(int heal)
+    {
+        health.RuntimeValue += heal;
+        playerHealth.Raise();
+    }
+
     public void hurt(int dmg)
     {
         health.RuntimeValue -= dmg;

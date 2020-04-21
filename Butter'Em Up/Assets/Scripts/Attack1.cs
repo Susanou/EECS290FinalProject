@@ -51,8 +51,13 @@ public class Attack1 : MonoBehaviour
     }
 
     private void OnTriggerEnter2D(Collider2D other) {
-        if(other.CompareTag("Damageable") || other.CompareTag("Boss")){
+        if (other.CompareTag("Damageable"))
+        {
             other.GetComponent<Befriend>().hurt(spread);
+        }
+        else if (other.CompareTag("Boss"))
+        {
+            other.GetComponent<BossEpi>().hurt(spread);
         }
     }
 }
