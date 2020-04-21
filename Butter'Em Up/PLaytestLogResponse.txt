@@ -1,0 +1,17 @@
+Ryan Hochberg ryanhochberg@gmail.com (advanced player)
+- good art and animation (very cute)
+- Lots of dialogue from the princess
+- need an extra bar to represent the total health of the bread, not only the befriend meter (implemented)
+- Hard to go through on a first try but easier after you get a heand for implemented
+- some hitboxes looked weird (Boss hitting you from very far) (fixed)
+
+Erin Hochberg (new player)
+- very cute art and music
+- Too much dialogue
+- Boss indication of which spread to use needed (easier once told which one to use)
+
+Marie Hochberg (new player)
+- good art, music and animation
+- need a bit to get the hang of attacking and walking
+- Couldn't get past the two guard toasts at the boss door
+- Maybe the game is too hard for beginers
