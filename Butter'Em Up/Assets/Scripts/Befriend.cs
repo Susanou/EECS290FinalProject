@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class Befriend : MonoBehaviour
 {
     public Slider slider;
+    public Slider hpSlider;
     public GameObject sliderUI;
     public string correctSpread; // Spread that you need to use to befriend. Any other will deal damage
     public FloatValue totalHP; // total number of hits to kill or befriend
@@ -83,10 +84,12 @@ public class Befriend : MonoBehaviour
             damage[(int)dmg] = spread;
             dmg = Mathf.Min(++dmg, totalHP.RuntimeValue);
             slider.value = CalculateFriend();
+            hpSlider.value = 1 - slider.value;
         }
         else{
             Debug.Log("Befriending start");
-            slider.value = CalculateFriend();
+            slider.value = 1;
+            hpSlider.value = 0;
             befriend();
             return;
         }

@@ -141,6 +141,7 @@ public class BossEpi : MonoBehaviour
         {
             Debug.Log("Befriending start");
             friends = true;
+            slider.value = 1;
             StartCoroutine(friend());
             return;
         }

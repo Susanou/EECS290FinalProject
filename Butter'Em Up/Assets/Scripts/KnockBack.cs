@@ -85,7 +85,7 @@ public class KnockBack: MonoBehaviour
     {
         if (e != null)
         {
-            yield return new WaitForSeconds(kbtime);
+            yield return new WaitForSeconds(kbtime+1);
             e.velocity = Vector2.zero;
             e.GetComponent<BossEpi>().currentState = BossState.walk;
         }
