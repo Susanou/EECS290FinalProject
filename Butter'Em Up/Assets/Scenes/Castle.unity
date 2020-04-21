@@ -1613,10 +1613,6 @@ PrefabInstance:
       objectReference: {fileID: 1227792854}
     - target: {fileID: 242960392, guid: d92e61470fed82f4da915d0496dee0e3, type: 3}
       propertyPath: attackRange
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 242960392, guid: d92e61470fed82f4da915d0496dee0e3, type: 3}
-      propertyPath: attackRange
       value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 312684166, guid: d92e61470fed82f4da915d0496dee0e3, type: 3}
@@ -76945,7 +76941,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 716c5943674e4af41926765a82798cb5, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 7cacf1b8541d7ac4fa5bd572c2964258, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
