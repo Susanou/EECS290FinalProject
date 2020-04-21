@@ -1615,6 +1615,10 @@ PrefabInstance:
       propertyPath: attackRange
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 242960392, guid: d92e61470fed82f4da915d0496dee0e3, type: 3}
+      propertyPath: attackRange
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 312684166, guid: d92e61470fed82f4da915d0496dee0e3, type: 3}
       propertyPath: kbtime
       value: 0.2
