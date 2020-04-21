@@ -27,6 +27,11 @@ public class BossEpi : MonoBehaviour
     [SerializeField] GameObject endmusic;
     [SerializeField] GameObject killMusic;
     [SerializeField] GameObject angry;
+    [SerializeField] PhysicalInventoryItem spread1;
+    [SerializeField] PhysicalInventoryItem spread2;
+    [SerializeField] PhysicalInventoryItem recipeComponent;
+    [SerializeField] PhysicalInventoryItem ingredient;
+
 
     [SerializeField] private int health = 0;
     private bool friends = false;
@@ -144,7 +149,10 @@ public class BossEpi : MonoBehaviour
 
         befriendjingle.SetActive(true);
         myAnimator.SetBool("friend", true);
-
+        spread1.gameObject.SetActive(true);
+        spread2.gameObject.SetActive(true);
+        recipeComponent.gameObject.SetActive(true);
+        ingredient.gameObject.SetActive(true);
 
         yield return new WaitForSeconds(3f);
         Debug.Log("setting to false");
