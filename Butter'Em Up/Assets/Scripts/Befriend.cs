@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class Befriend : MonoBehaviour
 {
     public Slider slider;
+    public Slider hpSlider;
     public GameObject sliderUI;
     public string correctSpread; // Spread that you need to use to befriend. Any other will deal damage
     public FloatValue totalHP; // total number of hits to kill or befriend
@@ -16,7 +17,6 @@ public class Befriend : MonoBehaviour
                             // 1 = enemy, 0 = befriended, 2 = death
     private Animator enemyAnimator;
     [SerializeField] GameObject befriendjingle;
-    [SerializeField] GameObject endmusic;
     [SerializeField] GameObject killMusic;
     [SerializeField] GameObject HealthPot;
 
@@ -49,17 +49,17 @@ public class Befriend : MonoBehaviour
         Debug.Log("You have befriended this bread");
 
         befriendjingle.SetActive(true);
-        HealthPot.SetActive(true);
- 
+        this.GetComponent<WanderingAI>().currentState = EnemyState.stagger;
+        
         enemyAnimator.SetBool("friend", true);
-        
-        
-        
-
-        yield return new WaitForSeconds(3f);
+        yield return new WaitForSeconds(1.5f);
         Debug.Log("setting to false");
-        this.gameObject.SetActive(false);
+        HealthPot.SetActive(false);
         HealthPot.SetActive(true);
+        HealthPot.transform.position = this.transform.position;
+        
+        this.gameObject.SetActive(false);
+        
 
     }
 
@@ -68,7 +68,8 @@ public class Befriend : MonoBehaviour
         killMusic.SetActive(true);
         enemyAnimator.SetBool("dead", true);
         Debug.Log("You killed that bread");
-        
+        this.GetComponent<WanderingAI>().currentState = EnemyState.stagger;
+
         yield return new WaitForSeconds(1.5f);
         this.gameObject.SetActive(false);
     }
@@ -77,16 +78,21 @@ public class Befriend : MonoBehaviour
 
 
     public void hurt(string spread){
+        
         damage[(int)dmg] = spread;
         dmg = Mathf.Min(++dmg, totalHP.RuntimeValue);
-        if (dmg < totalHP.RuntimeValue){
-            slider.value = CalculateFriend();
-        }
-        else{
+        slider.value = CalculateFriend();
+        hpSlider.value = 1 - slider.value;
+
+        if (dmg >= totalHP.RuntimeValue)
+        {
             Debug.Log("Befriending start");
+            slider.value = CalculateFriend();
+            hpSlider.value = 0;
             befriend();
             return;
         }
+            
     }
 
     float CalculateFriend()

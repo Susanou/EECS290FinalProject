@@ -7,6 +7,7 @@ public enum EnemyState
 {
     pursuit,
     attack,
+    stagger
 }
 
 public class WanderingAI : MonoBehaviour {
@@ -42,7 +43,7 @@ public class WanderingAI : MonoBehaviour {
         change = Vector2.zero;
         change = target.transform.position - this.transform.position;
 
-        if (change.magnitude <= attackRange && currentState != EnemyState.attack)
+        if (change.magnitude <= attackRange && currentState != EnemyState.attack && currentState != EnemyState.stagger)
         {
             StartCoroutine(attack());
         }
@@ -54,7 +55,6 @@ public class WanderingAI : MonoBehaviour {
         else if (change.magnitude >= giveUp)
         {
             Debug.Log("giving up");
-            myAnimator.SetBool("walking", false);
             myAnimator.SetFloat("changeX", 0);
             myAnimator.SetFloat("changeY", -1);
         }

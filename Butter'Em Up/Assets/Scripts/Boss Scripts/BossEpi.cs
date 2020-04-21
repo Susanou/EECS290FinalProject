@@ -7,7 +7,7 @@ public enum BossState
 {
     walk,
     attack,
-    idle
+    stagger
 }
 
 
@@ -22,34 +22,36 @@ public class BossEpi : MonoBehaviour
     public FloatValue maxHealth;
     public int speed;
     public string correctSpread;
+    public BossState currentState;
+    public float attackDelay;
 
     [SerializeField] GameObject befriendjingle;
     [SerializeField] GameObject endmusic;
     [SerializeField] GameObject killMusic;
     [SerializeField] GameObject angry;
-    [SerializeField] PhysicalInventoryItem spread1;
-    [SerializeField] PhysicalInventoryItem spread2;
-    [SerializeField] PhysicalInventoryItem recipeComponent;
-    [SerializeField] PhysicalInventoryItem ingredient;
-
+    [SerializeField] GameObject HealthPot;
+    [SerializeField] GameObject KeyDrop;
+    [SerializeField] GameObject recipeDrop;
 
     [SerializeField] private int health = 0;
     private bool friends = false;
-    private BossState currentState;
+
     private Rigidbody2D myRigidBody;
     private Vector3 change;
     private Animator myAnimator;
     private Transform target;
     private bool angryState = false;
-
+    private float timer;
+    [SerializeField] private bool entered;
+    
     // Start is called before the first frame update
     void Start()
     {
-        currentState = BossState.idle;
+        currentState = BossState.stagger;
         myAnimator = this.GetComponent<Animator>();
         myRigidBody = this.GetComponent<Rigidbody2D>();
         target = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
-
+        friends = false;
 
         myAnimator.SetFloat("changeX", 0);
         myAnimator.SetFloat("changeY", -1);
@@ -59,42 +61,42 @@ public class BossEpi : MonoBehaviour
     void Update()
     {
         if(target.transform.position.x < maxBossArea.x && target.transform.position.y < maxBossArea.y
-            && target.transform.position.x > minBossArea.x && target.transform.position.y > minBossArea.y)
+            && target.transform.position.x > minBossArea.x && target.transform.position.y > minBossArea.y
+            && !entered)
         {
             currentState = BossState.walk;
+            entered = true;
         }
-        else
+        else if(!entered)
         {
-            currentState = BossState.idle;
+            currentState = BossState.stagger;
         }
 
-
-        if(health == 0)
-        {
-            StartCoroutine(friend());
-        }
-
-        if(health > maxHealth.initialValue / 2 && !angryState)
+        if(health >= maxHealth.initialValue / 2 && !angryState)
         {
             angry.SetActive(true);
             angryState = true;
-            speed += 10;
-            this.GetComponent<KnockBack>().thrust += 10;
+            speed += 5;
+            this.GetComponent<KnockBack>().thrust += 2;
         }
 
 
         change = Vector2.zero;
         change = target.transform.position - this.transform.position;
 
-        if (change.magnitude <= attackRange && currentState != BossState.attack && !friends)
+        if (change.magnitude <= attackRange && currentState != BossState.attack && !friends && timer > attackDelay)
         {
             StartCoroutine(attack());
+            timer = 0;
         }
 
         else if (currentState == BossState.walk && !friends)
         {
+            Debug.Log("Trying to move");
             updateMoveAndAnimation();
         }
+
+        timer += Time.deltaTime;
     }
 
     void updateMoveAndAnimation()
@@ -126,7 +128,7 @@ public class BossEpi : MonoBehaviour
 
     public void hurt(string spread)
     {
-        
+        Debug.Log(spread);
         if(spread == correctSpread)
             health++;
 
@@ -138,6 +140,7 @@ public class BossEpi : MonoBehaviour
         {
             Debug.Log("Befriending start");
             friends = true;
+            slider.value = 1;
             StartCoroutine(friend());
             return;
         }
@@ -149,14 +152,18 @@ public class BossEpi : MonoBehaviour
 
         befriendjingle.SetActive(true);
         myAnimator.SetBool("friend", true);
-        spread1.gameObject.SetActive(true);
-        spread2.gameObject.SetActive(true);
-        recipeComponent.gameObject.SetActive(true);
-        ingredient.gameObject.SetActive(true);
+        angry.SetActive(false);
+        endmusic.SetActive(false);
+        HealthPot.SetActive(true);
+        KeyDrop.SetActive(true);
+        recipeDrop.SetActive(true);
 
         yield return new WaitForSeconds(3f);
         Debug.Log("setting to false");
-        //this.gameObject.SetActive(false);
+        HealthPot.transform.position = this.transform.position + new Vector3(0, 1, 0);
+        recipeDrop.transform.position = this.transform.position + new Vector3(1, 1, 0);
+        KeyDrop.transform.position = this.transform.position + new Vector3(1,0,0);
+        this.gameObject.SetActive(false);
 
     }
 
@@ -173,6 +180,7 @@ public class BossEpi : MonoBehaviour
     void MoveCharacter()
     {
         change.Normalize();
+        
         myRigidBody.MovePosition(transform.position + change * speed * Time.deltaTime);
     }
 
