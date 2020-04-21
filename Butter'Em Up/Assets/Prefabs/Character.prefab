@@ -211,7 +211,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1658789061
-  m_SortingLayer: 1
+  m_SortingLayer: 3
   m_SortingOrder: 1
   m_Sprite: {fileID: -6323267364357008151, guid: 3fcda9c3f2d6e234e9e313d015369bd6,
     type: 3}
@@ -421,7 +421,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1658789061
-  m_SortingLayer: 1
+  m_SortingLayer: 3
   m_SortingOrder: 1
   m_Sprite: {fileID: -8817426130257391540, guid: 3fcda9c3f2d6e234e9e313d015369bd6,
     type: 3}
@@ -537,7 +537,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1658789061
-  m_SortingLayer: 1
+  m_SortingLayer: 3
   m_SortingOrder: -2
   m_Sprite: {fileID: 5637020899135582185, guid: 9f636cd491bccda47aa5668cce8c393a,
     type: 3}
@@ -633,7 +633,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1658789061
-  m_SortingLayer: 1
+  m_SortingLayer: 3
   m_SortingOrder: -1
   m_Sprite: {fileID: 8372404247693859508, guid: 9f636cd491bccda47aa5668cce8c393a,
     type: 3}
@@ -715,7 +715,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1658789061
-  m_SortingLayer: 1
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: -5145059400507163617, guid: 9f636cd491bccda47aa5668cce8c393a,
     type: 3}
@@ -747,7 +747,6 @@ GameObject:
   - component: {fileID: 709620691}
   - component: {fileID: 709620692}
   - component: {fileID: 2082799075}
-  - component: {fileID: 1852485677143273461}
   m_Layer: 8
   m_Name: Character
   m_TagString: Player
@@ -937,20 +936,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerInventory: {fileID: 11400000, guid: af685a2419829af409ca56e166782b5c, type: 2}
   knifeSprite: {fileID: 7377098352219389548}
---- !u!114 &1852485677143273461
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7377098352821378923}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f0f6c688bba614978b9b9a4a87d97a4b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  playerInventory: {fileID: 11400000, guid: af685a2419829af409ca56e166782b5c, type: 2}
-  knifeSprite: {fileID: 0}
 --- !u!1 &7377098353487554959
 GameObject:
   m_ObjectHideFlags: 0
@@ -1019,7 +1004,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1658789061
-  m_SortingLayer: 1
+  m_SortingLayer: 3
   m_SortingOrder: -1
   m_Sprite: {fileID: 5524745695277153670, guid: 9f636cd491bccda47aa5668cce8c393a,
     type: 3}
