@@ -33,7 +33,7 @@ public class KnockBack: MonoBehaviour
                 Debug.Log("Knocking Bakc");
                 
                 enemy.GetComponent<WanderingAI>().currentState = EnemyState.stagger;
-                Vector2 difference = enemy.transform.position - this.transform.position;
+                Vector2 difference = enemy.gameObject.transform.position - this.transform.position;
 
                 Debug.Log(difference);
                 difference = difference.normalized * thrust;
@@ -52,7 +52,7 @@ public class KnockBack: MonoBehaviour
                 Debug.Log("Knocking Bakc");
 
                 enemy.GetComponent<BossEpi>().currentState = BossState.stagger;
-                Vector2 difference = enemy.transform.position - this.transform.position;
+                Vector2 difference = enemy.gameObject.transform.position - this.transform.position;
 
                 Debug.Log(difference);
                 difference = difference.normalized * thrust;
