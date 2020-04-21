@@ -30,6 +30,8 @@ public class BossEpi : MonoBehaviour
     [SerializeField] GameObject killMusic;
     [SerializeField] GameObject angry;
     [SerializeField] GameObject HealthPot;
+    [SerializeField] GameObject KeyDrop;
+    [SerializeField] GameObject recipeDrop;
 
     [SerializeField] private int health = 0;
     private bool friends = false;
@@ -151,6 +153,10 @@ public class BossEpi : MonoBehaviour
         befriendjingle.SetActive(true);
         myAnimator.SetBool("friend", true);
         angry.SetActive(false);
+        endmusic.SetActive(false);
+        HealthPot.SetActive(true);
+        KeyDrop.SetActive(true);
+        recipeDrop.SetActive(true);
 
         yield return new WaitForSeconds(3f);
         Debug.Log("setting to false");

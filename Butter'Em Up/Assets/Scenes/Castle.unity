@@ -1598,11 +1598,19 @@ PrefabInstance:
     - target: {fileID: 242960392, guid: d92e61470fed82f4da915d0496dee0e3, type: 3}
       propertyPath: endmusic
       value: 
-      objectReference: {fileID: 1624855659}
+      objectReference: {fileID: 1683445264}
     - target: {fileID: 242960392, guid: d92e61470fed82f4da915d0496dee0e3, type: 3}
       propertyPath: attackDelay
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 242960392, guid: d92e61470fed82f4da915d0496dee0e3, type: 3}
+      propertyPath: KeyDrop
+      value: 
+      objectReference: {fileID: 348062079}
+    - target: {fileID: 242960392, guid: d92e61470fed82f4da915d0496dee0e3, type: 3}
+      propertyPath: recipeDrop
+      value: 
+      objectReference: {fileID: 1227792854}
     - target: {fileID: 312684166, guid: d92e61470fed82f4da915d0496dee0e3, type: 3}
       propertyPath: kbtime
       value: 0.2

@@ -17,7 +17,6 @@ public class Befriend : MonoBehaviour
                             // 1 = enemy, 0 = befriended, 2 = death
     private Animator enemyAnimator;
     [SerializeField] GameObject befriendjingle;
-    [SerializeField] GameObject endmusic;
     [SerializeField] GameObject killMusic;
     [SerializeField] GameObject HealthPot;
 
@@ -55,7 +54,7 @@ public class Befriend : MonoBehaviour
         enemyAnimator.SetBool("friend", true);
         yield return new WaitForSeconds(1.5f);
         Debug.Log("setting to false");
-        endmusic.SetActive(false);
+        HealthPot.SetActive(false);
         HealthPot.SetActive(true);
         HealthPot.transform.position = this.transform.position;
         
