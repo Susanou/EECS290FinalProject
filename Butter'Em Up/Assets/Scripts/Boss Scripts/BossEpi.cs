@@ -23,6 +23,7 @@ public class BossEpi : MonoBehaviour
     public int speed;
     public string correctSpread;
     public BossState currentState;
+    public float attackDelay;
 
     [SerializeField] GameObject befriendjingle;
     [SerializeField] GameObject endmusic;
@@ -32,13 +33,15 @@ public class BossEpi : MonoBehaviour
 
     [SerializeField] private int health = 0;
     private bool friends = false;
-    
+
     private Rigidbody2D myRigidBody;
     private Vector3 change;
     private Animator myAnimator;
     private Transform target;
     private bool angryState = false;
-
+    private float timer;
+    [SerializeField] private bool entered;
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -46,7 +49,7 @@ public class BossEpi : MonoBehaviour
         myAnimator = this.GetComponent<Animator>();
         myRigidBody = this.GetComponent<Rigidbody2D>();
         target = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
-
+        friends = false;
 
         myAnimator.SetFloat("changeX", 0);
         myAnimator.SetFloat("changeY", -1);
@@ -56,48 +59,42 @@ public class BossEpi : MonoBehaviour
     void Update()
     {
         if(target.transform.position.x < maxBossArea.x && target.transform.position.y < maxBossArea.y
-            && target.transform.position.x > minBossArea.x && target.transform.position.y > minBossArea.y)
+            && target.transform.position.x > minBossArea.x && target.transform.position.y > minBossArea.y
+            && !entered)
         {
             currentState = BossState.walk;
+            entered = true;
         }
-        else
+        else if(!entered)
         {
             currentState = BossState.stagger;
         }
 
-
-        if(health >= maxHealth.RuntimeValue )
-        {
-            StartCoroutine(friend());
-        }
-
-        if(health > maxHealth.initialValue / 2 && !angryState)
+        if(health >= maxHealth.initialValue / 2 && !angryState)
         {
             angry.SetActive(true);
             angryState = true;
-            speed += 10;
-            this.GetComponent<KnockBack>().thrust += 10;
+            speed += 5;
+            this.GetComponent<KnockBack>().thrust += 2;
         }
 
 
         change = Vector2.zero;
         change = target.transform.position - this.transform.position;
 
-        if (change.magnitude <= attackRange && currentState != BossState.attack && !friends)
+        if (change.magnitude <= attackRange && currentState != BossState.attack && !friends && timer > attackDelay)
         {
             StartCoroutine(attack());
+            timer = 0;
         }
 
         else if (currentState == BossState.walk && !friends)
         {
+            Debug.Log("Trying to move");
             updateMoveAndAnimation();
         }
-        else
-        {
-            myAnimator.SetBool("walking", false);
-            myAnimator.SetFloat("changeX", 0);
-            myAnimator.SetFloat("changeY", -1);
-        }
+
+        timer += Time.deltaTime;
     }
 
     void updateMoveAndAnimation()
@@ -153,7 +150,7 @@ public class BossEpi : MonoBehaviour
 
         befriendjingle.SetActive(true);
         myAnimator.SetBool("friend", true);
-
+        angry.SetActive(false);
 
         yield return new WaitForSeconds(3f);
         Debug.Log("setting to false");
@@ -174,6 +171,7 @@ public class BossEpi : MonoBehaviour
     void MoveCharacter()
     {
         change.Normalize();
+        
         myRigidBody.MovePosition(transform.position + change * speed * Time.deltaTime);
     }
 

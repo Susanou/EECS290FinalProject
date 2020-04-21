@@ -53,11 +53,13 @@ public class KnockBack: MonoBehaviour
 
                 enemy.GetComponent<BossEpi>().currentState = BossState.stagger;
                 Vector2 difference = enemy.transform.position - this.transform.position;
+
+                Debug.Log(difference);
                 difference = difference.normalized * thrust;
+                Debug.Log(difference);
                 enemy.AddForce(difference, ForceMode2D.Impulse);
 
                 StartCoroutine(BossKnockCo(enemy));
-                enemy.GetComponent<BossEpi>().currentState = BossState.walk;
             }
         }
         
@@ -85,7 +87,7 @@ public class KnockBack: MonoBehaviour
     {
         if (e != null)
         {
-            yield return new WaitForSeconds(kbtime+1);
+            yield return new WaitForSeconds(kbtime+0.5f);
             e.velocity = Vector2.zero;
             e.GetComponent<BossEpi>().currentState = BossState.walk;
         }
