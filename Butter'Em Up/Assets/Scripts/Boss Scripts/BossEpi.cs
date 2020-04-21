@@ -34,7 +34,7 @@ public class BossEpi : MonoBehaviour
     [SerializeField] GameObject recipeDrop;
     [SerializeField] GameObject Portal;
 
-    [SerializeField] private int health = 0;
+    private int health = 0;
     private bool friends = false;
 
     private Rigidbody2D myRigidBody;
@@ -43,7 +43,7 @@ public class BossEpi : MonoBehaviour
     private Transform target;
     private bool angryState = false;
     private float timer;
-    [SerializeField] private bool entered;
+    private bool entered;
     
     // Start is called before the first frame update
     void Start()
