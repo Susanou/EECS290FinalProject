@@ -266,11 +266,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1857230812, guid: 1800549976415724a8b8bd38f1852355, type: 3}
       propertyPath: m_UseAutoMass
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1857230812, guid: 1800549976415724a8b8bd38f1852355, type: 3}
       propertyPath: m_Mass
-      value: 11.2909565
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1238856453085755184, guid: 1800549976415724a8b8bd38f1852355,
         type: 3}
@@ -1263,11 +1263,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1857230812, guid: 1800549976415724a8b8bd38f1852355, type: 3}
       propertyPath: m_UseAutoMass
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1857230812, guid: 1800549976415724a8b8bd38f1852355, type: 3}
       propertyPath: m_Mass
-      value: 11.2909565
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 332783198581700010, guid: 1800549976415724a8b8bd38f1852355,
         type: 3}
@@ -1533,11 +1533,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 90535625, guid: d92e61470fed82f4da915d0496dee0e3, type: 3}
       propertyPath: m_UseAutoMass
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 90535625, guid: d92e61470fed82f4da915d0496dee0e3, type: 3}
       propertyPath: m_Mass
-      value: 3.0327802
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 90535626, guid: d92e61470fed82f4da915d0496dee0e3, type: 3}
       propertyPath: m_Enabled
@@ -62759,10 +62759,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 429347396, guid: 1800549976415724a8b8bd38f1852355, type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 1330886777, guid: 1800549976415724a8b8bd38f1852355, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
@@ -62770,14 +62766,6 @@ PrefabInstance:
     - target: {fileID: 1330886777, guid: 1800549976415724a8b8bd38f1852355, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1857230812, guid: 1800549976415724a8b8bd38f1852355, type: 3}
-      propertyPath: m_UseAutoMass
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1857230812, guid: 1800549976415724a8b8bd38f1852355, type: 3}
-      propertyPath: m_Mass
-      value: 11.2909565
       objectReference: {fileID: 0}
     - target: {fileID: 1238856453085755184, guid: 1800549976415724a8b8bd38f1852355,
         type: 3}
@@ -62841,11 +62829,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1521431043642679258, guid: 1800549976415724a8b8bd38f1852355,
         type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1521431043642679258, guid: 1800549976415724a8b8bd38f1852355,
-        type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
@@ -62856,14 +62839,14 @@ PrefabInstance:
       objectReference: {fileID: 676917636}
     - target: {fileID: 3168142526768003449, guid: 1800549976415724a8b8bd38f1852355,
         type: 3}
-      propertyPath: killMusic
-      value: 
-      objectReference: {fileID: 1877139313}
-    - target: {fileID: 3168142526768003449, guid: 1800549976415724a8b8bd38f1852355,
-        type: 3}
       propertyPath: endmusic
       value: 
       objectReference: {fileID: 4503609}
+    - target: {fileID: 3168142526768003449, guid: 1800549976415724a8b8bd38f1852355,
+        type: 3}
+      propertyPath: killMusic
+      value: 
+      objectReference: {fileID: 1877139313}
     - target: {fileID: 3168142526768003449, guid: 1800549976415724a8b8bd38f1852355,
         type: 3}
       propertyPath: HealthPot
@@ -62954,11 +62937,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1857230812, guid: 1800549976415724a8b8bd38f1852355, type: 3}
       propertyPath: m_UseAutoMass
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1857230812, guid: 1800549976415724a8b8bd38f1852355, type: 3}
       propertyPath: m_Mass
-      value: 11.2909565
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1238856453085755184, guid: 1800549976415724a8b8bd38f1852355,
         type: 3}
@@ -79206,12 +79189,12 @@ PrefabInstance:
     - target: {fileID: 3355181244681544705, guid: 813086c8e87653394be9ccfbe61770da,
         type: 3}
       propertyPath: m_UseAutoMass
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3355181244681544705, guid: 813086c8e87653394be9ccfbe61770da,
         type: 3}
       propertyPath: m_Mass
-      value: 3.8988051
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 5707866912915158061, guid: 813086c8e87653394be9ccfbe61770da,
         type: 3}

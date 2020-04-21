@@ -77,7 +77,7 @@ public class KnockBack: MonoBehaviour
     {
         if (e != null)
         {
-            yield return new WaitForSeconds(kbtime);
+            yield return new WaitForSeconds(kbtime+0.5f);
             e.velocity = Vector2.zero;
             e.GetComponent<WanderingAI>().currentState = EnemyState.pursuit;
         }
