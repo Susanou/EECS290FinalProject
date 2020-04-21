@@ -30,15 +30,23 @@ public class HeartManager : MonoBehaviour
         }
     }
 
+    public void addContrainers()
+    {
+        heartContainers++;
+        InitHearts();
+        playerHealth.RuntimeValue = heartContainers;
+    }
+
     public void updateHearts()
     {
 
-        int tempHealth = (int)playerHealth.RuntimeValue-1;
+        int tempHealth = (int)Mathf.Min(playerHealth.RuntimeValue-1, heartContainers);
 
         for(int i = 0; i < heartContainers; i++)
         {
             if(i <= tempHealth)
             {
+                hearts[i].gameObject.SetActive(true);
                 hearts[i].sprite = fullHeart;
             }else if(i > tempHealth)
             {
