@@ -33,7 +33,7 @@ public class KnockBack: MonoBehaviour
                 Debug.Log("Knocking Bakc");
                 
                 enemy.GetComponent<WanderingAI>().currentState = EnemyState.stagger;
-                Vector2 difference = enemy.transform.position - this.transform.position;
+                Vector2 difference = enemy.gameObject.transform.position - this.transform.position;
 
                 Debug.Log(difference);
                 difference = difference.normalized * thrust;
@@ -52,12 +52,14 @@ public class KnockBack: MonoBehaviour
                 Debug.Log("Knocking Bakc");
 
                 enemy.GetComponent<BossEpi>().currentState = BossState.stagger;
-                Vector2 difference = enemy.transform.position - this.transform.position;
+                Vector2 difference = enemy.gameObject.transform.position - this.transform.position;
+
+                Debug.Log(difference);
                 difference = difference.normalized * thrust;
+                Debug.Log(difference);
                 enemy.AddForce(difference, ForceMode2D.Impulse);
 
                 StartCoroutine(BossKnockCo(enemy));
-                enemy.GetComponent<BossEpi>().currentState = BossState.walk;
             }
         }
         
@@ -75,7 +77,7 @@ public class KnockBack: MonoBehaviour
     {
         if (e != null)
         {
-            yield return new WaitForSeconds(kbtime);
+            yield return new WaitForSeconds(kbtime+0.5f);
             e.velocity = Vector2.zero;
             e.GetComponent<WanderingAI>().currentState = EnemyState.pursuit;
         }
@@ -85,7 +87,7 @@ public class KnockBack: MonoBehaviour
     {
         if (e != null)
         {
-            yield return new WaitForSeconds(kbtime+1);
+            yield return new WaitForSeconds(kbtime+0.5f);
             e.velocity = Vector2.zero;
             e.GetComponent<BossEpi>().currentState = BossState.walk;
         }

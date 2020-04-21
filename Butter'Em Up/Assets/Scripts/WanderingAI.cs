@@ -55,7 +55,6 @@ public class WanderingAI : MonoBehaviour {
         else if (change.magnitude >= giveUp)
         {
             Debug.Log("giving up");
-            myAnimator.SetBool("walking", false);
             myAnimator.SetFloat("changeX", 0);
             myAnimator.SetFloat("changeY", -1);
         }
