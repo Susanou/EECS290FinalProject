@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 //this is from the 2D GameKit Code with some modifications to fit our use case.
 [RequireComponent(typeof(Collider2D))]
@@ -8,13 +9,13 @@ public class TransporterScript : MonoBehaviour
 {
    public enum TransitionType
         {
-            DifferentZone, DifferentNonGameplayScene, SameScene,
+            DifferentZone, DifferentNonGameplayScene,
         }
 
 
         public enum TransitionWhen
         {
-            ExternalCall, InteractPressed, OnTriggerEnter,
+            ExternalCall, OnTriggerEnter,
         }
 
     
@@ -58,19 +59,13 @@ public class TransporterScript : MonoBehaviour
 
         void Update ()
         {
-
             if(!m_TransitioningGameObjectPresent)
                 return;
-
-            if (transitionWhen == TransitionWhen.InteractPressed)
-            {
-                TransitionInternal ();
-            }
         }
 
         protected void TransitionInternal ()
-        {        
-           SceneController.TransitionToScene (this);
+        {
+            SceneManager.LoadScene(newSceneName, LoadSceneMode.Single);
         }
 
         public void Transition ()
