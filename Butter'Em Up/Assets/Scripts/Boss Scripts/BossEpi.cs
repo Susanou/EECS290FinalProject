@@ -186,6 +186,7 @@ public class BossEpi : MonoBehaviour
         myRigidBody.MovePosition(transform.position + change * speed * Time.deltaTime);
     }
 
+#if UNITY_EDITOR
     private void OnDrawGizmos()
     {
 
@@ -194,4 +195,5 @@ public class BossEpi : MonoBehaviour
 
         UnityEditor.Handles.DrawWireCube(this.transform.position, maxBossArea-minBossArea);
     }
+#endif
 }
