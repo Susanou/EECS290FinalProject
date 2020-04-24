@@ -10,7 +10,6 @@ public class AddContainer : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-
         if (other.gameObject.CompareTag("Player") && !other.isTrigger)
         {
             healthManager.GetComponent<HeartManager>().addContrainers();
