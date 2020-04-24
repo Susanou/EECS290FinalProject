@@ -942,6 +942,7 @@ GameObject:
   - component: {fileID: 5879301553555235225}
   - component: {fileID: 5879301553555235227}
   - component: {fileID: 5879301553555235226}
+  - component: {fileID: 5879301553087024346}
   m_Layer: 0
   m_Name: Boss Hallah
   m_TagString: BossHallah
@@ -1040,3 +1041,35 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.3984377, y: 3.8185782}
   m_EdgeRadius: 0
+--- !u!114 &5879301553087024346
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5879301553555235303}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c8293b6a776e91f42a7a7bf2fef3d68e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxBossArea: {x: 0, y: 0}
+  minBossArea: {x: 0, y: 0}
+  slider: {fileID: 5879301553505788609}
+  sliderUI: {fileID: 5879301553119560852}
+  attackRange: 0
+  maxHealth: {fileID: 11400000, guid: f531aa625bb0a1a4d9395dc98d46542b, type: 2}
+  speed: 0
+  correctSpread: Nutella
+  currentState: 0
+  attackDelay: 0
+  projectileSpeed: 10
+  hat: {fileID: 5172385047146482571, guid: 0e16841357127ed44b7b817dfc23e6d1, type: 3}
+  befriendjingle: {fileID: 0}
+  endmusic: {fileID: 0}
+  killMusic: {fileID: 0}
+  angry: {fileID: 0}
+  HealthPot: {fileID: 0}
+  KeyDrop: {fileID: 0}
+  recipeDrop: {fileID: 0}
+  Portal: {fileID: 0}

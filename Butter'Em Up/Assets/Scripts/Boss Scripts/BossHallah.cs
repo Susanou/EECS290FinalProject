@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class BossHeallah : MonoBehaviour
+public class BossHallah : MonoBehaviour
 {
 
     public Vector2 maxBossArea;
