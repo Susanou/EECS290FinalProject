@@ -10,13 +10,13 @@ public class BossHallah : MonoBehaviour
     public Vector2 minBossArea;
     public Slider slider;
     public GameObject sliderUI;
-    public float attackRange;
     public FloatValue maxHealth;
     public int speed;
     public string correctSpread;
     public BossState currentState;
     public float attackDelay;
     public float projectileSpeed = 10.0f;
+    public Vector2[] waypoints;
 
     public GameObject hat;
     private GameObject _hat;
@@ -35,7 +35,7 @@ public class BossHallah : MonoBehaviour
 
     private int health = 0;
     private bool friends = false;
-
+    private int waypointCOunter = 0;
     private Rigidbody2D myRigidBody;
     private Vector3 change;
     private Animator myAnimator;
@@ -78,7 +78,6 @@ public class BossHallah : MonoBehaviour
             angryState = true;
             speed += 5;
             projectileSpeed += 5;
-            this.GetComponent<KnockBack>().thrust += 2;
         }
 
 
@@ -87,11 +86,29 @@ public class BossHallah : MonoBehaviour
 
         if (currentState != BossState.attack && !friends && timer > attackDelay)
         {
-            //StartCoroutine(attack());
-            _hat = Instantiate(hat) as GameObject;
-            _hat.transform.position = this.transform.position;
-            _hat.GetComponent<Rigidbody2D>().velocity = change.normalized*projectileSpeed;
-            timer = 0;
+            if (!angryState)
+            {
+                //StartCoroutine(attack());
+                _hat = Instantiate(hat) as GameObject;
+                _hat.transform.position = this.transform.position;
+                _hat.GetComponent<Rigidbody2D>().velocity = change.normalized * projectileSpeed;
+                timer = 0;
+            }
+            else
+            {
+                _hat = Instantiate(hat) as GameObject;
+                _hat2 = Instantiate(hat) as GameObject;
+                _hat3 = Instantiate(hat) as GameObject;
+                Vector3 dir2 = this.transform.position - target.position - new Vector3(10, 0, 0);
+                Vector3 dir3 = this.transform.position - target.position - new Vector3(10, 0, 0);
+                _hat.transform.position = this.transform.position;
+                _hat.GetComponent<Rigidbody2D>().velocity = change.normalized * projectileSpeed;
+                _hat2.transform.position = this.transform.position;
+                _hat2.GetComponent<Rigidbody2D>().velocity = dir2.normalized * projectileSpeed;
+                _hat3.transform.position = this.transform.position;
+                _hat3.GetComponent<Rigidbody2D>().velocity = dir3.normalized * projectileSpeed;
+                timer = 0;
+            }
         }
 
         //else if (currentState == BossState.walk && !friends)
@@ -165,9 +182,9 @@ public class BossHallah : MonoBehaviour
 
         yield return new WaitForSeconds(3f);
         Debug.Log("setting to false");
-        HealthPot.transform.position = this.transform.position + new Vector3(0, 1, 0);
-        recipeDrop.transform.position = this.transform.position + new Vector3(1, 1, 0);
-        KeyDrop.transform.position = this.transform.position + new Vector3(1, 0, 0);
+        HealthPot.transform.position = this.transform.position + new Vector3(0, 4, 0);
+        recipeDrop.transform.position = this.transform.position + new Vector3(5, 5, 0);
+        KeyDrop.transform.position = this.transform.position + new Vector3(3, 0, 0);
         this.gameObject.SetActive(false);
 
     }
@@ -194,9 +211,12 @@ public class BossHallah : MonoBehaviour
     {
 
         UnityEditor.Handles.color = Color.green;
-        UnityEditor.Handles.DrawWireDisc(this.transform.position, this.transform.forward, this.attackRange);
-
         UnityEditor.Handles.DrawWireCube(this.transform.position, maxBossArea - minBossArea);
+
+        Gizmos.color = Color.cyan;
+        Gizmos.DrawLine(this.transform.position, target.position);
+        Gizmos.DrawLine(this.transform.position, target.position - new Vector3(10,0,0));
+        Gizmos.DrawLine(this.transform.position, target.position + new Vector3(10,0,0));
     }
 #endif
 }

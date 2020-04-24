@@ -162,9 +162,9 @@ public class BossEpi : MonoBehaviour
 
         yield return new WaitForSeconds(3f);
         Debug.Log("setting to false");
-        HealthPot.transform.position = this.transform.position + new Vector3(0, 1, 0);
-        recipeDrop.transform.position = this.transform.position + new Vector3(1, 1, 0);
-        KeyDrop.transform.position = this.transform.position + new Vector3(1,0,0);
+        HealthPot.transform.position = this.transform.position + new Vector3(0, 4, 0);
+        recipeDrop.transform.position = this.transform.position + new Vector3(5, 5, 0);
+        KeyDrop.transform.position = this.transform.position + new Vector3(3,0,0);
         this.gameObject.SetActive(false);
 
     }
