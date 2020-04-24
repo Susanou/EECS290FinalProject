@@ -55,7 +55,7 @@ public class Attack1 : MonoBehaviour
         {
             other.GetComponent<Befriend>().hurt(spread);
         }
-        else if (other.CompareTag("Boss"))
+        else if (other.CompareTag("BossEpi"))
         {
             other.GetComponent<BossEpi>().hurt(spread);
         }

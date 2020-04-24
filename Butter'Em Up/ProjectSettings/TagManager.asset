@@ -7,6 +7,10 @@ TagManager:
   - Damageable
   - Friend
   - Boss
+  - BossEpi
+  - BossDougnut
+  - BossHallah
+  - BossBao
   layers:
   - Default
   - TransparentFX

@@ -44,7 +44,7 @@ public class KnockBack: MonoBehaviour
                
             }
         }
-        else if (other.gameObject.CompareTag("Boss"))
+        else if (other.gameObject.CompareTag("BossEpi"))
         {
             Rigidbody2D enemy = other.GetComponent<Rigidbody2D>();
             if (enemy != null)

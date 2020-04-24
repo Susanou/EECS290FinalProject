@@ -565,7 +565,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1851439378}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.01999998, y: 0.12999964, z: -1.6567755}
+  m_LocalPosition: {x: 0.61, y: 0.12999964, z: -1.6567755}
   m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_Children: []
   m_Father: {fileID: 5698415287774685974}
@@ -848,7 +848,7 @@ GameObject:
   - component: {fileID: 242960392}
   m_Layer: 0
   m_Name: "Boss \xE9pi"
-  m_TagString: Boss
+  m_TagString: BossEpi
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -887,7 +887,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 8
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 0
@@ -909,7 +909,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.074370384, y: -1.827385}
+  m_Offset: {x: 0.14354515, y: -1.9175069}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -920,7 +920,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.1487408, y: 0.66002274}
+  m_Size: {x: 2.1402702, y: 0.74803114}
   m_EdgeRadius: 0
 --- !u!95 &5698415287851965921
 Animator:
@@ -935,7 +935,7 @@ Animator:
   m_Controller: {fileID: 9100000, guid: b907875aa5d98084fa0314f4848536a3, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
-  m_ApplyRootMotion: 0
+  m_ApplyRootMotion: 1
   m_LinearVelocityBlending: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
@@ -954,7 +954,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.18323803, y: 0.06467199}
+  m_Offset: {x: 0.1142292, y: 0.006793499}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -965,7 +965,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 2.0131998, y: 4.449191}
+  m_Size: {x: 1.6317863, y: 4.564948}
   m_EdgeRadius: 0
 --- !u!114 &312684166
 MonoBehaviour:
@@ -980,7 +980,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dmg: 1
-  kbtime: 2
+  kbtime: 0.2
   thrust: 10
 --- !u!114 &242960392
 MonoBehaviour:
@@ -998,16 +998,20 @@ MonoBehaviour:
   minBossArea: {x: 70, y: -9}
   slider: {fileID: 415901923}
   sliderUI: {fileID: 1465296181}
-  attackRange: 7.5
+  attackRange: 4
   maxHealth: {fileID: 11400000, guid: 610bd5de54e878a4db2597e8a5a5594d, type: 2}
   speed: 7
   correctSpread: Margarine
+  currentState: 0
+  attackDelay: 3
   befriendjingle: {fileID: 0}
   endmusic: {fileID: 0}
   killMusic: {fileID: 0}
   angry: {fileID: 7346988548821937384}
   HealthPot: {fileID: 0}
-  health: 0
+  KeyDrop: {fileID: 0}
+  recipeDrop: {fileID: 0}
+  Portal: {fileID: 0}
 --- !u!1 &5698415287847055122
 GameObject:
   m_ObjectHideFlags: 0
