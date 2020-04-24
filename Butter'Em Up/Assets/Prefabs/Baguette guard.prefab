@@ -1322,7 +1322,7 @@ Animator:
   m_Controller: {fileID: 9100000, guid: 3b19373e9e213ac4cb3c23f79a20d978, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
-  m_ApplyRootMotion: 0
+  m_ApplyRootMotion: 1
   m_LinearVelocityBlending: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
@@ -1355,10 +1355,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 66ecd76292bed534b825e1ef74508ce5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dist: 0
-  giveUp: 0
-  attackRange: 0
-  speed: 0
+  dist: 8
+  giveUp: 10
+  attackRange: 3
+  speed: 5
   currentState: 0
   target: {fileID: 0}
 --- !u!114 &9125969211625292084
@@ -1376,8 +1376,8 @@ MonoBehaviour:
   slider: {fileID: 1207022697}
   hpSlider: {fileID: 1412240305}
   sliderUI: {fileID: 568524075}
-  correctSpread: 
-  totalHP: {fileID: 0}
+  correctSpread: Nutella
+  totalHP: {fileID: 11400000, guid: 4bee1966465f5be49b7be9eb1f73a29c, type: 2}
   befriendjingle: {fileID: 0}
   killMusic: {fileID: 0}
   HealthPot: {fileID: 0}
