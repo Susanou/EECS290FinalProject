@@ -35,9 +35,9 @@ public class BossHallah : MonoBehaviour
 
     private int health = 0;
     private bool friends = false;
-    private int waypointCOunter = 0;
+    private int waypointCounter = 0;
     private Rigidbody2D myRigidBody;
-    private Vector3 change;
+    private Vector2 change;
     private Animator myAnimator;
     private Transform target;
     private bool angryState = false;
@@ -52,6 +52,7 @@ public class BossHallah : MonoBehaviour
         myRigidBody = this.GetComponent<Rigidbody2D>();
         target = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
         friends = false;
+        waypointCounter = 0;
 
         //myAnimator.SetFloat("changeX", 0);
         //myAnimator.SetFloat("changeY", -1);
@@ -82,7 +83,11 @@ public class BossHallah : MonoBehaviour
 
 
         change = Vector2.zero;
-        change = target.transform.position - this.transform.position;
+        change = waypoints[waypointCounter] - (Vector2)this.transform.position;
+        if(change.magnitude < 0.1f)
+        {
+            change = Vector2.zero;
+        }
 
         if (currentState != BossState.attack && !friends && timer > attackDelay)
         {
@@ -91,7 +96,8 @@ public class BossHallah : MonoBehaviour
                 //StartCoroutine(attack());
                 _hat = Instantiate(hat) as GameObject;
                 _hat.transform.position = this.transform.position;
-                _hat.GetComponent<Rigidbody2D>().velocity = change.normalized * projectileSpeed;
+                Vector3 dir = target.position - this.transform.position;
+                _hat.GetComponent<Rigidbody2D>().velocity = dir.normalized * projectileSpeed;
                 timer = 0;
             }
             else
@@ -99,10 +105,11 @@ public class BossHallah : MonoBehaviour
                 _hat = Instantiate(hat) as GameObject;
                 _hat2 = Instantiate(hat) as GameObject;
                 _hat3 = Instantiate(hat) as GameObject;
-                Vector3 dir2 = this.transform.position - target.position - new Vector3(10, 0, 0);
-                Vector3 dir3 = this.transform.position - target.position - new Vector3(10, 0, 0);
+                Vector3 dir = target.position - this.transform.position;
+                Vector3 dir2 = target.position - this.transform.position - new Vector3(10, 0, 0);
+                Vector3 dir3 = target.position - this.transform.position - new Vector3(10, 0, 0);
                 _hat.transform.position = this.transform.position;
-                _hat.GetComponent<Rigidbody2D>().velocity = change.normalized * projectileSpeed;
+                _hat.GetComponent<Rigidbody2D>().velocity = dir.normalized * projectileSpeed;
                 _hat2.transform.position = this.transform.position;
                 _hat2.GetComponent<Rigidbody2D>().velocity = dir2.normalized * projectileSpeed;
                 _hat3.transform.position = this.transform.position;
@@ -111,19 +118,28 @@ public class BossHallah : MonoBehaviour
             }
         }
 
-        //else if (currentState == BossState.walk && !friends)
-        //{
-        //    Debug.Log("Trying to move");
-        //    updateMoveAndAnimation();
-        //}
+        if (currentState == BossState.walk && !friends)
+        {
+            MoveCharacter();
+            //updateMoveAndAnimation();
+        }
+
+        if (change == Vector2.zero)
+            waypointCounter = (waypointCounter + 1) % waypoints.Length;
 
         timer += Time.deltaTime;
+    }
+
+    private void FixedUpdate()
+    {
+        
+
     }
 
     void updateMoveAndAnimation()
     {
 
-        if (change != Vector3.zero)
+        if (change != Vector2.zero)
         {
 
             MoveCharacter();
@@ -144,8 +160,11 @@ public class BossHallah : MonoBehaviour
 
         }
         else
+        {
             myAnimator.SetBool("walking", false);
+        }
     }
+            
 
     public void hurt(string spread)
     {
@@ -202,8 +221,8 @@ public class BossHallah : MonoBehaviour
     void MoveCharacter()
     {
         change.Normalize();
-
-        myRigidBody.MovePosition(transform.position + change * speed * Time.deltaTime);
+        Debug.Log("Trying to move" + change);
+        myRigidBody.MovePosition((Vector2)this.transform.position + change * speed * Time.deltaTime);
     }
 
 #if UNITY_EDITOR
