@@ -102,12 +102,13 @@ public class BossHallah : MonoBehaviour
             }
             else
             {
+
                 _hat = Instantiate(hat) as GameObject;
                 _hat2 = Instantiate(hat) as GameObject;
                 _hat3 = Instantiate(hat) as GameObject;
                 Vector3 dir = target.position - this.transform.position;
                 Vector3 dir2 = target.position - this.transform.position - new Vector3(10, 0, 0);
-                Vector3 dir3 = target.position - this.transform.position - new Vector3(10, 0, 0);
+                Vector3 dir3 = target.position - this.transform.position + new Vector3(10, 0, 0);
                 _hat.transform.position = this.transform.position;
                 _hat.GetComponent<Rigidbody2D>().velocity = dir.normalized * projectileSpeed;
                 _hat2.transform.position = this.transform.position;
