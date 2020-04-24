@@ -6,8 +6,9 @@ public class Projectile : MonoBehaviour
 {
 	public int damage = 1;
 
-	void OnTriggerEnter(Collider other)
+	void OnTriggerEnter2D(Collider2D other)
 	{
-		Destroy(this.gameObject);
+		if(!other.gameObject.CompareTag("BossHallah"))
+			Destroy(this.gameObject);
 	}
 }

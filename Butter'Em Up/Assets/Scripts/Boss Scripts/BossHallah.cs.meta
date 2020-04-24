@@ -3,7 +3,19 @@ guid: c8293b6a776e91f42a7a7bf2fef3d68e
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - slider: {instanceID: 0}
+  - sliderUI: {instanceID: 0}
+  - maxHealth: {instanceID: 0}
+  - hat: {fileID: 5172385047146482571, guid: 0e16841357127ed44b7b817dfc23e6d1, type: 3}
+  - befriendjingle: {instanceID: 0}
+  - endmusic: {instanceID: 0}
+  - killMusic: {instanceID: 0}
+  - angry: {instanceID: 0}
+  - HealthPot: {instanceID: 0}
+  - KeyDrop: {instanceID: 0}
+  - recipeDrop: {instanceID: 0}
+  - Portal: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

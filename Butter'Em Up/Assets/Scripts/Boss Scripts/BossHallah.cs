@@ -53,8 +53,8 @@ public class BossHallah : MonoBehaviour
         target = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
         friends = false;
 
-        myAnimator.SetFloat("changeX", 0);
-        myAnimator.SetFloat("changeY", -1);
+        //myAnimator.SetFloat("changeX", 0);
+        //myAnimator.SetFloat("changeY", -1);
     }
 
     // Update is called once per frame
@@ -85,20 +85,20 @@ public class BossHallah : MonoBehaviour
         change = Vector2.zero;
         change = target.transform.position - this.transform.position;
 
-        if (change.magnitude <= attackRange && currentState != BossState.attack && !friends && timer > attackDelay)
+        if (currentState != BossState.attack && !friends && timer > attackDelay)
         {
-            StartCoroutine(attack());
+            //StartCoroutine(attack());
             _hat = Instantiate(hat) as GameObject;
-            Vector2 dir = target.transform.position - this.transform.position;
-            _hat.GetComponent<Rigidbody2D>().velocity = dir.normalized*projectileSpeed;
+            _hat.transform.position = this.transform.position;
+            _hat.GetComponent<Rigidbody2D>().velocity = change.normalized*projectileSpeed;
             timer = 0;
         }
 
-        else if (currentState == BossState.walk && !friends)
-        {
-            Debug.Log("Trying to move");
-            updateMoveAndAnimation();
-        }
+        //else if (currentState == BossState.walk && !friends)
+        //{
+        //    Debug.Log("Trying to move");
+        //    updateMoveAndAnimation();
+        //}
 
         timer += Time.deltaTime;
     }

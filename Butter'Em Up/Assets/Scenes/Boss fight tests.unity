@@ -10240,20 +10240,15 @@ PrefabInstance:
       propertyPath: killMusic
       value: 
       objectReference: {fileID: 1224602853}
-    - target: {fileID: 9125969211625292084, guid: 4240ac2f5a5248048a9bd98c08db06df,
-        type: 3}
-      propertyPath: correctSpread
-      value: Nutella
-      objectReference: {fileID: 0}
     - target: {fileID: 9125969212745297708, guid: 4240ac2f5a5248048a9bd98c08db06df,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 19.800785
+      value: -2.5
       objectReference: {fileID: 0}
     - target: {fileID: 9125969212745297708, guid: 4240ac2f5a5248048a9bd98c08db06df,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 26.70563
+      value: 38.8
       objectReference: {fileID: 0}
     - target: {fileID: 9125969212745297708, guid: 4240ac2f5a5248048a9bd98c08db06df,
         type: 3}
@@ -70343,6 +70338,31 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5879301553087024346, guid: 4ebaed3ad61630348bf1e42d26aeea40,
+        type: 3}
+      propertyPath: maxBossArea.x
+      value: 94
+      objectReference: {fileID: 0}
+    - target: {fileID: 5879301553087024346, guid: 4ebaed3ad61630348bf1e42d26aeea40,
+        type: 3}
+      propertyPath: maxBossArea.y
+      value: 43
+      objectReference: {fileID: 0}
+    - target: {fileID: 5879301553087024346, guid: 4ebaed3ad61630348bf1e42d26aeea40,
+        type: 3}
+      propertyPath: minBossArea.x
+      value: 35
+      objectReference: {fileID: 0}
+    - target: {fileID: 5879301553087024346, guid: 4ebaed3ad61630348bf1e42d26aeea40,
+        type: 3}
+      propertyPath: minBossArea.y
+      value: -8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5879301553087024346, guid: 4ebaed3ad61630348bf1e42d26aeea40,
+        type: 3}
+      propertyPath: attackDelay
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 5879301553267336471, guid: 4ebaed3ad61630348bf1e42d26aeea40,
         type: 3}
       propertyPath: m_AnchorMax.x
@@ -70356,12 +70376,12 @@ PrefabInstance:
     - target: {fileID: 5879301553555235224, guid: 4ebaed3ad61630348bf1e42d26aeea40,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 62.498905
+      value: 67.4
       objectReference: {fileID: 0}
     - target: {fileID: 5879301553555235224, guid: 4ebaed3ad61630348bf1e42d26aeea40,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 16.956251
+      value: 21.3
       objectReference: {fileID: 0}
     - target: {fileID: 5879301553555235224, guid: 4ebaed3ad61630348bf1e42d26aeea40,
         type: 3}
