@@ -38,7 +38,7 @@ public class WanderingAI : MonoBehaviour {
         myAnimator.SetFloat("changeY", -1);
     }
 
-    void Update()
+    void FixedUpdate()
     {
         change = Vector2.zero;
         change = target.transform.position - this.transform.position;
@@ -101,7 +101,7 @@ public class WanderingAI : MonoBehaviour {
     void MoveCharacter()
     {
         change.Normalize();
-        myRigidbody.MovePosition((Vector2)this.transform.position + change * speed * Time.deltaTime);
+        myRigidbody.MovePosition((Vector2)this.transform.position + change * speed * Time.fixedDeltaTime);
 
     }
 

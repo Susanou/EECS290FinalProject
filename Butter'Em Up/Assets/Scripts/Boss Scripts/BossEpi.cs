@@ -59,7 +59,7 @@ public class BossEpi : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         if(target.transform.position.x < maxBossArea.x && target.transform.position.y < maxBossArea.y
             && target.transform.position.x > minBossArea.x && target.transform.position.y > minBossArea.y
@@ -183,7 +183,7 @@ public class BossEpi : MonoBehaviour
     {
         change.Normalize();
         
-        myRigidBody.MovePosition(transform.position + change * speed * Time.deltaTime);
+        myRigidBody.MovePosition(transform.position + change * speed * Time.fixedDeltaTime);
     }
 
 #if UNITY_EDITOR

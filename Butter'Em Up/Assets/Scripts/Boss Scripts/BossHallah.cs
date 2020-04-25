@@ -59,7 +59,7 @@ public class BossHallah : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         if (target.transform.position.x < maxBossArea.x && target.transform.position.y < maxBossArea.y
             && target.transform.position.x > minBossArea.x && target.transform.position.y > minBossArea.y
@@ -129,12 +129,6 @@ public class BossHallah : MonoBehaviour
             waypointCounter = (waypointCounter + 1) % waypoints.Length;
 
         timer += Time.deltaTime;
-    }
-
-    private void FixedUpdate()
-    {
-        
-
     }
 
     void updateMoveAndAnimation()
@@ -223,7 +217,7 @@ public class BossHallah : MonoBehaviour
     {
         change.Normalize();
         Debug.Log("Trying to move" + change);
-        myRigidBody.MovePosition((Vector2)this.transform.position + change * speed * Time.deltaTime);
+        myRigidBody.MovePosition((Vector2)this.transform.position + change * speed * Time.fixedDeltaTime);
     }
 
 #if UNITY_EDITOR
