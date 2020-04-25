@@ -38,7 +38,7 @@ public class WanderingAI : MonoBehaviour {
         myAnimator.SetFloat("changeY", -1);
     }
 
-    void FixedUpdate()
+    void Update()
     {
         change = Vector2.zero;
         change = target.transform.position - this.transform.position;
@@ -60,6 +60,16 @@ public class WanderingAI : MonoBehaviour {
         }
 
 
+    }
+
+    void FixedUpdate()
+    {
+        if (change.magnitude >= giveUp)
+        {
+            Debug.Log("giving up");
+            myAnimator.SetFloat("changeX", 0);
+            myAnimator.SetFloat("changeY", -1);
+        }
     }
 
     void updateMoveAndAnimation()

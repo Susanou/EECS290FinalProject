@@ -46,6 +46,8 @@ public class Befriend : MonoBehaviour
 
     private IEnumerator friend()
     {
+        this.gameObject.tag = "DeadFriend";
+
         Debug.Log("You have befriended this bread");
 
         befriendjingle.SetActive(true);
@@ -65,6 +67,7 @@ public class Befriend : MonoBehaviour
 
     private IEnumerator dead()
     {
+        this.gameObject.tag = "DeadFriend";
         killMusic.SetActive(true);
         enemyAnimator.SetBool("dead", true);
         Debug.Log("You killed that bread");

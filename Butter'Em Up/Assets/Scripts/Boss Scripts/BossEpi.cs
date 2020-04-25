@@ -59,7 +59,7 @@ public class BossEpi : MonoBehaviour
     }
 
     // Update is called once per frame
-    void FixedUpdate()
+    void Update()
     {
         if(target.transform.position.x < maxBossArea.x && target.transform.position.y < maxBossArea.y
             && target.transform.position.x > minBossArea.x && target.transform.position.y > minBossArea.y
@@ -91,13 +91,16 @@ public class BossEpi : MonoBehaviour
             timer = 0;
         }
 
-        else if (currentState == BossState.walk && !friends)
+        timer += Time.deltaTime;
+    }
+
+    private void FixedUpdate()
+    {
+        if (currentState == BossState.walk && !friends)
         {
             Debug.Log("Trying to move");
             updateMoveAndAnimation();
         }
-
-        timer += Time.deltaTime;
     }
 
     void updateMoveAndAnimation()
@@ -149,6 +152,8 @@ public class BossEpi : MonoBehaviour
 
     private IEnumerator friend()
     {
+        this.gameObject.tag = "DeadFriend";
+
         Debug.Log("You have befriended this bread");
 
         befriendjingle.SetActive(true);

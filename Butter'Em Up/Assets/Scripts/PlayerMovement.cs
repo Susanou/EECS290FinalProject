@@ -38,7 +38,7 @@ public class PlayerMovement : MonoBehaviour
 
 
     // Update is called once per frame
-    void FixedUpdate()
+    void Update()
     {
         change = Vector3.zero;
         change.x = Input.GetAxisRaw("Horizontal");
@@ -53,7 +53,11 @@ public class PlayerMovement : MonoBehaviour
         {
             myAttack.AttackSpread2();
         }
-        else if (currentState == PlayerState.walk)
+    }
+
+    private void FixedUpdate()
+    {
+        if (currentState == PlayerState.walk)
         {
             updateMoveAndAnimation();
         }

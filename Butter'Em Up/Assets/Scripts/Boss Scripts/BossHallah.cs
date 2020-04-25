@@ -183,6 +183,8 @@ public class BossHallah : MonoBehaviour
 
     private IEnumerator friend()
     {
+        this.gameObject.tag = "DeadFriend";
+
         Debug.Log("You have befriended this bread");
 
         befriendjingle.SetActive(true);

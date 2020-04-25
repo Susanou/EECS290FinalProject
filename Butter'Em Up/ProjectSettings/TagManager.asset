@@ -11,6 +11,7 @@ TagManager:
   - BossDougnut
   - BossHallah
   - BossBao
+  - DeadFriend
   layers:
   - Default
   - TransparentFX
