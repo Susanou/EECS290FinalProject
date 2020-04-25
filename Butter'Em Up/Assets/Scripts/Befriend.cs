@@ -67,7 +67,7 @@ public class Befriend : MonoBehaviour
 
     private IEnumerator dead()
     {
-        this.gameObject.tag = "DeadFriend";
+        this.gameObject.tag = "DeadFriend"; 
         killMusic.SetActive(true);
         enemyAnimator.SetBool("dead", true);
         Debug.Log("You killed that bread");

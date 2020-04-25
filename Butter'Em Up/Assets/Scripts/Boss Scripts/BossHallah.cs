@@ -59,7 +59,7 @@ public class BossHallah : MonoBehaviour
     }
 
     // Update is called once per frame
-    void FixedUpdate()
+    void Update()
     {
         if (target.transform.position.x < maxBossArea.x && target.transform.position.y < maxBossArea.y
             && target.transform.position.x > minBossArea.x && target.transform.position.y > minBossArea.y
@@ -93,7 +93,7 @@ public class BossHallah : MonoBehaviour
         {
             if (!angryState)
             {
-                //StartCoroutine(attack());
+                StartCoroutine(attack());
                 _hat = Instantiate(hat) as GameObject;
                 _hat.transform.position = this.transform.position;
                 Vector3 dir = target.position - this.transform.position;
@@ -102,7 +102,7 @@ public class BossHallah : MonoBehaviour
             }
             else
             {
-
+                StartCoroutine(attack());
                 _hat = Instantiate(hat) as GameObject;
                 _hat2 = Instantiate(hat) as GameObject;
                 _hat3 = Instantiate(hat) as GameObject;
@@ -119,16 +119,19 @@ public class BossHallah : MonoBehaviour
             }
         }
 
+        timer += Time.deltaTime;
+    }
+
+    void FixedUpdate()
+    {
         if (currentState == BossState.walk && !friends)
         {
             MoveCharacter();
-            //updateMoveAndAnimation();
+            updateMoveAndAnimation();
         }
 
         if (change == Vector2.zero)
             waypointCounter = (waypointCounter + 1) % waypoints.Length;
-
-        timer += Time.deltaTime;
     }
 
     void updateMoveAndAnimation()
@@ -207,10 +210,10 @@ public class BossHallah : MonoBehaviour
 
     private IEnumerator attack()
     {
-        myAnimator.SetBool("attacking", true);
+        //myAnimator.SetBool("attacking", true);
         currentState = BossState.attack;
         yield return null;
-        myAnimator.SetBool("attacking", false);
+        //myAnimator.SetBool("attacking", false);
         yield return new WaitForSeconds(3f);
         currentState = BossState.walk;
     }
