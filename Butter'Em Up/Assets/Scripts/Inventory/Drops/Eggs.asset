@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Eggs
   m_EditorClassIdentifier: 
   itemName: Eggs
-  itemDescription: 
+  itemDescription: Three Eggs
   itemImage: {fileID: -2243423616732023639, guid: e0febef2d3575ac4c949fa375409dd19,
     type: 3}
   type: 3

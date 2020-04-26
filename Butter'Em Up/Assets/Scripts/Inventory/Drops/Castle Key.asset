@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Castle Key
   m_EditorClassIdentifier: 
   itemName: Castle Key
-  itemDescription: 
+  itemDescription: This is a key to the castle!
   itemImage: {fileID: 21300000, guid: 7cacf1b8541d7ac4fa5bd572c2964258, type: 3}
   type: 0
   myEvent:

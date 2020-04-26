@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Scrap 4
   m_EditorClassIdentifier: 
   itemName: Recipe Scrap 4
-  itemDescription: 
+  itemDescription: Bake at 350 till Golden Brown!
   itemImage: {fileID: 2480943460443849707, guid: e0febef2d3575ac4c949fa375409dd19,
     type: 3}
   type: 2

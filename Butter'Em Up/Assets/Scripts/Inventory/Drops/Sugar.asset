@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Sugar
   m_EditorClassIdentifier: 
   itemName: Sugar
-  itemDescription: 
+  itemDescription: 6 Tbsp of Sugar
   itemImage: {fileID: 46842822684328588, guid: e0febef2d3575ac4c949fa375409dd19, type: 3}
   type: 3
   myEvent:
