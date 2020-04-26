@@ -20,6 +20,9 @@ public class PlayerMovement : MonoBehaviour
     private Vector3 change;
     private Animator myAnimator;
     private Attack1 myAttack;
+    [SerializeField] GameObject GameOver;
+    [SerializeField] GameObject EndMainMusic;
+    [SerializeField] GameObject EndBossMusic;
 
 
 
@@ -99,11 +102,15 @@ public class PlayerMovement : MonoBehaviour
     {
         health.RuntimeValue -= dmg;
         playerHealth.Raise();
-        if (health.RuntimeValue > 0) {
+        if (health.RuntimeValue > 0)
+        {
             StartCoroutine(kbPlayer());
         }
 
         else
+            EndMainMusic.SetActive(false);
+        EndBossMusic.SetActive(false);
+        GameOver.SetActive(true);
             this.gameObject.SetActive(false);
     }
 
