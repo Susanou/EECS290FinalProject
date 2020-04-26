@@ -1575,7 +1575,7 @@ PrefabInstance:
     - target: {fileID: 242960392, guid: d92e61470fed82f4da915d0496dee0e3, type: 3}
       propertyPath: Portal
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 848982284}
     - target: {fileID: 242960392, guid: d92e61470fed82f4da915d0496dee0e3, type: 3}
       propertyPath: dialogueBox
       value: 
@@ -2710,6 +2710,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Knife: {fileID: 978596044}
+--- !u!1 &848982284 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5084247682892932256, guid: 342c2b6ddcc017b4d9d133edfc33d67e,
+    type: 3}
+  m_PrefabInstance: {fileID: 5084247683381158890}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &852050471
 GameObject:
   m_ObjectHideFlags: 0
@@ -78933,6 +78939,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5084247682892932262, guid: 342c2b6ddcc017b4d9d133edfc33d67e,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 342c2b6ddcc017b4d9d133edfc33d67e, type: 3}

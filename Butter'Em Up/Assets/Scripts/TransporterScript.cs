@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.Events;
 
 //this is from the 2D GameKit Code with some modifications to fit our use case.
 [RequireComponent(typeof(Collider2D))]
@@ -41,6 +42,11 @@ public class TransporterScript : MonoBehaviour
         protected void TransitionInternal ()
         {
             SceneManager.LoadScene(newSceneName, LoadSceneMode.Single);
+        }
+
+        public void Activate()
+        {
+            this.gameObject.SetActive(true);
         }
 
 }

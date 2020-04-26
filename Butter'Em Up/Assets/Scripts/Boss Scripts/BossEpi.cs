@@ -32,7 +32,7 @@ public class BossEpi : MonoBehaviour
     [SerializeField] GameObject HealthPot;
     [SerializeField] GameObject KeyDrop;
     [SerializeField] GameObject recipeDrop;
-    //[SerializeField] GameObject Portal;
+    [SerializeField] GameObject Portal;
 
     private int health = 0;
     private bool friends = false;
@@ -68,10 +68,10 @@ public class BossEpi : MonoBehaviour
             && target.transform.position.x > minBossArea.x && target.transform.position.y > minBossArea.y
             && !entered)
         {
-            currentState = BossState.walk;
-            entered = true;
             dialogueBox.SetActive(true);
             dialogueText.text = "I can't control myself! Quick! Defeat me so I can give you the first part of the recipe!";
+            currentState = BossState.walk;
+            entered = true;
         }
         else if(!entered)
         {
@@ -170,7 +170,7 @@ public class BossEpi : MonoBehaviour
         HealthPot.SetActive(true);
         KeyDrop.SetActive(true);
         recipeDrop.SetActive(true);
-        //Portal.SetActive(true);
+        Portal.SetActive(true);
 
         yield return new WaitForSeconds(3f);
         Debug.Log("setting to false");
