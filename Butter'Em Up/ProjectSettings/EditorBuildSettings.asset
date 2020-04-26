@@ -20,4 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Aisle 3.unity
     guid: 914ce38b755cf450caed277bb828062f
+  - enabled: 1
+    path: Assets/Scenes/Gameover.unity
+    guid: bf373acdfdd19e04595e8f5a59b6310f
   m_configObjects: {}

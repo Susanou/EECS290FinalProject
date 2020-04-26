@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public enum PlayerState
 {
@@ -112,6 +113,7 @@ public class PlayerMovement : MonoBehaviour
             EndMainMusic.SetActive(false);
             EndBossMusic.SetActive(false);
             GameOver.SetActive(true);
+            SceneManager.LoadScene("Gameover", LoadSceneMode.Single);
             this.gameObject.SetActive(false);
         }
     }
