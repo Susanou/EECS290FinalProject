@@ -11,6 +11,7 @@ public class PrincessDialogue : MonoBehaviour
     public int click = 0; // times key is pressed
     public string[] dialogue;
     public bool inRange; // character is close enough to Princess
+    private bool firstDisable = false;
 
     // Start is called before the first frame update
     void Start()
@@ -52,6 +53,7 @@ public class PrincessDialogue : MonoBehaviour
                 case 10:
                     break;
                 case 19:
+                    firstDisable = true;
                     break;
                 default:
                     if (inRange)
@@ -63,8 +65,16 @@ public class PrincessDialogue : MonoBehaviour
         {
             dialogueText.text = dialogue[click++];
         }
-        else if (!inRange && click > 3)
+        else if (!inRange && click > 3 && click < 19)
             dialogueBox.SetActive(false);
+        else
+        {
+            if (firstDisable)
+            {
+                dialogueBox.SetActive(false);
+                firstDisable = !firstDisable;
+            }
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

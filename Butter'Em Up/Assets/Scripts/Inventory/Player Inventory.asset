@@ -15,6 +15,5 @@ MonoBehaviour:
   myInventory:
   - {fileID: 11400000, guid: bd28ff3d13c3c70499c5360773cf4a60, type: 2}
   - {fileID: 11400000, guid: 192908f13962e714cbbd55bf9866fc22, type: 2}
-  canAttack: 0
   currentPrimary: Margarine
   currentSecondary: Nutella
