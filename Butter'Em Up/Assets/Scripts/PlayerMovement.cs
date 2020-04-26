@@ -24,6 +24,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] GameObject GameOver;
     [SerializeField] GameObject EndMainMusic;
     [SerializeField] GameObject EndBossMusic;
+    [SerializeField] GameObject HurtSound;
 
 
 
@@ -121,9 +122,10 @@ public class PlayerMovement : MonoBehaviour
     IEnumerator kbPlayer()
     {
         this.currentState = PlayerState.stagger;
-        myAnimator.SetBool("hurt", true);
+        HurtSound.SetActive(false);
         yield return null;
         myAnimator.SetBool("hurt", false);
+        HurtSound.SetActive(true);
         yield return new WaitForSeconds(0.5f);
         this.currentState = PlayerState.walk;
     }
