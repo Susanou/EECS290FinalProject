@@ -107,11 +107,13 @@ public class PlayerMovement : MonoBehaviour
             StartCoroutine(kbPlayer());
         }
 
-        else
+        if (health.RuntimeValue <= 0)
+        {
             EndMainMusic.SetActive(false);
-        EndBossMusic.SetActive(false);
-        GameOver.SetActive(true);
+            EndBossMusic.SetActive(false);
+            GameOver.SetActive(true);
             this.gameObject.SetActive(false);
+        }
     }
 
     IEnumerator kbPlayer()
