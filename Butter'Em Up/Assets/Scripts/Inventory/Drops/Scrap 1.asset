@@ -13,14 +13,14 @@ MonoBehaviour:
   m_Name: Scrap 1
   m_EditorClassIdentifier: 
   itemName: Recipe Scrap 1
-  itemDescription: 
+  itemDescription: For the Wash of Sweetness, you need 1 cup of milk
   itemImage: {fileID: 2480943460443849707, guid: e0febef2d3575ac4c949fa375409dd19,
     type: 3}
   type: 2
   myEvent:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 8844325561066431798, guid: 421a8c758460022408d53bcc5f7779f1,
+      - m_Target: {fileID: 5084247682892932256, guid: 342c2b6ddcc017b4d9d133edfc33d67e,
           type: 3}
         m_MethodName: SetActive
         m_Mode: 6
