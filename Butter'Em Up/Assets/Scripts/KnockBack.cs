@@ -59,7 +59,7 @@ public class KnockBack: MonoBehaviour
                 Debug.Log(difference);
                 enemy.AddForce(difference, ForceMode2D.Impulse);
 
-                StartCoroutine(BossKnocEpikCo(enemy));
+                StartCoroutine(BossEpiKnockCo(enemy));
             }
         }
         else if (other.gameObject.CompareTag("BossHallah"))

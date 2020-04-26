@@ -44,7 +44,9 @@ public class BossEpi : MonoBehaviour
     private bool angryState = false;
     private float timer;
     private bool entered;
-    
+    public GameObject dialogueBox;
+    public Text dialogueText;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -56,6 +58,7 @@ public class BossEpi : MonoBehaviour
 
         myAnimator.SetFloat("changeX", 0);
         myAnimator.SetFloat("changeY", -1);
+
     }
 
     // Update is called once per frame
@@ -67,6 +70,8 @@ public class BossEpi : MonoBehaviour
         {
             currentState = BossState.walk;
             entered = true;
+            dialogueBox.SetActive(true);
+            dialogueText.text = "I can't control myself! Quick! Defeat me so I can give you the first part of the recipe!";
         }
         else if(!entered)
         {
@@ -79,6 +84,7 @@ public class BossEpi : MonoBehaviour
             angryState = true;
             speed += 5;
             this.GetComponent<KnockBack>().thrust += 2;
+            dialogueText.text = "You'll need to beat the other bosses to get the ingredients for the egg wash!";
         }
 
 
@@ -155,6 +161,7 @@ public class BossEpi : MonoBehaviour
         this.gameObject.tag = "DeadFriend";
 
         Debug.Log("You have befriended this bread");
+        dialogueText.text = "You've beaten me! Now get the ingredients on this recipe scrap to make the Wash of Sweetness and save all bread!";
 
         befriendjingle.SetActive(true);
         myAnimator.SetBool("friend", true);
