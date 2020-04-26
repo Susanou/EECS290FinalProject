@@ -93,7 +93,7 @@ GameObject:
   - component: {fileID: 5879301551960681773}
   - component: {fileID: 5879301551960681772}
   m_Layer: 0
-  m_Name: Left Shoe
+  m_Name: Left foot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -291,7 +291,7 @@ GameObject:
   - component: {fileID: 5879301552271528419}
   - component: {fileID: 5879301552271528418}
   m_Layer: 0
-  m_Name: Left Eye
+  m_Name: eye left
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -305,7 +305,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5879301552271528417}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.035192013, y: 3.0674198, z: 0}
+  m_LocalPosition: {x: 0.035192013, y: 3.06742, z: 0}
   m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_Children: []
   m_Father: {fileID: 5879301552245187756}
@@ -615,7 +615,7 @@ GameObject:
   - component: {fileID: 5879301553206695077}
   - component: {fileID: 5879301553206695076}
   m_Layer: 0
-  m_Name: Right shoe
+  m_Name: Right foot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -770,7 +770,7 @@ GameObject:
   - component: {fileID: 5879301553330620301}
   - component: {fileID: 5879301553330620300}
   m_Layer: 0
-  m_Name: Right Eye
+  m_Name: eye right
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1025,6 +1025,7 @@ GameObject:
   - component: {fileID: 5879301553555235227}
   - component: {fileID: 5879301553555235226}
   - component: {fileID: 5879301553087024346}
+  - component: {fileID: 3491061306314362291}
   m_Layer: 0
   m_Name: Boss Hallah
   m_TagString: BossHallah
@@ -1156,3 +1157,22 @@ MonoBehaviour:
   KeyDrop: {fileID: 0}
   recipeDrop: {fileID: 0}
   Portal: {fileID: 0}
+--- !u!95 &3491061306314362291
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5879301553555235303}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 6ed457a25f1584e41b204105ede6bc6f, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 1
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

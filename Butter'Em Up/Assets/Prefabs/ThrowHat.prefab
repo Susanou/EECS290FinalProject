@@ -13,7 +13,6 @@ GameObject:
   - component: {fileID: 5172385047146482572}
   - component: {fileID: -1835243458185591471}
   - component: {fileID: 2393984505810810491}
-  - component: {fileID: 8432763163550647747}
   m_Layer: 0
   m_Name: ThrowHat
   m_TagString: BossHallah
@@ -145,19 +144,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 945641da6ee91724585b7aab235e0eaf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 1
---- !u!114 &8432763163550647747
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5172385047146482571}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3312622659bb0db498a9854455fd5722, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
   dmg: 1
-  kbtime: 0.5
-  thrust: 5

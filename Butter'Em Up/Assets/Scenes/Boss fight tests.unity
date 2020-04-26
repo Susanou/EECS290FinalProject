@@ -70388,6 +70388,21 @@ PrefabInstance:
       propertyPath: speed
       value: 15
       objectReference: {fileID: 0}
+    - target: {fileID: 5879301553087024346, guid: 4ebaed3ad61630348bf1e42d26aeea40,
+        type: 3}
+      propertyPath: befriendjingle
+      value: 
+      objectReference: {fileID: 235187398}
+    - target: {fileID: 5879301553087024346, guid: 4ebaed3ad61630348bf1e42d26aeea40,
+        type: 3}
+      propertyPath: endmusic
+      value: 
+      objectReference: {fileID: 803372474}
+    - target: {fileID: 5879301553087024346, guid: 4ebaed3ad61630348bf1e42d26aeea40,
+        type: 3}
+      propertyPath: killMusic
+      value: 
+      objectReference: {fileID: 1012461439}
     - target: {fileID: 5879301553267336471, guid: 4ebaed3ad61630348bf1e42d26aeea40,
         type: 3}
       propertyPath: m_AnchorMax.y

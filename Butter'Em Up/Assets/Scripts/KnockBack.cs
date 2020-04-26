@@ -69,7 +69,7 @@ public class KnockBack: MonoBehaviour
             {
                 Debug.Log("Knocking Bakc");
 
-                enemy.GetComponent<BossEpi>().currentState = BossState.stagger;
+                enemy.GetComponent<BossHallah>().currentState = BossState.stagger;
                 Vector2 difference = enemy.gameObject.transform.position - this.transform.position;
 
                 Debug.Log(difference);
@@ -117,7 +117,7 @@ public class KnockBack: MonoBehaviour
         {
             yield return new WaitForSeconds(kbtime + 0.5f);
             e.velocity = Vector2.zero;
-            e.GetComponent<BossEpi>().currentState = BossState.walk;
+            e.GetComponent<BossHallah>().currentState = BossState.walk;
         }
     }
 }

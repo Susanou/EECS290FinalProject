@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class BossHallah : MonoBehaviour
+public class BossDoughnut : MonoBehaviour
 {
 
     public Vector2 maxBossArea;
@@ -16,13 +16,6 @@ public class BossHallah : MonoBehaviour
     public BossState currentState;
     public float attackDelay;
     public float projectileSpeed = 10.0f;
-    public Vector2[] waypoints;
-
-    public GameObject hat;
-    private GameObject _hat;
-    private GameObject _hat2;
-    private GameObject _hat3;
-
 
     [SerializeField] GameObject befriendjingle;
     [SerializeField] GameObject endmusic;
@@ -54,8 +47,8 @@ public class BossHallah : MonoBehaviour
         friends = false;
         waypointCounter = 0;
 
-        myAnimator.SetFloat("changeX", 0);
-        myAnimator.SetFloat("changeY", -1);
+        //myAnimator.SetFloat("changeX", 0);
+        //myAnimator.SetFloat("changeY", -1);
     }
 
     // Update is called once per frame
@@ -83,8 +76,8 @@ public class BossHallah : MonoBehaviour
 
 
         change = Vector2.zero;
-        change = waypoints[waypointCounter] - (Vector2)this.transform.position;
-        if(change.magnitude < 0.1f)
+
+        if (change.magnitude < 0.1f)
         {
             change = Vector2.zero;
         }
@@ -93,28 +86,12 @@ public class BossHallah : MonoBehaviour
         {
             if (!angryState)
             {
-                StartCoroutine(attack());
-                _hat = Instantiate(hat) as GameObject;
-                _hat.transform.position = this.transform.position;
-                Vector3 dir = target.position - this.transform.position;
-                _hat.GetComponent<Rigidbody2D>().velocity = dir.normalized * projectileSpeed;
+
                 timer = 0;
             }
             else
             {
                 StartCoroutine(attack());
-                _hat = Instantiate(hat) as GameObject;
-                _hat2 = Instantiate(hat) as GameObject;
-                _hat3 = Instantiate(hat) as GameObject;
-                Vector3 dir = target.position - this.transform.position;
-                Vector3 dir2 = target.position - this.transform.position - new Vector3(10, 0, 0);
-                Vector3 dir3 = target.position - this.transform.position + new Vector3(10, 0, 0);
-                _hat.transform.position = this.transform.position;
-                _hat.GetComponent<Rigidbody2D>().velocity = dir.normalized * projectileSpeed;
-                _hat2.transform.position = this.transform.position;
-                _hat2.GetComponent<Rigidbody2D>().velocity = dir2.normalized * projectileSpeed;
-                _hat3.transform.position = this.transform.position;
-                _hat3.GetComponent<Rigidbody2D>().velocity = dir3.normalized * projectileSpeed;
                 timer = 0;
             }
         }
@@ -129,9 +106,6 @@ public class BossHallah : MonoBehaviour
             MoveCharacter();
             updateMoveAndAnimation();
         }
-
-        if (change == Vector2.zero)
-            waypointCounter = (waypointCounter + 1) % waypoints.Length;
     }
 
     void updateMoveAndAnimation()
@@ -162,7 +136,7 @@ public class BossHallah : MonoBehaviour
             myAnimator.SetBool("walking", false);
         }
     }
-            
+
 
     public void hurt(string spread)
     {
@@ -234,8 +208,8 @@ public class BossHallah : MonoBehaviour
 
         Gizmos.color = Color.cyan;
         Gizmos.DrawLine(this.transform.position, target.position);
-        Gizmos.DrawLine(this.transform.position, target.position - new Vector3(10,0,0));
-        Gizmos.DrawLine(this.transform.position, target.position + new Vector3(10,0,0));
+        Gizmos.DrawLine(this.transform.position, target.position - new Vector3(10, 0, 0));
+        Gizmos.DrawLine(this.transform.position, target.position + new Vector3(10, 0, 0));
     }
 #endif
 }
