@@ -85,7 +85,7 @@ MonoBehaviour:
   m_MinValue: 0
   m_MaxValue: 1
   m_WholeNumbers: 0
-  m_Value: 1
+  m_Value: 0
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -665,9 +665,11 @@ GameObject:
   - component: {fileID: 6202911823291028500}
   - component: {fileID: 6202911823291028498}
   - component: {fileID: 1910851186195599298}
+  - component: {fileID: 192012730}
+  - component: {fileID: 192012731}
   m_Layer: 0
   m_Name: Dougnut Boss
-  m_TagString: BossDougnut
+  m_TagString: BossDoughnut
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -719,7 +721,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -754,9 +756,54 @@ Animator:
   m_Controller: {fileID: 9100000, guid: f242f813d01a3ac4cb0f037511fc4edb, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
-  m_ApplyRootMotion: 0
+  m_ApplyRootMotion: 1
   m_LinearVelocityBlending: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &192012730
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6202911823291028502}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3312622659bb0db498a9854455fd5722, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dmg: 1
+  kbtime: 0.5
+  thrust: 5
+--- !u!114 &192012731
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6202911823291028502}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 97d3a46dfa0f41141b2e1197dbbc2d8d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxBossArea: {x: 93, y: 45}
+  minBossArea: {x: 48, y: -5}
+  slider: {fileID: 82680686}
+  sliderUI: {fileID: 1349424723}
+  maxHealth: {fileID: 11400000, guid: bc7a7d432d2420444a5ef55ed9c69e6a, type: 2}
+  speed: 5
+  correctSpread: Nutella
+  currentState: 0
+  attackDelay: 8
+  koTime: 5
+  befriendjingle: {fileID: 0}
+  endmusic: {fileID: 0}
+  killMusic: {fileID: 0}
+  angry: {fileID: 0}
+  HealthPot: {fileID: 0}
+  KeyDrop: {fileID: 0}
+  recipeDrop: {fileID: 0}
+  Portal: {fileID: 0}

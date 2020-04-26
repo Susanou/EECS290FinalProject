@@ -34,10 +34,8 @@ public class KnockBack: MonoBehaviour
                 
                 enemy.GetComponent<WanderingAI>().currentState = EnemyState.stagger;
                 Vector2 difference = enemy.gameObject.transform.position - this.transform.position;
-
-                Debug.Log(difference);
                 difference = difference.normalized * thrust;
-                Debug.Log(difference);
+
                 enemy.AddForce(difference, ForceMode2D.Impulse);
                 
                 StartCoroutine(KnockCo(enemy));
@@ -54,9 +52,9 @@ public class KnockBack: MonoBehaviour
                 enemy.GetComponent<BossEpi>().currentState = BossState.stagger;
                 Vector2 difference = enemy.gameObject.transform.position - this.transform.position;
 
-                Debug.Log(difference);
+
                 difference = difference.normalized * thrust;
-                Debug.Log(difference);
+
                 enemy.AddForce(difference, ForceMode2D.Impulse);
 
                 StartCoroutine(BossEpiKnockCo(enemy));
@@ -71,10 +69,8 @@ public class KnockBack: MonoBehaviour
 
                 enemy.GetComponent<BossHallah>().currentState = BossState.stagger;
                 Vector2 difference = enemy.gameObject.transform.position - this.transform.position;
-
-                Debug.Log(difference);
                 difference = difference.normalized * thrust;
-                Debug.Log(difference);
+
                 enemy.AddForce(difference, ForceMode2D.Impulse);
 
                 StartCoroutine(BossHallahKnockCo(enemy));
@@ -84,14 +80,11 @@ public class KnockBack: MonoBehaviour
             Rigidbody2D enemy = other.GetComponent<Rigidbody2D>();
             if (enemy != null)
             {
-                Debug.Log("Knocking Bakc");
 
                 enemy.GetComponent<BossDoughnut>().currentState = BossState.stagger;
                 Vector2 difference = enemy.gameObject.transform.position - this.transform.position;
 
-                Debug.Log(difference);
                 difference = difference.normalized * thrust;
-                Debug.Log(difference);
                 enemy.AddForce(difference, ForceMode2D.Impulse);
 
                 StartCoroutine(BossDoughnutKnockCo(enemy));
@@ -102,9 +95,32 @@ public class KnockBack: MonoBehaviour
         {
 
 
-            other.GetComponent<PlayerMovement>().currentState = PlayerState.stagger;
+            Rigidbody2D enemy = other.GetComponent<Rigidbody2D>();
+            if (enemy != null)
+            {
+                Debug.Log("Knocking Bakc player");
+
+                enemy.GetComponent<PlayerMovement>().currentState = PlayerState.stagger;
+                Vector2 difference = enemy.gameObject.transform.position - this.transform.position;
+                difference = difference.normalized * thrust;
+
+                enemy.AddForce(difference, ForceMode2D.Impulse);
+
+                StartCoroutine(PlayerKnockCo(enemy));
+
+            }
             other.GetComponent<PlayerMovement>().hurt(dmg);
 
+        }
+    }
+
+    private IEnumerator PlayerKnockCo(Rigidbody2D e)
+    {
+        if (e != null)
+        {
+            yield return new WaitForSeconds(kbtime + 0.5f);
+            e.velocity = Vector2.zero;
+            e.GetComponent<PlayerMovement>().currentState = PlayerState.walk;
         }
     }
 

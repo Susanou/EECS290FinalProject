@@ -82,18 +82,20 @@ public class BossDoughnut : MonoBehaviour
         if (currentState != BossState.attack && !friends && timer > attackDelay)
         {
             change = target.transform.position - this.transform.position;
+            change.Normalize();
 
             Debug.Log("attacking");
 
             if (!angryState)
             {
                 time = 0;
-                StartCoroutine(attack());
+                StartCoroutine(attack(this.transform, this.transform.position, target.transform.position, speed));
 
             }
             else
             {
-                StartCoroutine(attack());
+                time = 0;
+                StartCoroutine(attack(this.transform, this.transform.position, target.transform.position, speed));
 
             }
         }
@@ -145,19 +147,20 @@ public class BossDoughnut : MonoBehaviour
 
     }
 
-    private IEnumerator attack()
+
+    IEnumerator attack(Transform objectToMove, Vector3 a, Vector3 b, float speed)
     {
         myAnimator.SetBool("attacking", true);
         currentState = BossState.attack;
-        
-        while (time < 5f) //rolls for 5 seconds
+        float step = (speed / (a - b).magnitude) * Time.fixedDeltaTime;
+        float t = 0;
+        while (t <= 1.0f)
         {
-            change.Normalize();
-            myRigidBody.MovePosition((Vector2)this.transform.position + change * speed * time);
+            t += step; // Goes from 0 to 1, incrementing by step each time
+            objectToMove.position = Vector3.Lerp(a, b, t); // Move objectToMove closer to b
+            yield return new WaitForFixedUpdate();         // Leave the routine and return here in the next frame
         }
-
-        yield return new WaitForSeconds(koTime);
-        yield return null;
+        objectToMove.position = b;
         myAnimator.SetBool("attacking", false);
         currentState = BossState.walk;
 
