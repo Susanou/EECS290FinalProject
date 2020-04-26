@@ -107,9 +107,10 @@ public class KnockBack: MonoBehaviour
                 enemy.AddForce(difference, ForceMode2D.Impulse);
 
                 StartCoroutine(PlayerKnockCo(enemy));
+                other.GetComponent<PlayerMovement>().hurt(dmg);
 
             }
-            other.GetComponent<PlayerMovement>().hurt(dmg);
+            
 
         }
     }

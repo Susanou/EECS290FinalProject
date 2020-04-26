@@ -62,5 +62,9 @@ public class Attack1 : MonoBehaviour
         {
             other.GetComponent<BossHallah>().hurt(spread);
         }
+        else if (other.CompareTag("BossDoughnut"))
+        {
+            other.GetComponent<BossDoughnut>().hurt(spread);
+        }
     }
 }
