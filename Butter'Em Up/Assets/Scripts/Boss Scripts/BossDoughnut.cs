@@ -15,7 +15,7 @@ public class BossDoughnut : MonoBehaviour
     public string correctSpread;
     public BossState currentState;
     public float attackDelay;
-    public float projectileSpeed = 10.0f;
+    public float koTime = 5f;
 
     [SerializeField] GameObject befriendjingle;
     [SerializeField] GameObject endmusic;
@@ -36,6 +36,7 @@ public class BossDoughnut : MonoBehaviour
     private bool angryState = false;
     private float timer;
     private bool entered;
+    private float time;
 
     // Start is called before the first frame update
     void Start()
@@ -52,7 +53,7 @@ public class BossDoughnut : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         if (target.transform.position.x < maxBossArea.x && target.transform.position.y < maxBossArea.y
             && target.transform.position.x > minBossArea.x && target.transform.position.y > minBossArea.y
@@ -71,72 +72,34 @@ public class BossDoughnut : MonoBehaviour
             angry.SetActive(true);
             angryState = true;
             speed += 5;
-            projectileSpeed += 5;
+            koTime = 3f;
         }
 
 
         change = Vector2.zero;
-
-        if (change.magnitude < 0.1f)
-        {
-            change = Vector2.zero;
-        }
+        
 
         if (currentState != BossState.attack && !friends && timer > attackDelay)
         {
+            change = target.transform.position - this.transform.position;
+
+            Debug.Log("attacking");
+
             if (!angryState)
             {
+                time = 0;
+                StartCoroutine(attack());
 
-                timer = 0;
             }
             else
             {
                 StartCoroutine(attack());
-                timer = 0;
+
             }
         }
-
+        time += Time.fixedDeltaTime;
         timer += Time.deltaTime;
     }
-
-    void FixedUpdate()
-    {
-        if (currentState == BossState.walk && !friends)
-        {
-            MoveCharacter();
-            updateMoveAndAnimation();
-        }
-    }
-
-    void updateMoveAndAnimation()
-    {
-
-        if (change != Vector2.zero)
-        {
-
-            MoveCharacter();
-
-            if (change.x != 0)
-            {
-                myAnimator.SetFloat("changeX", Mathf.Sign(change.x) * 1);
-                myAnimator.SetFloat("changeY", 0);
-            }
-            else
-            {
-                myAnimator.SetFloat("changeX", 0);
-                myAnimator.SetFloat("changeY", Mathf.Sign(change.y) * 1);
-            }
-
-
-            myAnimator.SetBool("walking", true);
-
-        }
-        else
-        {
-            myAnimator.SetBool("walking", false);
-        }
-    }
-
 
     public void hurt(string spread)
     {
@@ -184,19 +147,21 @@ public class BossDoughnut : MonoBehaviour
 
     private IEnumerator attack()
     {
-        //myAnimator.SetBool("attacking", true);
+        myAnimator.SetBool("attacking", true);
         currentState = BossState.attack;
-        yield return null;
-        //myAnimator.SetBool("attacking", false);
-        yield return new WaitForSeconds(3f);
-        currentState = BossState.walk;
-    }
+        
+        while (time < 5f) //rolls for 5 seconds
+        {
+            change.Normalize();
+            myRigidBody.MovePosition((Vector2)this.transform.position + change * speed * time);
+        }
 
-    void MoveCharacter()
-    {
-        change.Normalize();
-        Debug.Log("Trying to move" + change);
-        myRigidBody.MovePosition((Vector2)this.transform.position + change * speed * Time.fixedDeltaTime);
+        yield return new WaitForSeconds(koTime);
+        yield return null;
+        myAnimator.SetBool("attacking", false);
+        currentState = BossState.walk;
+
+        timer = 0;
     }
 
 #if UNITY_EDITOR
@@ -208,8 +173,6 @@ public class BossDoughnut : MonoBehaviour
 
         Gizmos.color = Color.cyan;
         Gizmos.DrawLine(this.transform.position, target.position);
-        Gizmos.DrawLine(this.transform.position, target.position - new Vector3(10, 0, 0));
-        Gizmos.DrawLine(this.transform.position, target.position + new Vector3(10, 0, 0));
     }
 #endif
 }

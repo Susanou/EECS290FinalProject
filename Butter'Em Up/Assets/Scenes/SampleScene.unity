@@ -2303,21 +2303,6 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6202911823291028498, guid: fb55e8376f56897499c9140f5d5ab8cb,
-        type: 3}
-      propertyPath: m_Offset.x
-      value: 0.0065727234
-      objectReference: {fileID: 0}
-    - target: {fileID: 6202911823291028498, guid: fb55e8376f56897499c9140f5d5ab8cb,
-        type: 3}
-      propertyPath: m_Radius
-      value: 1.9617333
-      objectReference: {fileID: 0}
-    - target: {fileID: 6202911823291028498, guid: fb55e8376f56897499c9140f5d5ab8cb,
-        type: 3}
-      propertyPath: m_Offset.y
-      value: -0.17088628
-      objectReference: {fileID: 0}
     - target: {fileID: 6202911823291028502, guid: fb55e8376f56897499c9140f5d5ab8cb,
         type: 3}
       propertyPath: m_Name

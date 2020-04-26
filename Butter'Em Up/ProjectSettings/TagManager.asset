@@ -8,10 +8,10 @@ TagManager:
   - Friend
   - Boss
   - BossEpi
-  - BossDougnut
   - BossHallah
   - BossBao
   - DeadFriend
+  - BossDoughnut
   layers:
   - Default
   - TransparentFX

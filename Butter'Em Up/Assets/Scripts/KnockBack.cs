@@ -79,6 +79,23 @@ public class KnockBack: MonoBehaviour
 
                 StartCoroutine(BossHallahKnockCo(enemy));
             }
+        }else if (other.gameObject.CompareTag("BossDoughnut"))
+        {
+            Rigidbody2D enemy = other.GetComponent<Rigidbody2D>();
+            if (enemy != null)
+            {
+                Debug.Log("Knocking Bakc");
+
+                enemy.GetComponent<BossDoughnut>().currentState = BossState.stagger;
+                Vector2 difference = enemy.gameObject.transform.position - this.transform.position;
+
+                Debug.Log(difference);
+                difference = difference.normalized * thrust;
+                Debug.Log(difference);
+                enemy.AddForce(difference, ForceMode2D.Impulse);
+
+                StartCoroutine(BossDoughnutKnockCo(enemy));
+            }
         }
 
         if (!this.CompareTag("DeadFriend") && other.CompareTag("Player") && other.GetComponent<PlayerMovement>().currentState != PlayerState.stagger)
@@ -118,6 +135,16 @@ public class KnockBack: MonoBehaviour
             yield return new WaitForSeconds(kbtime + 0.5f);
             e.velocity = Vector2.zero;
             e.GetComponent<BossHallah>().currentState = BossState.walk;
+        }
+    }
+
+    private IEnumerator BossDoughnutKnockCo(Rigidbody2D e)
+    {
+        if (e != null)
+        {
+            yield return new WaitForSeconds(kbtime + 0.5f);
+            e.velocity = Vector2.zero;
+            e.GetComponent<BossDoughnut>().currentState = BossState.walk;
         }
     }
 }

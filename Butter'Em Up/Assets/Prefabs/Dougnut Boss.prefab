@@ -416,7 +416,7 @@ GameObject:
   - component: {fileID: 6202911822561447002}
   - component: {fileID: 6202911822561447003}
   m_Layer: 0
-  m_Name: Eye Right
+  m_Name: eye right
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -430,7 +430,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6202911822561447005}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.46000004, y: 1.1999999, z: 0}
+  m_LocalPosition: {x: 0.46, y: 1.1999999, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 6202911822833673912}
@@ -582,7 +582,7 @@ GameObject:
   - component: {fileID: 6202911822950263452}
   - component: {fileID: 6202911822950263453}
   m_Layer: 0
-  m_Name: Eye Left
+  m_Name: eye left
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -664,6 +664,7 @@ GameObject:
   - component: {fileID: 6202911823291028501}
   - component: {fileID: 6202911823291028500}
   - component: {fileID: 6202911823291028498}
+  - component: {fileID: 1910851186195599298}
   m_Layer: 0
   m_Name: Dougnut Boss
   m_TagString: BossDougnut
@@ -737,6 +738,25 @@ CircleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.16443348}
+  m_Offset: {x: -0.0057690144, y: -0.17088628}
   serializedVersion: 2
-  m_Radius: 2.0227923
+  m_Radius: 2.3196375
+--- !u!95 &1910851186195599298
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6202911823291028502}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: f242f813d01a3ac4cb0f037511fc4edb, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
