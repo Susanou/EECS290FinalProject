@@ -27,15 +27,23 @@ public class PlayerInventory : ScriptableObject
                 Debug.Log($"Acquired {thisItem.itemName}");
                 break;
             case 2:
-                if (!myInventory.Contains(thisItem))
+                if (myInventory.Contains(thisItem))
                 {
+                    ;
+                }
+                else 
+                { 
                     myInventory.Add(thisItem); //recipe
                 }
                 Debug.Log("Acquired recipe fragment");
                 break;
             case 3:
-                if (!myInventory.Contains(thisItem))
+                if (myInventory.Contains(thisItem))
                 {
+                    ;
+                }
+                else
+                { 
                     myInventory.Add(thisItem); //ingredient
                 }
                 Debug.Log("Acquired Recipe Component");

@@ -12,11 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a9ce8fe983dfe0408ee1f34d5397adf, type: 3}
   m_Name: Scrap 3
   m_EditorClassIdentifier: 
-  itemName: Recipe Scrap 3
+  itemName: Scrap 3
   itemDescription: Three Eggs
   itemImage: {fileID: 2480943460443849707, guid: e0febef2d3575ac4c949fa375409dd19,
     type: 3}
   type: 2
+  damage: 0
+  damageString: 
   myEvent:
     m_PersistentCalls:
       m_Calls: []

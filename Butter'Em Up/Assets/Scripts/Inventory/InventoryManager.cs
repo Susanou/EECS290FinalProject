@@ -39,12 +39,20 @@ public class InventoryManager : MonoBehaviour
         }
     }
 
-    private void Start()
+    private void OnEnable()
     {
+        ClearInventorySlots();
         MakeInventorySlots();
         SetText("");
     }
 
+    void ClearInventorySlots()
+    {
+        for (int i = 0; i < inventoryPanel.transform.childCount; i++)
+        {
+            Destroy(inventoryPanel.transform.GetChild(i).gameObject);
+        }
+    }
     public void SetDesc(InventoryItem targetItem)
     {
         description.text = targetItem.itemDescription;
