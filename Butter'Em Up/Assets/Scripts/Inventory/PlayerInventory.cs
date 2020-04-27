@@ -27,18 +27,19 @@ public class PlayerInventory : ScriptableObject
                 Debug.Log($"Acquired {thisItem.itemName}");
                 break;
             case 2:
-                myInventory.Add(thisItem); //part of the recipe
+                if (!myInventory.Contains(thisItem))
+                {
+                    myInventory.Add(thisItem); //recipe
+                }
                 Debug.Log("Acquired recipe fragment");
                 break;
             case 3:
-                myInventory.Add(thisItem); //item in the recipe
+                if (!myInventory.Contains(thisItem))
+                {
+                    myInventory.Add(thisItem); //ingredient
+                }
                 Debug.Log("Acquired Recipe Component");
-                break;
-            case 4:
-                myInventory.Add(thisItem); //environment objects like keys
-                Debug.Log($"Acquired Environment Component {thisItem.itemName}");
-                break;
-                
+                break;                
         }
     }
 
