@@ -16,9 +16,10 @@ MonoBehaviour:
   itemDescription: Your trusty butter knife!
   itemImage: {fileID: 5637020899135582185, guid: 9f636cd491bccda47aa5668cce8c393a,
     type: 3}
-  numberHeld: 1
   type: 0
-  unique: 1
-  thisEvent:
+  damage: 0
+  damageString: 
+  myEvent:
     m_PersistentCalls:
       m_Calls: []
+  canEquip: 0
