@@ -211,7 +211,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1658789061
-  m_SortingLayer: 3
+  m_SortingLayer: 4
   m_SortingOrder: 1
   m_Sprite: {fileID: -6323267364357008151, guid: 3fcda9c3f2d6e234e9e313d015369bd6,
     type: 3}
@@ -421,7 +421,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1658789061
-  m_SortingLayer: 3
+  m_SortingLayer: 4
   m_SortingOrder: 1
   m_Sprite: {fileID: -8817426130257391540, guid: 3fcda9c3f2d6e234e9e313d015369bd6,
     type: 3}
@@ -537,7 +537,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1658789061
-  m_SortingLayer: 3
+  m_SortingLayer: 4
   m_SortingOrder: -2
   m_Sprite: {fileID: 5637020899135582185, guid: 9f636cd491bccda47aa5668cce8c393a,
     type: 3}
@@ -633,7 +633,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1658789061
-  m_SortingLayer: 3
+  m_SortingLayer: 4
   m_SortingOrder: -1
   m_Sprite: {fileID: 8372404247693859508, guid: 9f636cd491bccda47aa5668cce8c393a,
     type: 3}
@@ -715,7 +715,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1658789061
-  m_SortingLayer: 3
+  m_SortingLayer: 4
   m_SortingOrder: 0
   m_Sprite: {fileID: -5145059400507163617, guid: 9f636cd491bccda47aa5668cce8c393a,
     type: 3}
@@ -884,6 +884,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spread1: Margarine
   spread2: Nutella
+  damage1: 1
+  damage2: 1
   swoosh: {fileID: 0}
 --- !u!114 &709620692
 MonoBehaviour:
@@ -996,7 +998,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1658789061
-  m_SortingLayer: 3
+  m_SortingLayer: 4
   m_SortingOrder: -1
   m_Sprite: {fileID: 5524745695277153670, guid: 9f636cd491bccda47aa5668cce8c393a,
     type: 3}

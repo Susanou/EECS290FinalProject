@@ -62034,8 +62034,8 @@ MonoBehaviour:
   - For this reason, we must not fight each other but instead fight to keep our alliance.
   - I told you the spreads will help you defend yourself. However, you do not have
     to use them as a weapon. We, breads, enjoy the feeling of a good spread.
-  - Use shift to use margarine. You can practice using shift on me. Don't worry, you
-    won't hurt me!
+  - Use shift to use margarine. You can practice using shift on me. Don't worry,
+    you won't hurt me!
   - It feels great!
   - 'You only have a couple spreads right now, margarine and chocolate spread. '
   - Margarine is used with shift, and chocolate is used with space. Be careful not
@@ -78282,6 +78282,16 @@ PrefabInstance:
       propertyPath: swoosh
       value: 
       objectReference: {fileID: 164817363}
+    - target: {fileID: 5707866912915158061, guid: 813086c8e87653394be9ccfbe61770da,
+        type: 3}
+      propertyPath: damage1
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5707866912915158061, guid: 813086c8e87653394be9ccfbe61770da,
+        type: 3}
+      propertyPath: damage2
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7377098352821378923, guid: 813086c8e87653394be9ccfbe61770da,
         type: 3}
       propertyPath: m_Name
