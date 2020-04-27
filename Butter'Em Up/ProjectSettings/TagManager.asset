@@ -55,6 +55,9 @@ TagManager:
   - name: Plants
     uniqueID: 3073446111
     locked: 0
+  - name: Enemies
+    uniqueID: 1219619181
+    locked: 0
   - name: Player
     uniqueID: 1658789061
     locked: 0

@@ -13,10 +13,12 @@ MonoBehaviour:
   m_Name: Guac
   m_EditorClassIdentifier: 
   itemName: Guac
-  itemDescription: +3 Befriend against White Bread
+  itemDescription: +3 Befriend against Toast
   itemImage: {fileID: 6979639673562766729, guid: e0febef2d3575ac4c949fa375409dd19,
     type: 3}
   type: 1
+  damage: 3
+  damageString: Margarine
   myEvent:
     m_PersistentCalls:
       m_Calls: []

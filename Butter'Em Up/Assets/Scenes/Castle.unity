@@ -2864,7 +2864,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 852050471}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 11.1, y: 3.2, z: -15}
+  m_LocalPosition: {x: 8.5, y: 3.2, z: -15}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -2885,7 +2885,7 @@ MonoBehaviour:
   target: {fileID: 2082799073}
   smoothing: 0.6
   max: {x: 75, y: 38}
-  min: {x: 11, y: 3}
+  min: {x: 8, y: 3}
 --- !u!1 &869548819
 GameObject:
   m_ObjectHideFlags: 0
@@ -62034,8 +62034,8 @@ MonoBehaviour:
   - For this reason, we must not fight each other but instead fight to keep our alliance.
   - I told you the spreads will help you defend yourself. However, you do not have
     to use them as a weapon. We, breads, enjoy the feeling of a good spread.
-  - Use shift to use margarine. You can practice using shift on me. Don't worry, you
-    won't hurt me!
+  - Use shift to use margarine. You can practice using shift on me. Don't worry,
+    you won't hurt me!
   - It feels great!
   - 'You only have a couple spreads right now, margarine and chocolate spread. '
   - Margarine is used with shift, and chocolate is used with space. Be careful not
@@ -78282,6 +78282,16 @@ PrefabInstance:
       propertyPath: swoosh
       value: 
       objectReference: {fileID: 164817363}
+    - target: {fileID: 5707866912915158061, guid: 813086c8e87653394be9ccfbe61770da,
+        type: 3}
+      propertyPath: damage1
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5707866912915158061, guid: 813086c8e87653394be9ccfbe61770da,
+        type: 3}
+      propertyPath: damage2
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7377098352821378923, guid: 813086c8e87653394be9ccfbe61770da,
         type: 3}
       propertyPath: m_Name

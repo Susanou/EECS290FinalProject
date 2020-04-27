@@ -13,10 +13,12 @@ MonoBehaviour:
   m_Name: Tonkatsu
   m_EditorClassIdentifier: 
   itemName: Tonkatsu
-  itemDescription: +3 Befriend against French Bread
+  itemDescription: +3 Befriend against Baguettes
   itemImage: {fileID: 8855085021979221714, guid: e0febef2d3575ac4c949fa375409dd19,
     type: 3}
   type: 1
+  damage: 3
+  damageString: Nutella
   myEvent:
     m_PersistentCalls:
       m_Calls: []

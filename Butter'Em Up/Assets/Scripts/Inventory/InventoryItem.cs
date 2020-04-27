@@ -11,6 +11,8 @@ public class InventoryItem : ScriptableObject
     public string itemDescription;
     public Sprite itemImage;
     public int type; //0 is butter knife, 1 is spread, 2 is recipe bits, 3 is ingredients, 4 is keys/environment interactables
+    public int damage;
+    public string damageString;
     public UnityEvent myEvent;
     public bool canEquip;
 
