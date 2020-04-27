@@ -11,7 +11,7 @@ public class Befriend : MonoBehaviour
     public string correctSpread; // Spread that you need to use to befriend. Any other will deal damage
     public FloatValue totalHP; // total number of hits to kill or befriend
 
-    private string[] damage; // array that will store the spreads used
+    private int goodAttack; // counter of good spreads
     private float dmg = 0; // counter of the number of hits
     private int enemy = 1;  // state of the enemy
                             // 1 = enemy, 0 = befriended, 2 = death
@@ -23,7 +23,6 @@ public class Befriend : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {   
-        damage = new string[(int)totalHP.RuntimeValue];
         enemyAnimator = this.GetComponent<Animator>();
     }
 
@@ -82,16 +81,18 @@ public class Befriend : MonoBehaviour
 
 
     public void hurt(string spread){
-        
-        damage[(int)dmg] = spread;
+
+        if (spread == this.correctSpread)
+            goodAttack++;
+
         dmg = Mathf.Min(++dmg, totalHP.RuntimeValue);
-        slider.value = CalculateFriend();
+        slider.value = goodAttack/ (float)totalHP.RuntimeValue;
         hpSlider.value = 1 - slider.value;
 
         if (dmg >= totalHP.RuntimeValue)
         {
             Debug.Log("Befriending start");
-            slider.value = CalculateFriend();
+            slider.value = goodAttack / (float)totalHP.RuntimeValue;
             hpSlider.value = 0;
             befriend();
             return;
@@ -99,29 +100,11 @@ public class Befriend : MonoBehaviour
             
     }
 
-    float CalculateFriend()
-    {
-        float good = 0;
-
-        foreach (string s in damage)
-        {
-            if (s == correctSpread)
-                good++;
-        }
-        return good / (float)totalHP.RuntimeValue;
-    }
-
     void befriend(){
-        float good = 0;
-
-        foreach(string s in damage){
-            if(s == correctSpread)
-                good++;
-        }
 
         float x = Random.Range(0.0f, 1.0f);
 
-        if (x <= good/(float)totalHP.RuntimeValue)
+        if (x <= goodAttack/(float)totalHP.RuntimeValue)
             enemy = 0;
         else
             enemy = 2;
