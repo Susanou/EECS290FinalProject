@@ -26,6 +26,18 @@ public class StartMenu : MonoBehaviour
         MenuMusic.SetActive(false);
     }
 
+    public void credits()
+    {
+        SceneManager.LoadScene("credits");
+        MenuMusic.SetActive(false);
+    }
+
+    public void startMenu()
+    {
+        SceneManager.LoadScene(0); // 1 should be the number of the castle scene
+        MenuMusic.SetActive(false);
+    }
+
     public void exitGame()
     {
         Application.Quit();
