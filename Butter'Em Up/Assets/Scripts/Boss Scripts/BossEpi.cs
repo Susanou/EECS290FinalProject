@@ -183,8 +183,9 @@ public class BossEpi : MonoBehaviour
 
     private IEnumerator attack()
     {
-        myAnimator.SetBool("attacking", true);
         currentState = BossState.attack;
+        myAnimator.SetBool("attacking", true);
+        
         yield return null;
         myAnimator.SetBool("attacking", false);
         yield return new WaitForSeconds(3f);
