@@ -78598,9 +78598,46 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5084247682892932257, guid: 342c2b6ddcc017b4d9d133edfc33d67e,
         type: 3}
+      propertyPath: teleportEvent.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5084247682892932257, guid: 342c2b6ddcc017b4d9d133edfc33d67e,
+        type: 3}
       propertyPath: transitioningGameObject
       value: 
       objectReference: {fileID: 2082799074}
+    - target: {fileID: 5084247682892932257, guid: 342c2b6ddcc017b4d9d133edfc33d67e,
+        type: 3}
+      propertyPath: teleportEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5084247682892932257, guid: 342c2b6ddcc017b4d9d133edfc33d67e,
+        type: 3}
+      propertyPath: teleportEvent.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5084247682892932257, guid: 342c2b6ddcc017b4d9d133edfc33d67e,
+        type: 3}
+      propertyPath: teleportEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 11400000, guid: af685a2419829af409ca56e166782b5c,
+        type: 2}
+    - target: {fileID: 5084247682892932257, guid: 342c2b6ddcc017b4d9d133edfc33d67e,
+        type: 3}
+      propertyPath: teleportEvent.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: addItem
+      objectReference: {fileID: 0}
+    - target: {fileID: 5084247682892932257, guid: 342c2b6ddcc017b4d9d133edfc33d67e,
+        type: 3}
+      propertyPath: teleportEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: InventoryItem, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 5084247682892932257, guid: 342c2b6ddcc017b4d9d133edfc33d67e,
+        type: 3}
+      propertyPath: teleportEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 11400000, guid: 82fd94045059d734abaf1dcfe2fa1724,
+        type: 2}
     - target: {fileID: 5084247682892932260, guid: 342c2b6ddcc017b4d9d133edfc33d67e,
         type: 3}
       propertyPath: m_LocalPosition.x

@@ -9,44 +9,46 @@ using UnityEngine.Events;
 public class TransporterScript : MonoBehaviour
 {
     
-        public GameObject transitioningGameObject;
-        public string newSceneName;
-        public TransportEndpoint.DestinationTag transitionDestinationTag;
-        [Tooltip("The player will lose control when the transition happens but should the axis and button values reset to the default when control is lost.")]
-        bool m_TransitioningGameObjectPresent;
+    public GameObject transitioningGameObject;
+    public string newSceneName;
+    public TransportEndpoint.DestinationTag transitionDestinationTag;
+    public UnityEvent teleportEvent;
+    [Tooltip("The player will lose control when the transition happens but should the axis and button values reset to the default when control is lost.")]
+    bool m_TransitioningGameObjectPresent;
 
 
-        void OnTriggerEnter2D (Collider2D other)
+    void OnTriggerEnter2D (Collider2D other)
+    {
+        if (other.gameObject == transitioningGameObject)
         {
-            if (other.gameObject == transitioningGameObject)
-            {
-                m_TransitioningGameObjectPresent = true;
-                TransitionInternal ();
-            }
+            m_TransitioningGameObjectPresent = true;
+            teleportEvent.Invoke();
+            TransitionInternal ();
         }
+    }
 
-        void OnTriggerExit2D (Collider2D other)
+    void OnTriggerExit2D (Collider2D other)
+    {
+        if (other.gameObject == transitioningGameObject)
         {
-            if (other.gameObject == transitioningGameObject)
-            {
-                m_TransitioningGameObjectPresent = false;
-            }
+            m_TransitioningGameObjectPresent = false;
         }
+    }
 
-        void Update ()
-        {
-            if(!m_TransitioningGameObjectPresent)
-                return;
-        }
+    void Update ()
+    {
+        if(!m_TransitioningGameObjectPresent)
+            return;
+    }
 
-        protected void TransitionInternal ()
-        {
-            SceneManager.LoadScene(newSceneName, LoadSceneMode.Single);
-        }
+    protected void TransitionInternal ()
+    {
+        SceneManager.LoadScene(newSceneName, LoadSceneMode.Single);
+    }
 
-        public void Activate()
-        {
-            this.gameObject.SetActive(true);
-        }
+    public void Activate()
+    {
+        this.gameObject.SetActive(true);
+    }
 
 }
