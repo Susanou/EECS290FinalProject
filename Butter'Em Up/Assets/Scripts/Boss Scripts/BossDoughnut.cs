@@ -79,7 +79,7 @@ public class BossDoughnut : MonoBehaviour
         change = Vector2.zero;
         
 
-        if (currentState != BossState.attack && !friends && timer > attackDelay)
+        if (entered && currentState != BossState.attack && !friends && timer > attackDelay)
         {
             change = target.transform.position - this.transform.position;
             change.Normalize();
