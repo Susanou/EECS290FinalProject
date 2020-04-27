@@ -100,8 +100,8 @@ public class WanderingAI : MonoBehaviour {
 
     private IEnumerator attack()
     {
-        myAnimator.SetBool("attacking", true);
         currentState = EnemyState.attack;
+        myAnimator.SetBool("attacking", true);     
         yield return null;
         myAnimator.SetBool("attacking", false);
         yield return new WaitForSeconds(3f);

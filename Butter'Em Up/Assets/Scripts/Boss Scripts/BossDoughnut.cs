@@ -150,8 +150,9 @@ public class BossDoughnut : MonoBehaviour
 
     IEnumerator attack(Transform objectToMove, Vector3 a, Vector3 b, float speed)
     {
-        myAnimator.SetBool("attacking", true);
         currentState = BossState.attack;
+        myAnimator.SetBool("attacking", true);
+        
         float step = (speed / (a - b).magnitude) * Time.fixedDeltaTime;
         float t = 0;
         while (t <= 1.0f)
