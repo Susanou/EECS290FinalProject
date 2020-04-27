@@ -272,7 +272,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5879301552261018822}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0.04, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 5879301553522060672}
@@ -1115,10 +1115,10 @@ MonoBehaviour:
   slider: {fileID: 5879301553505788609}
   sliderUI: {fileID: 5879301553119560852}
   maxHealth: {fileID: 11400000, guid: f531aa625bb0a1a4d9395dc98d46542b, type: 2}
-  speed: 0
+  speed: 5
   correctSpread: Nutella
   currentState: 0
-  attackDelay: 5
+  attackDelay: 3
   projectileSpeed: 10
   waypoints: []
   hat: {fileID: 5172385047146482571, guid: 0e16841357127ed44b7b817dfc23e6d1, type: 3}

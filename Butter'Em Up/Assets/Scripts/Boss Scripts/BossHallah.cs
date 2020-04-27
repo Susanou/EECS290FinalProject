@@ -91,6 +91,8 @@ public class BossHallah : MonoBehaviour
 
         if (currentState != BossState.attack && !friends && timer > attackDelay)
         {
+            Debug.Log("attack");
+
             if (!angryState)
             {
                 StartCoroutine(attack());

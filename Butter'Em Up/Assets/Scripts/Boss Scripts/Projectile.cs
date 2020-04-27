@@ -11,13 +11,17 @@ public class Projectile : MonoBehaviour
 		if (!this.CompareTag("DeadFriend") && other.CompareTag("Player") && other.GetComponent<PlayerMovement>().currentState != PlayerState.stagger)
 		{
 
-
+			Debug.Log("touched the player");
 			other.GetComponent<PlayerMovement>().currentState = PlayerState.stagger;
 			other.GetComponent<PlayerMovement>().hurt(dmg);
+			Destroy(this.gameObject);
 
 		}
 
 		if (!other.gameObject.CompareTag("BossHallah"))
+		{
+			Debug.Log("detroyed without touching player   " +  other.gameObject.name);
 			Destroy(this.gameObject);
+		}
 	}
 }
