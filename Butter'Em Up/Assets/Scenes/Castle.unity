@@ -62017,8 +62017,8 @@ MonoBehaviour:
   dialogueText: {fileID: 869548821}
   click: 0
   dialogue:
-  - "I\u2019m too weak to shout across the room. Please, come closer. Use the arrow
-    keys or wasd to move. Press K to talk to me when you get close enough."
+  - Please, come closer. Use the arrow keys or wasd to move. Press K to talk to me
+    when you get close enough.
   - "You\u2019ve been so kind to stay with me through all of this. Everyone has been
     going crazy, including the royal guards."
   - Speaking of which, the toasts should be making their rounds of this portion of
@@ -62034,24 +62034,22 @@ MonoBehaviour:
   - For this reason, we must not fight each other but instead fight to keep our alliance.
   - I told you the spreads will help you defend yourself. However, you do not have
     to use them as a weapon. We, breads, enjoy the feeling of a good spread.
-  - Use shift to use your primary spread. You can practice using shift on me. Don't
-    worry, you won't hurt me!
+  - Use shift to use margarine. You can practice using shift on me. Don't worry,
+    you won't hurt me!
   - It feels great!
-  - 'You only have a couple spreads right now, margarine and chocolate nut spread.
-    You can set your primary and secondary spreads using the inventory menu (I). '
-  - Primary spread is used with shift, and secondary is used with space. Be careful
-    not to confuse your spreads. They do very different things.
+  - 'You only have a couple spreads right now, margarine and chocolate spread. '
+  - Margarine is used with shift, and chocolate is used with space. Be careful not
+    to confuse your spreads. They are not the same.
   - Although some spreads befriend your enemies, some spreads are not so friendly.
-    You have the ability to hurt a bread. Your chocolate spread is one that can kill
-    breads.
-  - "You only have a couple spreads right now, but that\u2019s still a good place
-    to start. You\u2019ll discover more later, but first you need to talk to \xE9pi."
+    You have the ability to hurt a bread. Toasts like margarine, but not chocolate.
+  - "Chocolate spread will kill toasts, but this isn\u2019t true for all types of
+    bread. You\u2019ll discover more later, but first you need to talk to \xE9pi."
   - "However hostile he can be, you will need his help. As the head guard of this
     castle, \xE9pi has knowledge of the surrounding lands and will tell you where
     you need to go from here."
-  - Before you talk to him, you need to take care of the toasts and baguttes.
+  - Before you talk to him, you need to take care of the toast castle guards.
   - The toasts should be in the hall outside my room, so go practice buttering them
-    up. Remember to use shift for your primary spread and space for your secondary.
+    up. Remember to use shift for margarine and space for chocolate.
   - Keep in mind that you can befriend or hurt breads. Although you know my opinion,
     that choice will be yours. Be careful, and good luck on your journey!
   inRange: 0
