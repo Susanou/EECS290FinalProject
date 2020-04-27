@@ -1008,7 +1008,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1219619181
-  m_SortingLayer: 0
+  m_SortingLayer: 3
   m_SortingOrder: 2
   m_Sprite: {fileID: -896719736707857394, guid: 733e28bb217aba247bd16fa8e0ac63bd,
     type: 3}
@@ -1090,7 +1090,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1219619181
-  m_SortingLayer: 0
+  m_SortingLayer: 3
   m_SortingOrder: 2
   m_Sprite: {fileID: -6990840403640849133, guid: 3fcda9c3f2d6e234e9e313d015369bd6,
     type: 3}
@@ -1204,7 +1204,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1219619181
-  m_SortingLayer: 0
+  m_SortingLayer: 3
   m_SortingOrder: 1
   m_Sprite: {fileID: -29692610139013811, guid: 733e28bb217aba247bd16fa8e0ac63bd, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -1448,7 +1448,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1219619181
-  m_SortingLayer: 0
+  m_SortingLayer: 3
   m_SortingOrder: 3
   m_Sprite: {fileID: -4569693976572012670, guid: 733e28bb217aba247bd16fa8e0ac63bd,
     type: 3}
@@ -1533,7 +1533,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1219619181
-  m_SortingLayer: 0
+  m_SortingLayer: 3
   m_SortingOrder: 1
   m_Sprite: {fileID: 6306766961869140159, guid: 733e28bb217aba247bd16fa8e0ac63bd,
     type: 3}
@@ -1615,7 +1615,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1219619181
-  m_SortingLayer: 0
+  m_SortingLayer: 3
   m_SortingOrder: 1
   m_Sprite: {fileID: -29692610139013811, guid: 733e28bb217aba247bd16fa8e0ac63bd, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -1696,7 +1696,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1219619181
-  m_SortingLayer: 0
+  m_SortingLayer: 3
   m_SortingOrder: 2
   m_Sprite: {fileID: -60545194262561565, guid: 3fcda9c3f2d6e234e9e313d015369bd6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}

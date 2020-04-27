@@ -247,3 +247,6 @@ MonoBehaviour:
   transitioningGameObject: {fileID: 0}
   newSceneName: Aisle 1
   transitionDestinationTag: 0
+  teleportEvent:
+    m_PersistentCalls:
+      m_Calls: []
