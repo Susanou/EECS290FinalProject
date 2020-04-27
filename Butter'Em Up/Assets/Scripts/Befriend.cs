@@ -80,12 +80,12 @@ public class Befriend : MonoBehaviour
 
 
 
-    public void hurt(string spread){
+    public void hurt(string spread, int degats){
 
         if (spread == this.correctSpread)
-            goodAttack++;
+            goodAttack+=degats;
 
-        dmg = Mathf.Min(++dmg, totalHP.RuntimeValue);
+        dmg = Mathf.Min(dmg+degats, totalHP.RuntimeValue);
         slider.value = goodAttack/ (float)totalHP.RuntimeValue;
         hpSlider.value = 1 - slider.value;
 

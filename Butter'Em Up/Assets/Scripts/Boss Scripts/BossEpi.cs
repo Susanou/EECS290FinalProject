@@ -136,11 +136,11 @@ public class BossEpi : MonoBehaviour
             myAnimator.SetBool("walking", false);
     }
 
-    public void hurt(string spread)
+    public void hurt(string spread, int degats)
     {
         Debug.Log(spread);
         if(spread == correctSpread)
-            health++;
+            health+=degats;
 
         if (health < maxHealth.RuntimeValue)
         {
