@@ -7,8 +7,11 @@ public class Attack1 : MonoBehaviour
 
     public string spread1;
     public string spread2;
+    public int damage1;
+    public int damage2;
 
     private string spread;
+    private int damage;
     private Animator _animator;
     private PlayerMovement movement;
     [SerializeField] GameObject swoosh;
@@ -29,12 +32,14 @@ public class Attack1 : MonoBehaviour
     public void AttackSpread1()
     {
         spread = spread1;
+        damage = damage1;
         StartCoroutine(knifeSwing());
     }
 
     public void AttackSpread2()
     {
         spread = spread2;
+        damage = damage2;
         StartCoroutine(knifeSwing());
     }
 
@@ -53,18 +58,18 @@ public class Attack1 : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D other) {
         if (other.CompareTag("Damageable"))
         {
-            other.GetComponent<Befriend>().hurt(spread);
+            other.GetComponent<Befriend>().hurt(spread, damage);
         }
         else if (other.CompareTag("BossEpi"))
         {
-            other.GetComponent<BossEpi>().hurt(spread);
+            other.GetComponent<BossEpi>().hurt(spread, damage);
         }else if (other.CompareTag("BossHallah"))
         {
-            other.GetComponent<BossHallah>().hurt(spread);
+            other.GetComponent<BossHallah>().hurt(spread, damage);
         }
         else if (other.CompareTag("BossDoughnut"))
         {
-            other.GetComponent<BossDoughnut>().hurt(spread);
+            other.GetComponent<BossDoughnut>().hurt(spread, damage);
         }
     }
 }

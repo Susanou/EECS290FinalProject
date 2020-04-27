@@ -55,7 +55,8 @@ public class InventoryManager : MonoBehaviour
     {
         if (currentItem.canEquip)
         {
-            playerAttack.spread1 = currentItem.itemName;
+            playerAttack.spread1 = currentItem.damageString;
+            playerAttack.damage1 = currentItem.damage;
             primary.sprite = currentItem.itemImage;
         }
     }
@@ -63,7 +64,8 @@ public class InventoryManager : MonoBehaviour
     {
         if(currentItem.canEquip)
         {
-            playerAttack.spread2 = currentItem.itemName;
+            playerAttack.spread2 = currentItem.damageString;
+            playerAttack.damage2 = currentItem.damage;
             secondary.sprite = currentItem.itemImage;
         }
     }

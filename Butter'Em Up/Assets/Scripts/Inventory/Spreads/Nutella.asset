@@ -17,6 +17,8 @@ MonoBehaviour:
   itemImage: {fileID: 8641895268797647228, guid: e0febef2d3575ac4c949fa375409dd19,
     type: 3}
   type: 1
+  damage: 1
+  damageString: Nutella
   myEvent:
     m_PersistentCalls:
       m_Calls: []
