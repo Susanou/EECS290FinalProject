@@ -81,16 +81,18 @@ public class Befriend : MonoBehaviour
 
 
     public void hurt(string spread){
-        
-        damage[(int)dmg] = spread;
+
+        if (spread == this.correctSpread)
+            goodAttack++;
+
         dmg = Mathf.Min(++dmg, totalHP.RuntimeValue);
-        slider.value = CalculateFriend();
+        slider.value = goodAttack/ (float)totalHP.RuntimeValue;
         hpSlider.value = 1 - slider.value;
 
         if (dmg >= totalHP.RuntimeValue)
         {
             Debug.Log("Befriending start");
-            slider.value = CalculateFriend();
+            slider.value = goodAttack / (float)totalHP.RuntimeValue;
             hpSlider.value = 0;
             befriend();
             return;
@@ -98,29 +100,11 @@ public class Befriend : MonoBehaviour
             
     }
 
-    float CalculateFriend()
-    {
-        float good = 0;
-
-        foreach (string s in damage)
-        {
-            if (s == correctSpread)
-                good++;
-        }
-        return good / (float)totalHP.RuntimeValue;
-    }
-
     void befriend(){
-        float good = 0;
-
-        foreach(string s in damage){
-            if(s == correctSpread)
-                good++;
-        }
 
         float x = Random.Range(0.0f, 1.0f);
 
-        if (x <= good/(float)totalHP.RuntimeValue)
+        if (x <= goodAttack/(float)totalHP.RuntimeValue)
             enemy = 0;
         else
             enemy = 2;
