@@ -276,6 +276,12 @@ PrefabInstance:
       propertyPath: m_Name
       value: HealthHolder
       objectReference: {fileID: 0}
+    - target: {fileID: 918250260058102693, guid: 50f329f5b40272a48afeca61d9c12e6f,
+        type: 3}
+      propertyPath: heartContainers
+      value: 
+      objectReference: {fileID: 11400000, guid: 8f02470f28cdaaa4e92041af6a3fc97b,
+        type: 2}
     - target: {fileID: 918250260058102694, guid: 50f329f5b40272a48afeca61d9c12e6f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -396,6 +402,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4431610377205740599}
     m_Modifications:
+    - target: {fileID: 4317625085050578081, guid: f64c4e17627822a4c963d863a5f4fe56,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4317625085050578085, guid: f64c4e17627822a4c963d863a5f4fe56,
         type: 3}
       propertyPath: playerAttack
@@ -415,6 +426,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: InventoryCanvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 4317625085171954459, guid: f64c4e17627822a4c963d863a5f4fe56,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4317625085171954463, guid: f64c4e17627822a4c963d863a5f4fe56,
         type: 3}

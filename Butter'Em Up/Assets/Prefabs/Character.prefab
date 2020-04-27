@@ -485,7 +485,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &7377098352219389550
 Transform:
   m_ObjectHideFlags: 0
@@ -807,7 +807,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 8
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 0
@@ -829,7 +829,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.028727055, y: -2.095931}
+  m_Offset: {x: -0.18306708, y: -2.2196274}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -840,7 +840,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 4.987302, y: 3.1269855}
+  m_Size: {x: 3.884872, y: 2.879593}
   m_EdgeRadius: 0
 --- !u!81 &776660336
 AudioListener:
@@ -862,10 +862,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3ee1b1eb1befbb09bb8f4e4131d1aaaf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 25
+  speed: 15
   currentState: 0
   health: {fileID: 11400000, guid: 83cf39b5bae2cb94faed1cae3993ac1c, type: 2}
   playerHealth: {fileID: 11400000, guid: 6c36e35ee8ce0c940b8836987a0734f3, type: 2}
+  GameOver: {fileID: 0}
+  EndMainMusic: {fileID: 0}
+  EndBossMusic: {fileID: 0}
+  HurtSound: {fileID: 0}
 --- !u!114 &5707866912915158061
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -894,8 +898,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dmg: 1
-  kbtime: 2
-  thrust: 15
+  kbtime: 0.5
+  thrust: 10
 --- !u!114 &2082799075
 MonoBehaviour:
   m_ObjectHideFlags: 0
