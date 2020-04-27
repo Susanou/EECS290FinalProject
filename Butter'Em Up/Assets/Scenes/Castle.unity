@@ -2445,7 +2445,7 @@ MonoBehaviour:
   fullHeart: {fileID: 5687524595573011454, guid: 6abefd1e9664fd44fb38dd9b384453fb,
     type: 3}
   emptyHeart: {fileID: 0}
-  heartContainers: 3
+  heartContainers: {fileID: 0}
   playerHealth: {fileID: 11400000, guid: 83cf39b5bae2cb94faed1cae3993ac1c, type: 2}
 --- !u!212 &708092031
 SpriteRenderer:
@@ -62423,7 +62423,7 @@ MonoBehaviour:
   fullHeart: {fileID: 5687524595573011454, guid: 6abefd1e9664fd44fb38dd9b384453fb,
     type: 3}
   emptyHeart: {fileID: 0}
-  heartContainers: 3
+  heartContainers: {fileID: 0}
   playerHealth: {fileID: 11400000, guid: 83cf39b5bae2cb94faed1cae3993ac1c, type: 2}
 --- !u!212 &1332027997
 SpriteRenderer:
@@ -76861,7 +76861,7 @@ MonoBehaviour:
   fullHeart: {fileID: 5687524595573011454, guid: 6abefd1e9664fd44fb38dd9b384453fb,
     type: 3}
   emptyHeart: {fileID: 0}
-  heartContainers: 3
+  heartContainers: {fileID: 0}
   playerHealth: {fileID: 11400000, guid: 83cf39b5bae2cb94faed1cae3993ac1c, type: 2}
 --- !u!1 &1683445264
 GameObject:
@@ -77138,7 +77138,7 @@ MonoBehaviour:
     type: 3}
   emptyHeart: {fileID: -145808401816936526, guid: 6abefd1e9664fd44fb38dd9b384453fb,
     type: 3}
-  heartContainers: 3
+  heartContainers: {fileID: 11400000, guid: 8f02470f28cdaaa4e92041af6a3fc97b, type: 2}
   playerHealth: {fileID: 11400000, guid: 83cf39b5bae2cb94faed1cae3993ac1c, type: 2}
 --- !u!1 &1855113389
 GameObject:
@@ -77930,7 +77930,7 @@ MonoBehaviour:
   fullHeart: {fileID: 5687524595573011454, guid: 6abefd1e9664fd44fb38dd9b384453fb,
     type: 3}
   emptyHeart: {fileID: 0}
-  heartContainers: 3
+  heartContainers: {fileID: 0}
   playerHealth: {fileID: 11400000, guid: 83cf39b5bae2cb94faed1cae3993ac1c, type: 2}
 --- !u!212 &2003374746
 SpriteRenderer:
@@ -78073,7 +78073,7 @@ MonoBehaviour:
   fullHeart: {fileID: 5687524595573011454, guid: 6abefd1e9664fd44fb38dd9b384453fb,
     type: 3}
   emptyHeart: {fileID: 0}
-  heartContainers: 3
+  heartContainers: {fileID: 0}
   playerHealth: {fileID: 11400000, guid: 83cf39b5bae2cb94faed1cae3993ac1c, type: 2}
 --- !u!212 &2003664878
 SpriteRenderer:
@@ -78259,47 +78259,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 709620691, guid: 813086c8e87653394be9ccfbe61770da, type: 3}
-      propertyPath: m_Offset.y
-      value: 0.08306122
-      objectReference: {fileID: 0}
-    - target: {fileID: 709620691, guid: 813086c8e87653394be9ccfbe61770da, type: 3}
-      propertyPath: m_Size.y
-      value: 2.6009598
-      objectReference: {fileID: 0}
-    - target: {fileID: 709620692, guid: 813086c8e87653394be9ccfbe61770da, type: 3}
-      propertyPath: kbtime
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 709620692, guid: 813086c8e87653394be9ccfbe61770da, type: 3}
-      propertyPath: thrust
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 3355181244413464400, guid: 813086c8e87653394be9ccfbe61770da,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3355181244681544704, guid: 813086c8e87653394be9ccfbe61770da,
-        type: 3}
-      propertyPath: m_Offset.y
-      value: -0.41164017
-      objectReference: {fileID: 0}
-    - target: {fileID: 3355181244681544704, guid: 813086c8e87653394be9ccfbe61770da,
-        type: 3}
-      propertyPath: m_Size.y
-      value: 6.4955673
-      objectReference: {fileID: 0}
-    - target: {fileID: 3355181244681544705, guid: 813086c8e87653394be9ccfbe61770da,
-        type: 3}
-      propertyPath: m_UseAutoMass
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3355181244681544705, guid: 813086c8e87653394be9ccfbe61770da,
-        type: 3}
-      propertyPath: m_Mass
-      value: 8
-      objectReference: {fileID: 0}
     - target: {fileID: 3355181244681544707, guid: 813086c8e87653394be9ccfbe61770da,
         type: 3}
       propertyPath: GameOver
@@ -78320,21 +78279,11 @@ PrefabInstance:
       propertyPath: HurtSound
       value: 
       objectReference: {fileID: 181769193}
-    - target: {fileID: 3355181244681544707, guid: 813086c8e87653394be9ccfbe61770da,
-        type: 3}
-      propertyPath: speed
-      value: 15
-      objectReference: {fileID: 0}
     - target: {fileID: 5707866912915158061, guid: 813086c8e87653394be9ccfbe61770da,
         type: 3}
       propertyPath: swoosh
       value: 
       objectReference: {fileID: 164817363}
-    - target: {fileID: 7377098352219389548, guid: 813086c8e87653394be9ccfbe61770da,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 7377098352821378923, guid: 813086c8e87653394be9ccfbe61770da,
         type: 3}
       propertyPath: m_Name
