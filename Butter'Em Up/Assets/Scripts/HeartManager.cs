@@ -40,7 +40,7 @@ public class HeartManager : MonoBehaviour
     public void updateHearts()
     {
 
-        int tempHealth = (int)Mathf.Min(playerHealth.RuntimeValue-1, heartContainers.initialValue);
+        int tempHealth = (int)Mathf.Min(playerHealth.RuntimeValue-1, heartContainers.RuntimeValue);
 
         for(int i = 0; i < heartContainers.initialValue; i++)
         {
