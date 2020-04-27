@@ -87,7 +87,7 @@ public class Befriend : MonoBehaviour
 
         dmg = Mathf.Min(dmg+degats, totalHP.RuntimeValue);
         slider.value = goodAttack/ (float)totalHP.RuntimeValue;
-        hpSlider.value = 1 - slider.value;
+        hpSlider.value = 1 - dmg / (float)totalHP.RuntimeValue;
 
         if (dmg >= totalHP.RuntimeValue)
         {
