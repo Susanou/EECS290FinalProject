@@ -746,7 +746,6 @@ GameObject:
   - component: {fileID: 5707866912915158061}
   - component: {fileID: 709620692}
   - component: {fileID: 2082799075}
-  - component: {fileID: 1818358525}
   m_Layer: 8
   m_Name: Character
   m_TagString: Player
@@ -903,20 +902,6 @@ MonoBehaviour:
   kbtime: 0.5
   thrust: 10
 --- !u!114 &2082799075
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7377098352821378923}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f0f6c688bba614978b9b9a4a87d97a4b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  playerInventory: {fileID: 11400000, guid: af685a2419829af409ca56e166782b5c, type: 2}
-  knifeSprite: {fileID: 7377098352219389548}
---- !u!114 &1818358525
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
