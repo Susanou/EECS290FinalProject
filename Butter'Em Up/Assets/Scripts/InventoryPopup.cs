@@ -15,6 +15,8 @@ public class InventoryPopup : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.I))
             inventoryOpen = toggleInventory();
+        if (Input.GetKeyDown(KeyCode.Escape))
+            pauseOpen = togglePause();
     }
 
     bool toggleInventory()
