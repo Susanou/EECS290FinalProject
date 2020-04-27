@@ -5,7 +5,6 @@ using UnityEngine;
 public class HealthUp : MonoBehaviour
 {
 
-    [SerializeField] private GameObject health;
     [SerializeField] private GameObject sound;
    
 
@@ -17,7 +16,7 @@ public class HealthUp : MonoBehaviour
             sound.SetActive(false);
             sound.SetActive(true);
             other.GetComponent<PlayerMovement>().gainHealth(1);
-            health.SetActive(false);
+            this.gameObject.SetActive(false);
         }
     }
             // Update is called once per frame

@@ -2405,7 +2405,6 @@ GameObject:
   - component: {fileID: 708092033}
   - component: {fileID: 708092032}
   - component: {fileID: 708092031}
-  - component: {fileID: 708092030}
   - component: {fileID: 708092029}
   - component: {fileID: 708092034}
   m_Layer: 0
@@ -2427,26 +2426,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e32ca2898f2f93f4ea61ecca09db84a2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: {fileID: 708092028}
   sound: {fileID: 1900489692}
---- !u!114 &708092030
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 708092028}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b7e8a2b9b773c774fb80e0e930c342fc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  hearts: []
-  fullHeart: {fileID: 5687524595573011454, guid: 6abefd1e9664fd44fb38dd9b384453fb,
-    type: 3}
-  emptyHeart: {fileID: 0}
-  heartContainers: {fileID: 0}
-  playerHealth: {fileID: 11400000, guid: 83cf39b5bae2cb94faed1cae3993ac1c, type: 2}
 --- !u!212 &708092031
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -62382,7 +62362,6 @@ GameObject:
   - component: {fileID: 1332027999}
   - component: {fileID: 1332027998}
   - component: {fileID: 1332027997}
-  - component: {fileID: 1332027996}
   - component: {fileID: 1332027995}
   m_Layer: 0
   m_Name: HealthPot (2)
@@ -62403,26 +62382,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e32ca2898f2f93f4ea61ecca09db84a2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: {fileID: 1332027994}
   sound: {fileID: 1900489692}
---- !u!114 &1332027996
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1332027994}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b7e8a2b9b773c774fb80e0e930c342fc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  hearts: []
-  fullHeart: {fileID: 5687524595573011454, guid: 6abefd1e9664fd44fb38dd9b384453fb,
-    type: 3}
-  emptyHeart: {fileID: 0}
-  heartContainers: {fileID: 0}
-  playerHealth: {fileID: 11400000, guid: 83cf39b5bae2cb94faed1cae3993ac1c, type: 2}
 --- !u!212 &1332027997
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -76729,7 +76689,6 @@ GameObject:
   - component: {fileID: 1654734093}
   - component: {fileID: 1654734092}
   - component: {fileID: 1654734091}
-  - component: {fileID: 1654734095}
   - component: {fileID: 1654734094}
   m_Layer: 0
   m_Name: HealthPot
@@ -76841,26 +76800,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e32ca2898f2f93f4ea61ecca09db84a2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: {fileID: 1654734090}
   sound: {fileID: 1900489692}
---- !u!114 &1654734095
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1654734090}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b7e8a2b9b773c774fb80e0e930c342fc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  hearts: []
-  fullHeart: {fileID: 5687524595573011454, guid: 6abefd1e9664fd44fb38dd9b384453fb,
-    type: 3}
-  emptyHeart: {fileID: 0}
-  heartContainers: {fileID: 0}
-  playerHealth: {fileID: 11400000, guid: 83cf39b5bae2cb94faed1cae3993ac1c, type: 2}
 --- !u!1 &1683445264
 GameObject:
   m_ObjectHideFlags: 0
@@ -77889,7 +77829,6 @@ GameObject:
   - component: {fileID: 2003374748}
   - component: {fileID: 2003374747}
   - component: {fileID: 2003374746}
-  - component: {fileID: 2003374745}
   - component: {fileID: 2003374744}
   m_Layer: 0
   m_Name: HealthPot (1)
@@ -77910,26 +77849,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e32ca2898f2f93f4ea61ecca09db84a2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: {fileID: 2003374743}
   sound: {fileID: 1900489692}
---- !u!114 &2003374745
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2003374743}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b7e8a2b9b773c774fb80e0e930c342fc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  hearts: []
-  fullHeart: {fileID: 5687524595573011454, guid: 6abefd1e9664fd44fb38dd9b384453fb,
-    type: 3}
-  emptyHeart: {fileID: 0}
-  heartContainers: {fileID: 0}
-  playerHealth: {fileID: 11400000, guid: 83cf39b5bae2cb94faed1cae3993ac1c, type: 2}
 --- !u!212 &2003374746
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -78032,7 +77952,6 @@ GameObject:
   - component: {fileID: 2003664880}
   - component: {fileID: 2003664879}
   - component: {fileID: 2003664878}
-  - component: {fileID: 2003664877}
   - component: {fileID: 2003664876}
   m_Layer: 0
   m_Name: HealthPot (3)
@@ -78053,26 +77972,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e32ca2898f2f93f4ea61ecca09db84a2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: {fileID: 2003664875}
   sound: {fileID: 1900489692}
---- !u!114 &2003664877
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2003664875}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b7e8a2b9b773c774fb80e0e930c342fc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  hearts: []
-  fullHeart: {fileID: 5687524595573011454, guid: 6abefd1e9664fd44fb38dd9b384453fb,
-    type: 3}
-  emptyHeart: {fileID: 0}
-  heartContainers: {fileID: 0}
-  playerHealth: {fileID: 11400000, guid: 83cf39b5bae2cb94faed1cae3993ac1c, type: 2}
 --- !u!212 &2003664878
 SpriteRenderer:
   m_ObjectHideFlags: 0
