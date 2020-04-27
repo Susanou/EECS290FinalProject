@@ -872,15 +872,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 97d3a46dfa0f41141b2e1197dbbc2d8d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxBossArea: {x: 66.13, y: 45}
-  minBossArea: {x: 48, y: -24.1}
+  maxBossArea: {x: 117, y: 63}
+  minBossArea: {x: 107, y: 1}
   slider: {fileID: 82680686}
   sliderUI: {fileID: 1349424723}
   maxHealth: {fileID: 11400000, guid: bc7a7d432d2420444a5ef55ed9c69e6a, type: 2}
-  speed: 10
+  speed: 20
   correctSpread: Nutella
   currentState: 0
-  attackDelay: 8
+  attackDelay: 5
   koTime: 5
   befriendjingle: {fileID: 0}
   endmusic: {fileID: 0}

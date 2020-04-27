@@ -71,8 +71,8 @@ public class BossDoughnut : MonoBehaviour
         {
             angry.SetActive(true);
             angryState = true;
-            speed += 5;
-            koTime = 3f;
+            speed += 10;
+            attackDelay = 3f;
         }
 
 
