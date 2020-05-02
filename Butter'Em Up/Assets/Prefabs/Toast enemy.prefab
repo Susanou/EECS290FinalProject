@@ -908,6 +908,7 @@ MonoBehaviour:
   dmg: 1
   kbtime: 0.5
   thrust: 5
+  origin: {fileID: 1238856453085755191}
 --- !u!1 &1238856453616575599
 GameObject:
   m_ObjectHideFlags: 0

@@ -860,6 +860,7 @@ MonoBehaviour:
   dmg: 1
   kbtime: 0.5
   thrust: 5
+  origin: {fileID: 6202911823291028503}
 --- !u!114 &192012731
 MonoBehaviour:
   m_ObjectHideFlags: 0

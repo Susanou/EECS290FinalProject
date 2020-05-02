@@ -1657,6 +1657,10 @@ PrefabInstance:
       propertyPath: dialogueText
       value: 
       objectReference: {fileID: 869548821}
+    - target: {fileID: 312684166, guid: d92e61470fed82f4da915d0496dee0e3, type: 3}
+      propertyPath: origin
+      value: 
+      objectReference: {fileID: 940299860}
     - target: {fileID: 1818989718, guid: d92e61470fed82f4da915d0496dee0e3, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -2948,6 +2952,12 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 869548819}
   m_CullTransparentMesh: 0
+--- !u!4 &940299860 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5698415287774685974, guid: d92e61470fed82f4da915d0496dee0e3,
+    type: 3}
+  m_PrefabInstance: {fileID: 615659919}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &978596044 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7377098352219389548, guid: 813086c8e87653394be9ccfbe61770da,
@@ -62759,14 +62769,6 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1857230812, guid: 1800549976415724a8b8bd38f1852355, type: 3}
-      propertyPath: m_UseAutoMass
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1857230812, guid: 1800549976415724a8b8bd38f1852355, type: 3}
-      propertyPath: m_Mass
-      value: 2
-      objectReference: {fileID: 0}
     - target: {fileID: 1238856453085755184, guid: 1800549976415724a8b8bd38f1852355,
         type: 3}
       propertyPath: m_Name
@@ -62829,11 +62831,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1521431043642679258, guid: 1800549976415724a8b8bd38f1852355,
         type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1521431043642679258, guid: 1800549976415724a8b8bd38f1852355,
-        type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
@@ -62852,11 +62849,6 @@ PrefabInstance:
       propertyPath: HealthPot
       value: 
       objectReference: {fileID: 1654734090}
-    - target: {fileID: 3168142526768003449, guid: 1800549976415724a8b8bd38f1852355,
-        type: 3}
-      propertyPath: endmusic
-      value: 
-      objectReference: {fileID: 4503609}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1800549976415724a8b8bd38f1852355, type: 3}
 --- !u!1 &1442677606
@@ -62922,7 +62914,7 @@ GameObject:
   - component: {fileID: 1469364027}
   - component: {fileID: 1469364026}
   - component: {fileID: 1469364025}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Walls
   m_TagString: walls
   m_Icon: {fileID: 0}
@@ -78281,22 +78273,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 262816622, guid: 813086c8e87653394be9ccfbe61770da, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 262816623, guid: 813086c8e87653394be9ccfbe61770da, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 1.08
-      objectReference: {fileID: 0}
-    - target: {fileID: 522742383, guid: 813086c8e87653394be9ccfbe61770da, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 522742384, guid: 813086c8e87653394be9ccfbe61770da, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -1.21
-      objectReference: {fileID: 0}
     - target: {fileID: 3355181244681544707, guid: 813086c8e87653394be9ccfbe61770da,
         type: 3}
       propertyPath: GameOver
@@ -78311,7 +78287,7 @@ PrefabInstance:
         type: 3}
       propertyPath: EndBossMusic
       value: 
-      objectReference: {fileID: 1683445264}
+      objectReference: {fileID: 1633658785}
     - target: {fileID: 3355181244681544707, guid: 813086c8e87653394be9ccfbe61770da,
         type: 3}
       propertyPath: HurtSound
@@ -78322,16 +78298,6 @@ PrefabInstance:
       propertyPath: swoosh
       value: 
       objectReference: {fileID: 164817363}
-    - target: {fileID: 5707866912915158061, guid: 813086c8e87653394be9ccfbe61770da,
-        type: 3}
-      propertyPath: damage1
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5707866912915158061, guid: 813086c8e87653394be9ccfbe61770da,
-        type: 3}
-      propertyPath: damage2
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 7377098352821378923, guid: 813086c8e87653394be9ccfbe61770da,
         type: 3}
       propertyPath: m_Name

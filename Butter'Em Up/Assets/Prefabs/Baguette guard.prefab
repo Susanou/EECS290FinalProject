@@ -1342,6 +1342,7 @@ MonoBehaviour:
   dmg: 1
   kbtime: 0.5
   thrust: 10
+  origin: {fileID: 9125969212745297708}
 --- !u!114 &9125969211625292082
 MonoBehaviour:
   m_ObjectHideFlags: 0

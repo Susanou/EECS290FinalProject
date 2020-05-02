@@ -9,12 +9,14 @@ public class Attack1 : MonoBehaviour
     public string spread2;
     public int damage1;
     public int damage2;
+    public Transform origin;
 
     private string spread;
     private int damage;
     private Animator _animator;
     private PlayerMovement movement;
     [SerializeField] GameObject swoosh;
+    private Transform o;
 
     // Start is called before the first frame update
     void Start()
@@ -57,9 +59,12 @@ public class Attack1 : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other) {
 
-        RaycastHit2D hit = Physics2D.Raycast((Vector2)this.transform.position, (Vector2)other.transform.position);
-        Debug.Log(hit.collider);
-       //Debug.Log(other.tag);
+        this.o = other.transform;
+
+        int mask = LayerMask.GetMask("Enemy");
+
+        RaycastHit2D hit = Physics2D.Raycast((Vector2)origin.position, (Vector2)other.transform.position - (Vector2)origin.position, 5f, mask);
+
         if (hit.collider.tag != "walls")
         {
             if (other.CompareTag("Damageable"))
@@ -79,5 +84,11 @@ public class Attack1 : MonoBehaviour
                 other.GetComponent<BossDoughnut>().hurt(spread, damage);
             }
         }
+    }
+
+    private void OnDrawGizmos()
+    {
+        Gizmos.color = Color.magenta;
+        Gizmos.DrawRay(origin.position, o.position - origin.position);
     }
 }

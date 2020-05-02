@@ -8,6 +8,7 @@ public class KnockBack: MonoBehaviour
     public int dmg;
     public float kbtime;
     public float thrust;
+    public Transform origin;
 
     // Start is called before the first frame update
     void Start()
@@ -23,8 +24,9 @@ public class KnockBack: MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        RaycastHit2D hit = Physics2D.Raycast((Vector2)this.transform.position, (Vector2)other.transform.position);
-
+        int mask = LayerMask.GetMask("Enemy");
+        RaycastHit2D hit = Physics2D.Raycast((Vector2)origin.position, (Vector2)other.transform.position, Mathf.Infinity, mask);
+        Debug.Log(hit.collider);
         if (hit.collider.tag != "walls")
         {
             if (other.gameObject.CompareTag("Damageable"))
