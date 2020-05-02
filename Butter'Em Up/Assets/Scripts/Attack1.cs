@@ -56,20 +56,28 @@ public class Attack1 : MonoBehaviour
     }
 
     private void OnTriggerEnter2D(Collider2D other) {
-        if (other.CompareTag("Damageable"))
+
+        RaycastHit2D hit = Physics2D.Raycast((Vector2)this.transform.position- new Vector2(0,-2), (Vector2)other.transform.position);
+        Debug.Log(hit.collider);
+       //Debug.Log(other.tag);
+        if (hit.collider.tag != "walls")
         {
-            other.GetComponent<Befriend>().hurt(spread, damage);
-        }
-        else if (other.CompareTag("BossEpi"))
-        {
-            other.GetComponent<BossEpi>().hurt(spread, damage);
-        }else if (other.CompareTag("BossHallah"))
-        {
-            other.GetComponent<BossHallah>().hurt(spread, damage);
-        }
-        else if (other.CompareTag("BossDoughnut"))
-        {
-            other.GetComponent<BossDoughnut>().hurt(spread, damage);
+            if (other.CompareTag("Damageable"))
+            {
+                other.GetComponent<Befriend>().hurt(spread, damage);
+            }
+            else if (other.CompareTag("BossEpi"))
+            {
+                other.GetComponent<BossEpi>().hurt(spread, damage);
+            }
+            else if (other.CompareTag("BossHallah"))
+            {
+                other.GetComponent<BossHallah>().hurt(spread, damage);
+            }
+            else if (other.CompareTag("BossDoughnut"))
+            {
+                other.GetComponent<BossDoughnut>().hurt(spread, damage);
+            }
         }
     }
 }

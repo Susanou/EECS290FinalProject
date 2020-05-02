@@ -12,6 +12,7 @@ TagManager:
   - BossBao
   - DeadFriend
   - BossDoughnut
+  - walls
   layers:
   - Default
   - TransparentFX

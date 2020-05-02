@@ -377,7 +377,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: "Background:     Studio Ghibli \u9B54\u5973\u306E\u5B85\u6025\u4FBF"
+  m_Text: 'Background:     Photo by Miti on Unsplash'
 --- !u!222 &936754540
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -647,7 +647,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 5cfe8013a497c3d479f4494761b1cbe2, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 80afb8ea3f6fabd4792778e0a6584564, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
