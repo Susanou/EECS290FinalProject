@@ -23,95 +23,101 @@ public class KnockBack: MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.gameObject.CompareTag("Damageable"))
+        RaycastHit2D hit = Physics2D.Raycast((Vector2)this.transform.position, (Vector2)other.transform.position);
+
+        if (hit.collider.tag != "walls")
         {
-            
-
-            Rigidbody2D enemy = other.GetComponent<Rigidbody2D>();
-            if(enemy != null)
-            {
-                Debug.Log("Knocking Bakc");
-                
-                enemy.GetComponent<WanderingAI>().currentState = EnemyState.stagger;
-                Vector2 difference = enemy.gameObject.transform.position - this.transform.position;
-                difference = difference.normalized * thrust;
-
-                enemy.AddForce(difference, ForceMode2D.Impulse);
-                
-                StartCoroutine(KnockCo(enemy));
-               
-            }
-        }
-        else if (other.gameObject.CompareTag("BossEpi"))
-        {
-            Rigidbody2D enemy = other.GetComponent<Rigidbody2D>();
-            if (enemy != null)
-            {
-                Debug.Log("Knocking Bakc");
-
-                enemy.GetComponent<BossEpi>().currentState = BossState.stagger;
-                Vector2 difference = enemy.gameObject.transform.position - this.transform.position;
-
-
-                difference = difference.normalized * thrust;
-
-                enemy.AddForce(difference, ForceMode2D.Impulse);
-
-                StartCoroutine(BossEpiKnockCo(enemy));
-            }
-        }
-        else if (other.gameObject.CompareTag("BossHallah"))
-        {
-            Rigidbody2D enemy = other.GetComponent<Rigidbody2D>();
-            if (enemy != null)
-            {
-                Debug.Log("Knocking Bakc");
-
-                enemy.GetComponent<BossHallah>().currentState = BossState.stagger;
-                Vector2 difference = enemy.gameObject.transform.position - this.transform.position;
-                difference = difference.normalized * thrust;
-
-                enemy.AddForce(difference, ForceMode2D.Impulse);
-
-                StartCoroutine(BossHallahKnockCo(enemy));
-            }
-        }else if (other.gameObject.CompareTag("BossDoughnut"))
-        {
-            Rigidbody2D enemy = other.GetComponent<Rigidbody2D>();
-            if (enemy != null)
+            if (other.gameObject.CompareTag("Damageable"))
             {
 
-                enemy.GetComponent<BossDoughnut>().currentState = BossState.stagger;
-                Vector2 difference = enemy.gameObject.transform.position - this.transform.position;
 
-                difference = difference.normalized * thrust;
-                enemy.AddForce(difference, ForceMode2D.Impulse);
+                Rigidbody2D enemy = other.GetComponent<Rigidbody2D>();
+                if (enemy != null)
+                {
+                    Debug.Log("Knocking Bakc");
 
-                StartCoroutine(BossDoughnutKnockCo(enemy));
+                    enemy.GetComponent<WanderingAI>().currentState = EnemyState.stagger;
+                    Vector2 difference = enemy.gameObject.transform.position - this.transform.position;
+                    difference = difference.normalized * thrust;
+
+                    enemy.AddForce(difference, ForceMode2D.Impulse);
+
+                    StartCoroutine(KnockCo(enemy));
+
+                }
             }
-        }
-
-        if (!this.CompareTag("DeadFriend") && other.CompareTag("Player") && other.GetComponent<PlayerMovement>().currentState != PlayerState.stagger)
-        {
-
-
-            Rigidbody2D enemy = other.GetComponent<Rigidbody2D>();
-            if (enemy != null)
+            else if (other.gameObject.CompareTag("BossEpi"))
             {
-                Debug.Log("Knocking Bakc player");
+                Rigidbody2D enemy = other.GetComponent<Rigidbody2D>();
+                if (enemy != null)
+                {
+                    Debug.Log("Knocking Bakc");
 
-                enemy.GetComponent<PlayerMovement>().currentState = PlayerState.stagger;
-                Vector2 difference = enemy.gameObject.transform.position - this.transform.position;
-                difference = difference.normalized * thrust;
+                    enemy.GetComponent<BossEpi>().currentState = BossState.stagger;
+                    Vector2 difference = enemy.gameObject.transform.position - this.transform.position;
 
-                enemy.AddForce(difference, ForceMode2D.Impulse);
 
-                StartCoroutine(PlayerKnockCo(enemy));
-                other.GetComponent<PlayerMovement>().hurt(dmg);
+                    difference = difference.normalized * thrust;
+
+                    enemy.AddForce(difference, ForceMode2D.Impulse);
+
+                    StartCoroutine(BossEpiKnockCo(enemy));
+                }
+            }
+            else if (other.gameObject.CompareTag("BossHallah"))
+            {
+                Rigidbody2D enemy = other.GetComponent<Rigidbody2D>();
+                if (enemy != null)
+                {
+                    Debug.Log("Knocking Bakc");
+
+                    enemy.GetComponent<BossHallah>().currentState = BossState.stagger;
+                    Vector2 difference = enemy.gameObject.transform.position - this.transform.position;
+                    difference = difference.normalized * thrust;
+
+                    enemy.AddForce(difference, ForceMode2D.Impulse);
+
+                    StartCoroutine(BossHallahKnockCo(enemy));
+                }
+            }
+            else if (other.gameObject.CompareTag("BossDoughnut"))
+            {
+                Rigidbody2D enemy = other.GetComponent<Rigidbody2D>();
+                if (enemy != null)
+                {
+
+                    enemy.GetComponent<BossDoughnut>().currentState = BossState.stagger;
+                    Vector2 difference = enemy.gameObject.transform.position - this.transform.position;
+
+                    difference = difference.normalized * thrust;
+                    enemy.AddForce(difference, ForceMode2D.Impulse);
+
+                    StartCoroutine(BossDoughnutKnockCo(enemy));
+                }
+            }
+
+            if (!this.CompareTag("DeadFriend") && other.CompareTag("Player") && other.GetComponent<PlayerMovement>().currentState != PlayerState.stagger)
+            {
+
+
+                Rigidbody2D enemy = other.GetComponent<Rigidbody2D>();
+                if (enemy != null)
+                {
+                    Debug.Log("Knocking Bakc player");
+
+                    enemy.GetComponent<PlayerMovement>().currentState = PlayerState.stagger;
+                    Vector2 difference = enemy.gameObject.transform.position - this.transform.position;
+                    difference = difference.normalized * thrust;
+
+                    enemy.AddForce(difference, ForceMode2D.Impulse);
+
+                    StartCoroutine(PlayerKnockCo(enemy));
+                    other.GetComponent<PlayerMovement>().hurt(dmg);
+
+                }
+
 
             }
-            
-
         }
     }
 

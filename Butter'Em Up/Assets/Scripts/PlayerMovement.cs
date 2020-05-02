@@ -18,7 +18,7 @@ public class PlayerMovement : MonoBehaviour
     public Signal playerHealth;
 
     private Rigidbody2D myRigidBody;
-    private Vector3 change;
+    public Vector3 change;
     private Animator myAnimator;
     private Attack1 myAttack;
     [SerializeField] GameObject GameOver;

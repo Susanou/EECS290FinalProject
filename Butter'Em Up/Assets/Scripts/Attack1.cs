@@ -57,7 +57,7 @@ public class Attack1 : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other) {
 
-        RaycastHit2D hit = Physics2D.Raycast((Vector2)this.transform.position- new Vector2(0,-2), (Vector2)other.transform.position);
+        RaycastHit2D hit = Physics2D.Raycast((Vector2)this.transform.position, (Vector2)other.transform.position);
         Debug.Log(hit.collider);
        //Debug.Log(other.tag);
         if (hit.collider.tag != "walls")
