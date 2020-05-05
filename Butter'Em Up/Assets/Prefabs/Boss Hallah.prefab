@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1319662529}
   - component: {fileID: 1319662528}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Angry
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -92,7 +92,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5879301551960681773}
   - component: {fileID: 5879301551960681772}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Left foot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -174,7 +174,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5879301552245187756}
   - component: {fileID: 5879301552245187755}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Body
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -257,7 +257,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5879301552261018823}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Body
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -290,7 +290,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5879301552271528419}
   - component: {fileID: 5879301552271528418}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: eye left
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -614,7 +614,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5879301553206695077}
   - component: {fileID: 5879301553206695076}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Right foot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -769,7 +769,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5879301553330620301}
   - component: {fileID: 5879301553330620300}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: eye right
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -940,7 +940,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5879301553522060672}
   - component: {fileID: 5879301553522060687}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Hat
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1025,7 +1025,7 @@ GameObject:
   - component: {fileID: 5879301553555235227}
   - component: {fileID: 5879301553087024346}
   - component: {fileID: 3491061306314362291}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Boss Hallah
   m_TagString: BossHallah
   m_Icon: {fileID: 0}

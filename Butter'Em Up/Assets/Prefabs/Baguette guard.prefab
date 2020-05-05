@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 258776692}
   - component: {fileID: 258776693}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: attackHitBoxRight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -545,7 +545,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1226549396}
   - component: {fileID: 1226549397}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: attackHitBoxUp
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -800,7 +800,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1866615313}
   - component: {fileID: 1866615314}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: attackHitBoxLeft
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -857,7 +857,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2010963546}
   - component: {fileID: 2010963547}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: attackHitBoxDown
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -950,7 +950,7 @@ GameObject:
   m_Component:
   - component: {fileID: 9125969211715098453}
   - component: {fileID: 9125969211715098454}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: sword
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1032,7 +1032,7 @@ GameObject:
   m_Component:
   - component: {fileID: 9125969211874208114}
   - component: {fileID: 9125969211874208115}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: eye right
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1113,7 +1113,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9125969211913396907}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Body
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1146,7 +1146,7 @@ GameObject:
   m_Component:
   - component: {fileID: 9125969212537550948}
   - component: {fileID: 9125969212537550949}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Right foot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1232,7 +1232,7 @@ GameObject:
   - component: {fileID: 9125969211625292083}
   - component: {fileID: 9125969211625292082}
   - component: {fileID: 9125969211625292084}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Baguette guard
   m_TagString: Damageable
   m_Icon: {fileID: 0}
@@ -1391,7 +1391,7 @@ GameObject:
   m_Component:
   - component: {fileID: 9125969213110463962}
   - component: {fileID: 9125969213110463963}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: "K\xE9pi"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1473,7 +1473,7 @@ GameObject:
   m_Component:
   - component: {fileID: 9125969213166255529}
   - component: {fileID: 9125969213166255530}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Body
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1558,7 +1558,7 @@ GameObject:
   m_Component:
   - component: {fileID: 9125969213336460723}
   - component: {fileID: 9125969213336460724}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Left foot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1639,7 +1639,7 @@ GameObject:
   m_Component:
   - component: {fileID: 9125969213491687722}
   - component: {fileID: 9125969213491687723}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: eye left
   m_TagString: Untagged
   m_Icon: {fileID: 0}

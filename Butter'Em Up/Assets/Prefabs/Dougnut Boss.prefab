@@ -99,7 +99,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1030575167}
   - component: {fileID: 1030575168}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Angry
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -497,7 +497,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6202911822561447002}
   - component: {fileID: 6202911822561447003}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: eye right
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -579,7 +579,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6202911822833673912}
   - component: {fileID: 6202911822833673913}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Body
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -663,7 +663,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6202911822950263452}
   - component: {fileID: 6202911822950263453}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: eye left
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -749,7 +749,7 @@ GameObject:
   - component: {fileID: 1910851186195599298}
   - component: {fileID: 192012730}
   - component: {fileID: 192012731}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Dougnut Boss
   m_TagString: BossDoughnut
   m_Icon: {fileID: 0}

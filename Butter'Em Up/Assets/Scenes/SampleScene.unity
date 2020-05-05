@@ -473,6 +473,7 @@ MonoBehaviour:
   dmg: 1
   kbtime: 2
   thrust: 0
+  origin: {fileID: 0}
 --- !u!1001 &444114922
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1512,40 +1513,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1215650704}
   m_CullTransparentMesh: 0
---- !u!1 &1341853394 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5172385047146482571, guid: 0e16841357127ed44b7b817dfc23e6d1,
-    type: 3}
-  m_PrefabInstance: {fileID: 5172385046317647193}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1341853395
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1341853394}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 945641da6ee91724585b7aab235e0eaf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dmg: 1
---- !u!114 &1341853396
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1341853394}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3312622659bb0db498a9854455fd5722, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dmg: 1
-  kbtime: 0.5
-  thrust: 5
 --- !u!1 &1459119454
 GameObject:
   m_ObjectHideFlags: 0
@@ -1998,14 +1965,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 234774645, guid: 04567e83ddc61d346b996be5e98bd334, type: 3}
-      propertyPath: m_Value
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 401732121, guid: 04567e83ddc61d346b996be5e98bd334, type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 401732121, guid: 04567e83ddc61d346b996be5e98bd334, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -2084,11 +2043,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: ThrowHat
       objectReference: {fileID: 0}
-    - target: {fileID: 5172385047146482571, guid: 0e16841357127ed44b7b817dfc23e6d1,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5172385047146482573, guid: 0e16841357127ed44b7b817dfc23e6d1,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2153,10 +2107,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1818989718, guid: d92e61470fed82f4da915d0496dee0e3, type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 1818989718, guid: d92e61470fed82f4da915d0496dee0e3, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -2304,10 +2254,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1464253022, guid: fb55e8376f56897499c9140f5d5ab8cb, type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 1464253022, guid: fb55e8376f56897499c9140f5d5ab8cb, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0

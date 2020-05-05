@@ -172,7 +172,7 @@ GameObject:
   m_Component:
   - component: {fileID: 457249910}
   - component: {fileID: 457249911}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: attackHitBoxUp
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -229,7 +229,7 @@ GameObject:
   m_Component:
   - component: {fileID: 581928227}
   - component: {fileID: 581928228}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: attackHitBoxDown
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -286,7 +286,7 @@ GameObject:
   m_Component:
   - component: {fileID: 997604989}
   - component: {fileID: 997604990}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: attackHitBoxLeft
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -550,7 +550,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1851439379}
   - component: {fileID: 1851439380}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: attackHitBoxRight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -642,7 +642,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5698415287325199032}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Body
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -675,7 +675,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5698415287513876373}
   - component: {fileID: 5698415287513876374}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Body
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -760,7 +760,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5698415287750678369}
   - component: {fileID: 5698415287750678370}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Right foot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -845,7 +845,7 @@ GameObject:
   - component: {fileID: 5698415287851965921}
   - component: {fileID: 312684166}
   - component: {fileID: 242960392}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: "Boss \xE9pi"
   m_TagString: BossEpi
   m_Icon: {fileID: 0}
@@ -955,6 +955,7 @@ MonoBehaviour:
   dmg: 1
   kbtime: 0.2
   thrust: 10
+  origin: {fileID: 0}
 --- !u!114 &242960392
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -984,6 +985,7 @@ MonoBehaviour:
   HealthPot: {fileID: 0}
   KeyDrop: {fileID: 0}
   recipeDrop: {fileID: 0}
+  Portal: {fileID: 0}
   dialogueBox: {fileID: 0}
   dialogueText: {fileID: 0}
 --- !u!1 &5698415287847055122
@@ -996,7 +998,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5698415287847055120}
   - component: {fileID: 5698415287847055121}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: sword
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1078,7 +1080,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5698415288173175288}
   - component: {fileID: 5698415288173175289}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Left foot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1159,7 +1161,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5698415288246032127}
   - component: {fileID: 5698415288246032064}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: eye right
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1241,7 +1243,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5698415288695347125}
   - component: {fileID: 5698415288695347126}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: eye left
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1322,7 +1324,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8719300630720049739}
   - component: {fileID: 5128615231340492736}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: angry
   m_TagString: Untagged
   m_Icon: {fileID: 0}
