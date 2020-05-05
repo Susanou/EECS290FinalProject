@@ -65,7 +65,7 @@ public class Attack1 : MonoBehaviour
 
         RaycastHit2D hit = Physics2D.Raycast((Vector2)origin.position, (Vector2)other.transform.position - (Vector2)origin.position, 5f, mask);
 
-        if (hit.collider.tag != "walls")
+        if (hit.collider == null || hit.collider.tag != "walls")
         {
             if (other.CompareTag("Damageable"))
             {
